@@ -1,0 +1,304 @@
+\hypertarget{classLIBKMS__namespace_1_1Parameter}{\section{Шаблон класса L\-I\-B\-K\-M\-S\-\_\-namespace\-:\-:Parameter$<$ Ext, Spec $>$}
+\label{classLIBKMS__namespace_1_1Parameter}\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Parameter$<$ Ext, Spec $>$@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Parameter$<$ Ext, Spec $>$}}
+}
+
+
+Класс, от которого должны наследоваться все классы параметров  
+
+
+
+
+{\ttfamily \#include $<$param.\-hpp$>$}
+
+Граф наследования\-:L\-I\-B\-K\-M\-S\-\_\-namespace\-:\-:Parameter$<$ Ext, Spec $>$\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classLIBKMS__namespace_1_1Parameter}
+\end{center}
+\end{figure}
+\subsection*{Открытые типы}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classLIBKMS__namespace_1_1Parameter}{Parameter}$<$ Ext, Spec $>$ \hyperlink{classLIBKMS__namespace_1_1Parameter_af353e23edea754f9a2d1c936cd5c8eab}{parameter\-\_\-t}
+\item 
+typedef Spec$<$ \hyperlink{classLIBKMS__namespace_1_1Parameter_af353e23edea754f9a2d1c936cd5c8eab}{parameter\-\_\-t} $>$\-::ptr \hyperlink{classLIBKMS__namespace_1_1Parameter_a28516bcd5bad5857b2d1c676e4176f51}{ptr\-\_\-t}
+\end{DoxyCompactItemize}
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classLIBKMS__namespace_1_1Parameter_ac767db81c6aa9e552089be5958bfc81f}{Parameter} ()
+\item 
+\hyperlink{classLIBKMS__namespace_1_1Parameter_a3c0c7c0222fbe9d6d38e002e706cf1b7}{Parameter} (const std\-::string type\-\_\-name)
+\item 
+virtual \hyperlink{classLIBKMS__namespace_1_1Parameter_a644c4a3c66079510847da3377e5f1594}{$\sim$\-Parameter} ()
+\item 
+virtual \hyperlink{classLIBKMS__namespace_1_1Parameter_a28516bcd5bad5857b2d1c676e4176f51}{ptr\-\_\-t} \hyperlink{classLIBKMS__namespace_1_1Parameter_a2b360aeb7f850d4fccc58adc4a5b88b7}{clone} ()=0
+\item 
+virtual std\-::string \hyperlink{classLIBKMS__namespace_1_1Parameter_ad934454e1569e546f6f347bb03ce705f}{to\-\_\-string} () const =0
+\begin{DoxyCompactList}\small\item\em Вернуть представление данных в виде строки \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classLIBKMS__namespace_1_1Parameter_a6da649d3045e979a488c336bf77b411b}{from\-\_\-string} (const std\-::string \&)=0
+\begin{DoxyCompactList}\small\item\em Записать значение из строки \end{DoxyCompactList}\item 
+virtual std\-::vector$<$ uint8\-\_\-t $>$ \hyperlink{classLIBKMS__namespace_1_1Parameter_a6ebf9bc6aaa62d78f786bc6368a2c65a}{to\-\_\-bytes} () const =0
+\begin{DoxyCompactList}\small\item\em Вернуть представление данных в виде вектора байтов \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classLIBKMS__namespace_1_1Parameter_a33a7dac4680f0e39c9166771c65971ab}{from\-\_\-bytes} (const uint8\-\_\-t $\ast$, size\-\_\-t)=0
+\begin{DoxyCompactList}\small\item\em Записать значение из набора байтов \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classLIBKMS__namespace_1_1Parameter_a2f582483707d9229a5a2bde88d860fff}{is\-\_\-equal} (const \hyperlink{classLIBKMS__namespace_1_1Parameter_af353e23edea754f9a2d1c936cd5c8eab}{parameter\-\_\-t} \&another) const =0
+\begin{DoxyCompactList}\small\item\em Сравнить значения \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classLIBKMS__namespace_1_1Parameter_ac46dd4bb2e060a4e5f522b625cb44b11}{is\-\_\-set} () const =0
+\begin{DoxyCompactList}\small\item\em Является ли параметр установленным (для power-\/переменных) \end{DoxyCompactList}\item 
+std\-::string \hyperlink{classLIBKMS__namespace_1_1Parameter_a7d03af2df98ad4053433f84288f0e786}{get\-\_\-type} () const 
+\begin{DoxyCompactList}\small\item\em Вернуть имя типа \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classLIBKMS__namespace_1_1Parameter_a506fa08096a6595f04341b90912f35a0}{copy\-\_\-data} (\hyperlink{classLIBKMS__namespace_1_1Parameter_af353e23edea754f9a2d1c936cd5c8eab}{parameter\-\_\-t} \&)=0
+\item 
+{\footnotesize template$<$typename T $>$ }\\\hyperlink{structLIBKMS__namespace_1_1types_1_1get__return__type}{types\-::get\-\_\-return\-\_\-type}$<$ T, \\*
+\hyperlink{classLIBKMS__namespace_1_1Parameter_af353e23edea754f9a2d1c936cd5c8eab}{parameter\-\_\-t} $>$\-::return\-\_\-t \hyperlink{classLIBKMS__namespace_1_1Parameter_ae6f38891ce947733703c3de5aafce38c}{as} ()
+\item 
+{\footnotesize template$<$typename T $>$ }\\const \hyperlink{structLIBKMS__namespace_1_1types_1_1get__return__type}{types\-::get\-\_\-return\-\_\-type}\\*
+$<$ T, \hyperlink{classLIBKMS__namespace_1_1Parameter_af353e23edea754f9a2d1c936cd5c8eab}{parameter\-\_\-t} $>$\-::return\-\_\-t \hyperlink{classLIBKMS__namespace_1_1Parameter_a75fd27c3385b7474e99d501e4118702a}{c\-\_\-as} () const 
+\item 
+void \hyperlink{classLIBKMS__namespace_1_1Parameter_a688e383ed05a421a5b74f3d9a8780fad}{set\-\_\-desc} (const std\-::string \&d)
+\begin{DoxyCompactList}\small\item\em Устанавливает описание переменной \end{DoxyCompactList}\item 
+const std\-::string \& \hyperlink{classLIBKMS__namespace_1_1Parameter_a5696d8f34e854cae392e96ecca20e6c0}{get\-\_\-desc} () const 
+\begin{DoxyCompactList}\small\item\em Возвращает описание переменной \end{DoxyCompactList}\item 
+bool \hyperlink{classLIBKMS__namespace_1_1Parameter_a1bc31e7df8a2b5c68bec3ca3300af114}{is\-\_\-locked} () const 
+\begin{DoxyCompactList}\small\item\em Возвращает признак блокировки \end{DoxyCompactList}\item 
+void \hyperlink{classLIBKMS__namespace_1_1Parameter_aea87ceb7edf34c23aa5ec9240cd90673}{set\-\_\-lock} (bool \hyperlink{classLIBKMS__namespace_1_1Parameter_a1bc31e7df8a2b5c68bec3ca3300af114}{is\-\_\-locked})
+\begin{DoxyCompactList}\small\item\em Блокирует переменную \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Открытые статические члены}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classLIBKMS__namespace_1_1Parameter_a28516bcd5bad5857b2d1c676e4176f51}{ptr\-\_\-t} \hyperlink{classLIBKMS__namespace_1_1Parameter_a3978d2027190f56451d37703d7e317a2}{null\-\_\-ptr} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Подробное описание}
+\subsubsection*{template$<$class Ext, template$<$ typename U $>$ class Spec$>$class L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Parameter$<$ Ext, Spec $>$}
+
+Класс, от которого должны наследоваться все классы параметров 
+
+\subsection{Определения типов}
+\hypertarget{classLIBKMS__namespace_1_1Parameter_af353e23edea754f9a2d1c936cd5c8eab}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Parameter@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Parameter}!parameter\-\_\-t@{parameter\-\_\-t}}
+\index{parameter\-\_\-t@{parameter\-\_\-t}!LIBKMS_namespace::Parameter@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Parameter}}
+\subsubsection[{parameter\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Ext, template$<$ typename U $>$ class Spec$>$ typedef {\bf Parameter}$<$ Ext, Spec $>$ {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Parameter}$<$ Ext, Spec $>$\-::{\bf parameter\-\_\-t}}}\label{classLIBKMS__namespace_1_1Parameter_af353e23edea754f9a2d1c936cd5c8eab}
+\hypertarget{classLIBKMS__namespace_1_1Parameter_a28516bcd5bad5857b2d1c676e4176f51}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Parameter@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Parameter}!ptr\-\_\-t@{ptr\-\_\-t}}
+\index{ptr\-\_\-t@{ptr\-\_\-t}!LIBKMS_namespace::Parameter@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Parameter}}
+\subsubsection[{ptr\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Ext, template$<$ typename U $>$ class Spec$>$ typedef Spec$<$ {\bf parameter\-\_\-t} $>$\-::ptr {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Parameter}$<$ Ext, Spec $>$\-::{\bf ptr\-\_\-t}}}\label{classLIBKMS__namespace_1_1Parameter_a28516bcd5bad5857b2d1c676e4176f51}
+
+
+\subsection{Конструктор(ы)}
+\hypertarget{classLIBKMS__namespace_1_1Parameter_ac767db81c6aa9e552089be5958bfc81f}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Parameter@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Parameter}!Parameter@{Parameter}}
+\index{Parameter@{Parameter}!LIBKMS_namespace::Parameter@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Parameter}}
+\subsubsection[{Parameter}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Ext, template$<$ typename U $>$ class Spec$>$ {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Parameter}$<$ Ext, Spec $>$\-::{\bf Parameter} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classLIBKMS__namespace_1_1Parameter_ac767db81c6aa9e552089be5958bfc81f}
+\hypertarget{classLIBKMS__namespace_1_1Parameter_a3c0c7c0222fbe9d6d38e002e706cf1b7}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Parameter@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Parameter}!Parameter@{Parameter}}
+\index{Parameter@{Parameter}!LIBKMS_namespace::Parameter@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Parameter}}
+\subsubsection[{Parameter}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Ext, template$<$ typename U $>$ class Spec$>$ {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Parameter}$<$ Ext, Spec $>$\-::{\bf Parameter} (
+\begin{DoxyParamCaption}
+\item[{const std\-::string}]{type\-\_\-name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classLIBKMS__namespace_1_1Parameter_a3c0c7c0222fbe9d6d38e002e706cf1b7}
+\hypertarget{classLIBKMS__namespace_1_1Parameter_a644c4a3c66079510847da3377e5f1594}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Parameter@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Parameter}!$\sim$\-Parameter@{$\sim$\-Parameter}}
+\index{$\sim$\-Parameter@{$\sim$\-Parameter}!LIBKMS_namespace::Parameter@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Parameter}}
+\subsubsection[{$\sim$\-Parameter}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Ext, template$<$ typename U $>$ class Spec$>$ virtual {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Parameter}$<$ Ext, Spec $>$\-::$\sim${\bf Parameter} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classLIBKMS__namespace_1_1Parameter_a644c4a3c66079510847da3377e5f1594}
+
+
+\subsection{Методы}
+\hypertarget{classLIBKMS__namespace_1_1Parameter_ae6f38891ce947733703c3de5aafce38c}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Parameter@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Parameter}!as@{as}}
+\index{as@{as}!LIBKMS_namespace::Parameter@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Parameter}}
+\subsubsection[{as}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Ext, template$<$ typename U $>$ class Spec$>$ template$<$typename T $>$ {\bf types\-::get\-\_\-return\-\_\-type}$<$ T, {\bf parameter\-\_\-t} $>$\-::return\-\_\-t {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Parameter}$<$ Ext, Spec $>$\-::as (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classLIBKMS__namespace_1_1Parameter_ae6f38891ce947733703c3de5aafce38c}
+Попытка преобразования к нужному типу \begin{DoxyReturn}{Возвращает}
+нуль, если попытка не удалась 
+\end{DoxyReturn}
+\hypertarget{classLIBKMS__namespace_1_1Parameter_a75fd27c3385b7474e99d501e4118702a}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Parameter@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Parameter}!c\-\_\-as@{c\-\_\-as}}
+\index{c\-\_\-as@{c\-\_\-as}!LIBKMS_namespace::Parameter@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Parameter}}
+\subsubsection[{c\-\_\-as}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Ext, template$<$ typename U $>$ class Spec$>$ template$<$typename T $>$ const {\bf types\-::get\-\_\-return\-\_\-type}$<$ T, {\bf parameter\-\_\-t} $>$\-::return\-\_\-t {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Parameter}$<$ Ext, Spec $>$\-::c\-\_\-as (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classLIBKMS__namespace_1_1Parameter_a75fd27c3385b7474e99d501e4118702a}
+\hypertarget{classLIBKMS__namespace_1_1Parameter_a2b360aeb7f850d4fccc58adc4a5b88b7}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Parameter@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Parameter}!clone@{clone}}
+\index{clone@{clone}!LIBKMS_namespace::Parameter@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Parameter}}
+\subsubsection[{clone}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Ext, template$<$ typename U $>$ class Spec$>$ virtual {\bf ptr\-\_\-t} {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Parameter}$<$ Ext, Spec $>$\-::clone (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classLIBKMS__namespace_1_1Parameter_a2b360aeb7f850d4fccc58adc4a5b88b7}
+
+
+Замещается в \hyperlink{classLIBKMS__namespace_1_1Holder_aff9b8117c9662d48700365dac518a973}{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Holder$<$ T, Parameter $>$}.
+
+\hypertarget{classLIBKMS__namespace_1_1Parameter_a506fa08096a6595f04341b90912f35a0}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Parameter@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Parameter}!copy\-\_\-data@{copy\-\_\-data}}
+\index{copy\-\_\-data@{copy\-\_\-data}!LIBKMS_namespace::Parameter@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Parameter}}
+\subsubsection[{copy\-\_\-data}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Ext, template$<$ typename U $>$ class Spec$>$ virtual bool {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Parameter}$<$ Ext, Spec $>$\-::copy\-\_\-data (
+\begin{DoxyParamCaption}
+\item[{{\bf parameter\-\_\-t} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classLIBKMS__namespace_1_1Parameter_a506fa08096a6595f04341b90912f35a0}
+Скопировать значение из указанного контейнера \begin{DoxyReturn}{Возвращает}
+Изменилось ли значение 
+\end{DoxyReturn}
+\hypertarget{classLIBKMS__namespace_1_1Parameter_a33a7dac4680f0e39c9166771c65971ab}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Parameter@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Parameter}!from\-\_\-bytes@{from\-\_\-bytes}}
+\index{from\-\_\-bytes@{from\-\_\-bytes}!LIBKMS_namespace::Parameter@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Parameter}}
+\subsubsection[{from\-\_\-bytes}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Ext, template$<$ typename U $>$ class Spec$>$ virtual bool {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Parameter}$<$ Ext, Spec $>$\-::from\-\_\-bytes (
+\begin{DoxyParamCaption}
+\item[{const uint8\-\_\-t $\ast$}]{, }
+\item[{size\-\_\-t}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classLIBKMS__namespace_1_1Parameter_a33a7dac4680f0e39c9166771c65971ab}
+
+
+Записать значение из набора байтов 
+
+
+
+Замещается в \hyperlink{classLIBKMS__namespace_1_1Holder_a6c9274a0d762e36bd709baff85a4c8b2}{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Holder$<$ T, Parameter $>$}.
+
+\hypertarget{classLIBKMS__namespace_1_1Parameter_a6da649d3045e979a488c336bf77b411b}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Parameter@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Parameter}!from\-\_\-string@{from\-\_\-string}}
+\index{from\-\_\-string@{from\-\_\-string}!LIBKMS_namespace::Parameter@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Parameter}}
+\subsubsection[{from\-\_\-string}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Ext, template$<$ typename U $>$ class Spec$>$ virtual bool {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Parameter}$<$ Ext, Spec $>$\-::from\-\_\-string (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classLIBKMS__namespace_1_1Parameter_a6da649d3045e979a488c336bf77b411b}
+
+
+Записать значение из строки 
+
+
+
+Замещается в \hyperlink{classLIBKMS__namespace_1_1Holder_aadb0bc39195f64c5fdd1eebda4274175}{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Holder$<$ T, Parameter $>$}.
+
+\hypertarget{classLIBKMS__namespace_1_1Parameter_a5696d8f34e854cae392e96ecca20e6c0}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Parameter@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Parameter}!get\-\_\-desc@{get\-\_\-desc}}
+\index{get\-\_\-desc@{get\-\_\-desc}!LIBKMS_namespace::Parameter@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Parameter}}
+\subsubsection[{get\-\_\-desc}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Ext, template$<$ typename U $>$ class Spec$>$ const std\-::string\& {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Parameter}$<$ Ext, Spec $>$\-::get\-\_\-desc (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classLIBKMS__namespace_1_1Parameter_a5696d8f34e854cae392e96ecca20e6c0}
+
+
+Возвращает описание переменной 
+
+\hypertarget{classLIBKMS__namespace_1_1Parameter_a7d03af2df98ad4053433f84288f0e786}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Parameter@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Parameter}!get\-\_\-type@{get\-\_\-type}}
+\index{get\-\_\-type@{get\-\_\-type}!LIBKMS_namespace::Parameter@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Parameter}}
+\subsubsection[{get\-\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Ext, template$<$ typename U $>$ class Spec$>$ std\-::string {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Parameter}$<$ Ext, Spec $>$\-::get\-\_\-type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classLIBKMS__namespace_1_1Parameter_a7d03af2df98ad4053433f84288f0e786}
+
+
+Вернуть имя типа 
+
+\hypertarget{classLIBKMS__namespace_1_1Parameter_a2f582483707d9229a5a2bde88d860fff}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Parameter@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Parameter}!is\-\_\-equal@{is\-\_\-equal}}
+\index{is\-\_\-equal@{is\-\_\-equal}!LIBKMS_namespace::Parameter@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Parameter}}
+\subsubsection[{is\-\_\-equal}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Ext, template$<$ typename U $>$ class Spec$>$ virtual bool {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Parameter}$<$ Ext, Spec $>$\-::is\-\_\-equal (
+\begin{DoxyParamCaption}
+\item[{const {\bf parameter\-\_\-t} \&}]{another}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classLIBKMS__namespace_1_1Parameter_a2f582483707d9229a5a2bde88d860fff}
+
+
+Сравнить значения 
+
+\hypertarget{classLIBKMS__namespace_1_1Parameter_a1bc31e7df8a2b5c68bec3ca3300af114}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Parameter@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Parameter}!is\-\_\-locked@{is\-\_\-locked}}
+\index{is\-\_\-locked@{is\-\_\-locked}!LIBKMS_namespace::Parameter@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Parameter}}
+\subsubsection[{is\-\_\-locked}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Ext, template$<$ typename U $>$ class Spec$>$ bool {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Parameter}$<$ Ext, Spec $>$\-::is\-\_\-locked (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classLIBKMS__namespace_1_1Parameter_a1bc31e7df8a2b5c68bec3ca3300af114}
+
+
+Возвращает признак блокировки 
+
+\hypertarget{classLIBKMS__namespace_1_1Parameter_ac46dd4bb2e060a4e5f522b625cb44b11}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Parameter@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Parameter}!is\-\_\-set@{is\-\_\-set}}
+\index{is\-\_\-set@{is\-\_\-set}!LIBKMS_namespace::Parameter@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Parameter}}
+\subsubsection[{is\-\_\-set}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Ext, template$<$ typename U $>$ class Spec$>$ virtual bool {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Parameter}$<$ Ext, Spec $>$\-::is\-\_\-set (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classLIBKMS__namespace_1_1Parameter_ac46dd4bb2e060a4e5f522b625cb44b11}
+
+
+Является ли параметр установленным (для power-\/переменных) 
+
+
+
+Замещается в \hyperlink{classLIBKMS__namespace_1_1Holder_a25d1d8c9e5659fd2a2b0980031bf7166}{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Holder$<$ T, Parameter $>$}.
+
+\hypertarget{classLIBKMS__namespace_1_1Parameter_a3978d2027190f56451d37703d7e317a2}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Parameter@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Parameter}!null\-\_\-ptr@{null\-\_\-ptr}}
+\index{null\-\_\-ptr@{null\-\_\-ptr}!LIBKMS_namespace::Parameter@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Parameter}}
+\subsubsection[{null\-\_\-ptr}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Ext, template$<$ typename U $>$ class Spec$>$ static {\bf ptr\-\_\-t} {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Parameter}$<$ Ext, Spec $>$\-::null\-\_\-ptr (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classLIBKMS__namespace_1_1Parameter_a3978d2027190f56451d37703d7e317a2}
+\hypertarget{classLIBKMS__namespace_1_1Parameter_a688e383ed05a421a5b74f3d9a8780fad}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Parameter@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Parameter}!set\-\_\-desc@{set\-\_\-desc}}
+\index{set\-\_\-desc@{set\-\_\-desc}!LIBKMS_namespace::Parameter@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Parameter}}
+\subsubsection[{set\-\_\-desc}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Ext, template$<$ typename U $>$ class Spec$>$ void {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Parameter}$<$ Ext, Spec $>$\-::set\-\_\-desc (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{d}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classLIBKMS__namespace_1_1Parameter_a688e383ed05a421a5b74f3d9a8780fad}
+
+
+Устанавливает описание переменной 
+
+\hypertarget{classLIBKMS__namespace_1_1Parameter_aea87ceb7edf34c23aa5ec9240cd90673}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Parameter@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Parameter}!set\-\_\-lock@{set\-\_\-lock}}
+\index{set\-\_\-lock@{set\-\_\-lock}!LIBKMS_namespace::Parameter@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Parameter}}
+\subsubsection[{set\-\_\-lock}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Ext, template$<$ typename U $>$ class Spec$>$ void {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Parameter}$<$ Ext, Spec $>$\-::set\-\_\-lock (
+\begin{DoxyParamCaption}
+\item[{bool}]{is\-\_\-locked}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classLIBKMS__namespace_1_1Parameter_aea87ceb7edf34c23aa5ec9240cd90673}
+
+
+Блокирует переменную 
+
+\hypertarget{classLIBKMS__namespace_1_1Parameter_a6ebf9bc6aaa62d78f786bc6368a2c65a}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Parameter@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Parameter}!to\-\_\-bytes@{to\-\_\-bytes}}
+\index{to\-\_\-bytes@{to\-\_\-bytes}!LIBKMS_namespace::Parameter@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Parameter}}
+\subsubsection[{to\-\_\-bytes}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Ext, template$<$ typename U $>$ class Spec$>$ virtual std\-::vector$<$ uint8\-\_\-t $>$ {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Parameter}$<$ Ext, Spec $>$\-::to\-\_\-bytes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classLIBKMS__namespace_1_1Parameter_a6ebf9bc6aaa62d78f786bc6368a2c65a}
+
+
+Вернуть представление данных в виде вектора байтов 
+
+
+
+Замещается в \hyperlink{classLIBKMS__namespace_1_1Holder_af3568f981e9862d1cdc85404c971f8fd}{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Holder$<$ T, Parameter $>$}.
+
+\hypertarget{classLIBKMS__namespace_1_1Parameter_ad934454e1569e546f6f347bb03ce705f}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Parameter@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Parameter}!to\-\_\-string@{to\-\_\-string}}
+\index{to\-\_\-string@{to\-\_\-string}!LIBKMS_namespace::Parameter@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Parameter}}
+\subsubsection[{to\-\_\-string}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Ext, template$<$ typename U $>$ class Spec$>$ virtual std\-::string {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Parameter}$<$ Ext, Spec $>$\-::to\-\_\-string (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classLIBKMS__namespace_1_1Parameter_ad934454e1569e546f6f347bb03ce705f}
+
+
+Вернуть представление данных в виде строки 
+
+
+
+Замещается в \hyperlink{classLIBKMS__namespace_1_1Holder_a4a52e97abc2329b4de3188c8ee2437b7}{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Holder$<$ T, Parameter $>$}.
+
+
+
+Объявления и описания членов класса находятся в файле\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{param_8hpp}{param.\-hpp}\end{DoxyCompactItemize}

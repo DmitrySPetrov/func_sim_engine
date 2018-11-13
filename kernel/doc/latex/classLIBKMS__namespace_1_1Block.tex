@@ -1,0 +1,653 @@
+\hypertarget{classLIBKMS__namespace_1_1Block}{\section{Шаблон класса L\-I\-B\-K\-M\-S\-\_\-namespace\-:\-:Block$<$ Type\-Factory, Param\-Spec, Scheduler, Logger, Subpr\-Spec, String\-Spec, Bl\-Cl\-Spec, Formula\-Solver $>$}
+\label{classLIBKMS__namespace_1_1Block}\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block$<$ Type\-Factory, Param\-Spec, Scheduler, Logger, Subpr\-Spec, String\-Spec, Bl\-Cl\-Spec, Formula\-Solver $>$@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block$<$ Type\-Factory, Param\-Spec, Scheduler, Logger, Subpr\-Spec, String\-Spec, Bl\-Cl\-Spec, Formula\-Solver $>$}}
+}
+
+
+Шаблонный класс \hyperlink{classLIBKMS__namespace_1_1Block}{Block}, отображающий блок процесс.  
+
+
+
+
+{\ttfamily \#include $<$block.\-hpp$>$}
+
+Граф наследования\-:L\-I\-B\-K\-M\-S\-\_\-namespace\-:\-:Block$<$ Type\-Factory, Param\-Spec, Scheduler, Logger, Subpr\-Spec, String\-Spec, Bl\-Cl\-Spec, Formula\-Solver $>$\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.483444cm]{classLIBKMS__namespace_1_1Block}
+\end{center}
+\end{figure}
+\subsection*{Открытые типы}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classLIBKMS__namespace_1_1Block}{Block}$<$ \hyperlink{classLIBKMS__namespace_1_1TypeFactory}{Type\-Factory}, \\*
+Param\-Spec, Scheduler, Logger, \\*
+Subpr\-Spec, String\-Spec, \\*
+Bl\-Cl\-Spec, Formula\-Solver $>$ \hyperlink{classLIBKMS__namespace_1_1Block_ae33d301121e149f8c7cc9a19f7046237}{block\-\_\-t}
+\item 
+typedef \hyperlink{classLIBKMS__namespace_1_1TypeFactory}{Type\-Factory} \hyperlink{classLIBKMS__namespace_1_1Block_a1eac0ca1a7f0b6eb9e18a2990d3aa286}{type\-\_\-factory\-\_\-t}
+\item 
+typedef \hyperlink{classLIBKMS__namespace_1_1TypeFactory_a103a08b747cfe5b233b12c802b4563dc}{type\-\_\-factory\-\_\-t\-::parameter\-\_\-t} \hyperlink{classLIBKMS__namespace_1_1Block_aebb850556ee5e8369c1d95caa5dc9c69}{parameter\-\_\-t}
+\item 
+typedef \hyperlink{classLIBKMS__namespace_1_1Parameter_a28516bcd5bad5857b2d1c676e4176f51}{parameter\-\_\-t\-::ptr\-\_\-t} \hyperlink{classLIBKMS__namespace_1_1Block_ac67e65c4f0bd77566768ec64e25382b6}{parameter\-\_\-ptr}
+\item 
+typedef Param\-Spec$<$ \hyperlink{classLIBKMS__namespace_1_1Block_aebb850556ee5e8369c1d95caa5dc9c69}{parameter\-\_\-t} $>$\\*
+\-::map \hyperlink{classLIBKMS__namespace_1_1Block_a8d67012b101494c21dee73cd82a1e99f}{parameter\-\_\-map}
+\item 
+typedef \hyperlink{classLIBKMS__namespace_1_1Callable}{Callable}$<$ Logger, \\*
+\hyperlink{classLIBKMS__namespace_1_1Block_a8d67012b101494c21dee73cd82a1e99f}{parameter\-\_\-map}, Formula\-Solver $>$ \hyperlink{classLIBKMS__namespace_1_1Block_a3742cf8820e4b909e4fbcc3d9c22d686}{callable\-\_\-t}
+\item 
+typedef \hyperlink{classLIBKMS__namespace_1_1Subprogram}{Subprogram}$<$ Logger, \\*
+\hyperlink{classLIBKMS__namespace_1_1Block_a8d67012b101494c21dee73cd82a1e99f}{parameter\-\_\-map}, Formula\-Solver $>$ \hyperlink{classLIBKMS__namespace_1_1Block_a89ead8d5558038ca06b862f1988c3d1a}{subprogram\-\_\-t}
+\item 
+typedef Subpr\-Spec\\*
+$<$ \hyperlink{classLIBKMS__namespace_1_1Block_a89ead8d5558038ca06b862f1988c3d1a}{subprogram\-\_\-t} $>$\-::ptr \hyperlink{classLIBKMS__namespace_1_1Block_aa267fa3009a53828cb55cd853ff4c1b6}{subprogram\-\_\-ptr}
+\item 
+typedef Subpr\-Spec\\*
+$<$ \hyperlink{classLIBKMS__namespace_1_1Block_a89ead8d5558038ca06b862f1988c3d1a}{subprogram\-\_\-t} $>$\-::map \hyperlink{classLIBKMS__namespace_1_1Block_af6ad7e673cbb2f16fe125605494e67fb}{subprogram\-\_\-map}
+\item 
+typedef \hyperlink{classLIBKMS__namespace_1_1FunctionStorage}{Function\-Storage}\\*
+$<$ \hyperlink{classLIBKMS__namespace_1_1Block_a8d67012b101494c21dee73cd82a1e99f}{parameter\-\_\-map} $>$ \hyperlink{classLIBKMS__namespace_1_1Block_a2776c98e95ec6726f062516f0a0cf496}{function\-\_\-storage\-\_\-t}
+\item 
+typedef Subpr\-Spec$<$ \hyperlink{classLIBKMS__namespace_1_1Block_ae33d301121e149f8c7cc9a19f7046237}{block\-\_\-t} $>$\-::ptr \hyperlink{classLIBKMS__namespace_1_1Block_a85039a495a9c40a4425de6a5291decbe}{ptr\-\_\-t}
+\item 
+typedef Subpr\-Spec$<$ \hyperlink{classLIBKMS__namespace_1_1Block_ae33d301121e149f8c7cc9a19f7046237}{block\-\_\-t} $>$\-::map \hyperlink{classLIBKMS__namespace_1_1Block_aedba90f9127d999f41d7d397e691e081}{map\-\_\-t}
+\item 
+typedef \hyperlink{classLIBKMS__namespace_1_1BlockClassFactory}{Block\-Class\-Factory}\\*
+$<$ \hyperlink{classLIBKMS__namespace_1_1Block_a2776c98e95ec6726f062516f0a0cf496}{function\-\_\-storage\-\_\-t}, \\*
+\hyperlink{classLIBKMS__namespace_1_1Block_a89ead8d5558038ca06b862f1988c3d1a}{subprogram\-\_\-t}, \hyperlink{classLIBKMS__namespace_1_1Block_aa267fa3009a53828cb55cd853ff4c1b6}{subprogram\-\_\-ptr}, \\*
+\hyperlink{classLIBKMS__namespace_1_1Block_a85039a495a9c40a4425de6a5291decbe}{ptr\-\_\-t}, Bl\-Cl\-Spec $>$ \hyperlink{classLIBKMS__namespace_1_1Block_abbc80ab417de8b644b70879fe6e330f5}{block\-\_\-class\-\_\-factory\-\_\-t}
+\item 
+typedef \\*
+\hyperlink{classLIBKMS__namespace_1_1BlockClassFactory_a882880cb8a33fcc808b41e283cea2dc3}{block\-\_\-class\-\_\-factory\-\_\-t\-::block\-\_\-class\-\_\-ptr} \hyperlink{classLIBKMS__namespace_1_1Block_ae813a32e603fb01d7e86ef4afcdc91ae}{block\-\_\-class\-\_\-ptr}
+\item 
+typedef \\*
+\hyperlink{structLIBKMS__namespace_1_1Subprogram_1_1user__exception}{subprogram\-\_\-t\-::user\-\_\-exception} \hyperlink{classLIBKMS__namespace_1_1Block_abd8589c23dd87cd24c96cf2d1a7c9d71}{subp\-\_\-user\-\_\-exception}
+\end{DoxyCompactItemize}
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classLIBKMS__namespace_1_1Block_ab5d70866215bcf83e1351b3b87f6faa8}{Block} (const std\-::string classname, const std\-::string name)
+\begin{DoxyCompactList}\small\item\em Конструктор класса \end{DoxyCompactList}\item 
+virtual \hyperlink{classLIBKMS__namespace_1_1Block_a5a14faabdb3b2d924f8686a3a4f18967}{$\sim$\-Block} ()
+\item 
+double \hyperlink{classLIBKMS__namespace_1_1Block_a5ab9ab41a6f1e64bb0c2d1e5c43b72db}{get\-\_\-lastcall\-\_\-time\-\_\-plan} ()
+\begin{DoxyCompactList}\small\item\em Возвращает время последнего вызова по плану \end{DoxyCompactList}\item 
+void \hyperlink{classLIBKMS__namespace_1_1Block_a69d14e60cbcdd128a7a8349bcd04df20}{set\-\_\-period} (double period) noexcept
+\begin{DoxyCompactList}\small\item\em Установить период вызова \end{DoxyCompactList}\item 
+void \hyperlink{classLIBKMS__namespace_1_1Block_aa40076dc7823a49c1d9b3a674982621d}{make\-\_\-periodical} () noexcept
+\begin{DoxyCompactList}\small\item\em Сделать блок периодическим \end{DoxyCompactList}\item 
+void \hyperlink{classLIBKMS__namespace_1_1Block_a12d13e5d8452da4ac44028deb0e5de83}{make\-\_\-nonperiodical} () noexcept
+\begin{DoxyCompactList}\small\item\em Сделать блок вызываемым по обновлению \end{DoxyCompactList}\item 
+bool \hyperlink{classLIBKMS__namespace_1_1Block_a60f4040e8c8d04493ca228bca478b3f8}{is\-\_\-periodical} () const noexcept
+\item 
+double \hyperlink{classLIBKMS__namespace_1_1Block_a7aebfd8f059a5e29eb9fa680b7de3adb}{get\-\_\-period} () const noexcept
+\item 
+void \hyperlink{classLIBKMS__namespace_1_1Block_a7b987f3386282af15cce3ca7b6a6de96}{set\-\_\-blocked\-\_\-in\-\_\-stop} (bool bl) noexcept
+\begin{DoxyCompactList}\small\item\em Установить признак блокировки в СТОПе \end{DoxyCompactList}\item 
+bool \hyperlink{classLIBKMS__namespace_1_1Block_a237c80b9eda1709cd50ded2320a11c94}{is\-\_\-blocked\-\_\-in\-\_\-stop} () noexcept
+\begin{DoxyCompactList}\small\item\em Проверить, является ли заблокированным в СТОПе \end{DoxyCompactList}\item 
+\hyperlink{classLIBKMS__namespace_1_1Block_ae813a32e603fb01d7e86ef4afcdc91ae}{block\-\_\-class\-\_\-ptr} \hyperlink{classLIBKMS__namespace_1_1Block_a045a7ef5cf8f38f1cdd9e88f833b4df8}{get\-\_\-block\-\_\-class} ()
+\item 
+bool \hyperlink{classLIBKMS__namespace_1_1Block_ac4c34ca843fa50683bf6f67eaa5de7c7}{add\-\_\-variable} (const std\-::string \&name, const std\-::string \&type) noexcept
+\begin{DoxyCompactList}\small\item\em Добавить переменную \end{DoxyCompactList}\item 
+bool \hyperlink{classLIBKMS__namespace_1_1Block_a11ceb4187857e178a1fbe21fb5bbe3bf}{add\-\_\-variable} (const std\-::string \&name, \hyperlink{classLIBKMS__namespace_1_1Block_ac67e65c4f0bd77566768ec64e25382b6}{parameter\-\_\-ptr} \&p) noexcept
+\begin{DoxyCompactList}\small\item\em Добавить уже созданную переменную \end{DoxyCompactList}\item 
+\hyperlink{classLIBKMS__namespace_1_1Block_ac67e65c4f0bd77566768ec64e25382b6}{parameter\-\_\-ptr} \hyperlink{classLIBKMS__namespace_1_1Block_a865fb12a0800ec98c6ccdbc114051b74}{get\-\_\-variable} (const std\-::string \&name) const noexcept
+\begin{DoxyCompactList}\small\item\em Получить указатель на переменную с именем \end{DoxyCompactList}\item 
+std\-::set$<$ std\-::string $>$ \hyperlink{classLIBKMS__namespace_1_1Block_a4b04254ca77c0d2f34d76d45b8e297d2}{write\-\_\-variables} (const std\-::set$<$ std\-::string $>$ \&allowed, \hyperlink{classLIBKMS__namespace_1_1Block_a8d67012b101494c21dee73cd82a1e99f}{parameter\-\_\-map} \&val)
+\item 
+std\-::set$<$ std\-::string $>$ \hyperlink{classLIBKMS__namespace_1_1Block_af3cf3e07e2ea977d1b125abb6a5da96a}{get\-\_\-var\-\_\-list} (bool show\-\_\-locals) const 
+\item 
+const std\-::set$<$ std\-::string $>$ \hyperlink{classLIBKMS__namespace_1_1Block_ab0208151cac031b7d0465e5d80e4fd7e}{set\-\_\-names} () const noexcept
+\begin{DoxyCompactList}\small\item\em Возвращает список имен переменных S\-E\-T. \end{DoxyCompactList}\item 
+{\footnotesize template$<$template$<$ typename T $>$ class Iterable$>$ }\\void \hyperlink{classLIBKMS__namespace_1_1Block_a7578ee18a28d988ab83c2caad09b51d6}{set\-\_\-names\-\_\-set} (Iterable$<$ std\-::string $>$ \&names) noexcept
+\begin{DoxyCompactList}\small\item\em Устанавливает имена переменных S\-E\-T. \end{DoxyCompactList}\item 
+const std\-::set$<$ std\-::string $>$ \hyperlink{classLIBKMS__namespace_1_1Block_a29bbb63c82a1ca44dca3a879db824592}{use\-\_\-names} () const noexcept
+\begin{DoxyCompactList}\small\item\em Возвращает список имен переменных U\-S\-E. \end{DoxyCompactList}\item 
+bool \hyperlink{classLIBKMS__namespace_1_1Block_a2f86d7c526553e42af091402bd86670b}{add\-\_\-child} (const std\-::string \&name, \hyperlink{classLIBKMS__namespace_1_1Block_a85039a495a9c40a4425de6a5291decbe}{ptr\-\_\-t} \&bl)
+\begin{DoxyCompactList}\small\item\em Добавить дочерний блок \end{DoxyCompactList}\item 
+\hyperlink{classLIBKMS__namespace_1_1Block_a85039a495a9c40a4425de6a5291decbe}{ptr\-\_\-t} \hyperlink{classLIBKMS__namespace_1_1Block_ad78d26bc20dd3a2fbb064881c9a05be2}{get\-\_\-child} (const std\-::string \&name) const 
+\item 
+void \hyperlink{classLIBKMS__namespace_1_1Block_a346b2b894e22b139665a4c14b4c39ca7}{call\-\_\-child\-\_\-by\-\_\-name} (const std\-::string \&name, double time)
+\begin{DoxyCompactList}\small\item\em Вызвать дочерний блок по имени \end{DoxyCompactList}\item 
+void \hyperlink{classLIBKMS__namespace_1_1Block_aa8c287cbddd60507635837e6f9b80f75}{call\-\_\-child} (\hyperlink{classLIBKMS__namespace_1_1Block_ae33d301121e149f8c7cc9a19f7046237}{block\-\_\-t} \&bl, double time)
+\begin{DoxyCompactList}\small\item\em Вызвать дочерний блок \end{DoxyCompactList}\item 
+bool \hyperlink{classLIBKMS__namespace_1_1Block_ac6de19c8495f98c83949dc70b981752f}{add\-\_\-subprog} (const std\-::string \&id, \hyperlink{classLIBKMS__namespace_1_1Block_aa267fa3009a53828cb55cd853ff4c1b6}{subprogram\-\_\-ptr} \&s)
+\begin{DoxyCompactList}\small\item\em Добавить подпрограмму с приоритетом \end{DoxyCompactList}\item 
+\hyperlink{classLIBKMS__namespace_1_1Block_aa267fa3009a53828cb55cd853ff4c1b6}{subprogram\-\_\-ptr} \hyperlink{classLIBKMS__namespace_1_1Block_a8687ab032807e767e74d002b546364b7}{get\-\_\-subprog} (const std\-::string \&name)
+\begin{DoxyCompactList}\small\item\em Найти подпрограмму с заданным именем \end{DoxyCompactList}\item 
+std\-::set$<$ std\-::string $>$ \hyperlink{classLIBKMS__namespace_1_1Block_a5145a4cbdf4f2f82e25a5dc30e625f53}{get\-\_\-subp\-\_\-list} (bool show\-\_\-locals) const 
+\item 
+bool \hyperlink{classLIBKMS__namespace_1_1Block_afe9599aa88516b84f5710216cd5ed85a}{add\-\_\-return\-\_\-param} (const std\-::string \&src\-\_\-name, const std\-::string \&dst\-\_\-name)
+\item 
+bool \hyperlink{classLIBKMS__namespace_1_1Block_a6b270518bc9d758d72e50a835cac5a9f}{add\-\_\-use\-\_\-param} (const std\-::string \&src\-\_\-name, const std\-::string \&dst\-\_\-name)
+\item 
+void \hyperlink{classLIBKMS__namespace_1_1Block_a65c37b5d072c50d71c416676196663ac}{set\-\_\-prev\-\_\-power} (bool power)
+\begin{DoxyCompactList}\small\item\em Установить признак включения на предыдущем шаге \end{DoxyCompactList}\item 
+bool \hyperlink{classLIBKMS__namespace_1_1Block_ad5cbf3d42dd4c5098c894ff5df6c7f21}{get\-\_\-prev\-\_\-power} () const 
+\begin{DoxyCompactList}\small\item\em Получить признак включения на предыдущем шаге \end{DoxyCompactList}\item 
+void \hyperlink{classLIBKMS__namespace_1_1Block_ade9aea609aecf6bfc8664003e5f0d33c}{set\-\_\-poweron\-\_\-vars} (const \hyperlink{classLIBKMS__namespace_1_1Block_a8d67012b101494c21dee73cd82a1e99f}{parameter\-\_\-map} \&p)
+\begin{DoxyCompactList}\small\item\em Установить словарь переменных, записываемых по включению модуля \end{DoxyCompactList}\item 
+void \hyperlink{classLIBKMS__namespace_1_1Block_a1976ce5bedc5c014cc7444a53009d5a9}{set\-\_\-poweroff\-\_\-vars} (const \hyperlink{classLIBKMS__namespace_1_1Block_a8d67012b101494c21dee73cd82a1e99f}{parameter\-\_\-map} \&p)
+\begin{DoxyCompactList}\small\item\em Установить словарь переменных, записываемых по выключению модуля \end{DoxyCompactList}\item 
+\hyperlink{classLIBKMS__namespace_1_1Block_a8d67012b101494c21dee73cd82a1e99f}{parameter\-\_\-map} \hyperlink{classLIBKMS__namespace_1_1Block_a2dbcc05db46fa70b284bb4e3fd0e6ae4}{write\-\_\-poweron\-\_\-vars} ()
+\item 
+\hyperlink{classLIBKMS__namespace_1_1Block_a8d67012b101494c21dee73cd82a1e99f}{parameter\-\_\-map} \hyperlink{classLIBKMS__namespace_1_1Block_a9576f7464cb1111775fa2f07c2c30937}{write\-\_\-poweroff\-\_\-vars} ()
+\item 
+\hyperlink{classLIBKMS__namespace_1_1Block_a8d67012b101494c21dee73cd82a1e99f}{parameter\-\_\-map} \hyperlink{classLIBKMS__namespace_1_1Block_a526864a3f11d6bbfdd2c5df34386c19d}{call} (double time, const \hyperlink{classLIBKMS__namespace_1_1Block_a8d67012b101494c21dee73cd82a1e99f}{parameter\-\_\-map} \&vars, const \hyperlink{classLIBKMS__namespace_1_1Block_a8d67012b101494c21dee73cd82a1e99f}{parameter\-\_\-map} \&upper)
+\item 
+std\-::set$<$ std\-::string $>$ \hyperlink{classLIBKMS__namespace_1_1Block_a0977650092787638c559ea40fff04d64}{get\-\_\-subblocks\-\_\-with\-\_\-errors} ()
+\item 
+std\-::pair$<$ std\-::deque\\*
+$<$ std\-::string $>$, size\-\_\-t $>$ \hyperlink{classLIBKMS__namespace_1_1Block_af2ed32615fbeb3e4671d4d4b35802f45}{get\-\_\-next\-\_\-errors} (size\-\_\-t max=10)
+\end{DoxyCompactItemize}
+\subsection*{Защищенные данные}
+\begin{DoxyCompactItemize}
+\item 
+std\-::string \hyperlink{classLIBKMS__namespace_1_1Block_a1d39e7d7bc913e6ed550677602e74e50}{\-\_\-classname}
+\end{DoxyCompactItemize}
+
+
+\subsection{Подробное описание}
+\subsubsection*{template$<$typename Type\-Factory, template$<$ typename U $>$ class Param\-Spec, typename Scheduler, typename Logger, template$<$ typename U $>$ class Subpr\-Spec, typename String\-Spec, template$<$ typename U $>$ class Bl\-Cl\-Spec, typename Formula\-Solver$>$class L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block$<$ Type\-Factory, Param\-Spec, Scheduler, Logger, Subpr\-Spec, String\-Spec, Bl\-Cl\-Spec, Formula\-Solver $>$}
+
+Шаблонный класс \hyperlink{classLIBKMS__namespace_1_1Block}{Block}, отображающий блок процесс. 
+
+\begin{quotation}
+
+
+\end{quotation}
+Блок процесс (БЛП) является основной единицей моделирования. БЛП верхнего уровня является всей моделью. БЛП верхнего уровня периодически вызывается внешней подпрограммой.
+
+БЛП может содержать в себе БЛП низшего уровня. При каждом вызове БЛП высшего уровня последовательно вызывает БЛП низшего уровня в зависимости от их приоритета и периода вызова. За порядок вызова БЛП отвечает планировщик (Scheduler). Поскольку вызов БЛП низшего уровня происходит во время работы БЛП высшего уровня, период вызова последнего не может быть меньше чем у родительского БЛП.
+
+Для передачи параметров между БЛП служат переменные. С помощью переменных можно обеспечить обмен только между блоками одного уровня. Каждый блок имеет набор собственных (S\-E\-T) и используемых (U\-S\-E) переменных. S\-E\-T и U\-S\-E переменные должны иметь символические имена, не содержащие точек и пробелов.
+
+При вызове БЛП низшего уровня из БЛП высшего уровня производится копирование U\-S\-E переменных БЛП низшего уровня из переменных БЛП высшего уровня. По окночнании работы БЛП низшего уровня производится копирование S\-E\-T переменных из БЛП высшего уровня. Копируются только те переменные, которые указаны во внешней конфигурации -\/ базе данных (БД). Если переменная с именем, указанным в БД, отсутствует в блоке, она не копируется. При этом должно формироваться однократное сообщение об ошибке.
+
+Вызов БЛП, запись обновленных значений переменных и возникающие при этом ошибки фиксируются в протоколе при помощи компонента Logger.
+
+Данный шаблонный класс является прототипом для БЛП, входящих в состав модели. Последние должны содержать следующую дополнительную информацию\-: 
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}
+
+Как БЛП совершает полезную работу, т.\-е. обрабатывает U\-S\-E переменные?
+
+Создание БЛП\-: 
+\begin{DoxyItemize}
+\item Объявить класс, наследующий от \hyperlink{classLIBKMS__namespace_1_1Block}{Block}. 
+\item В конструкторе  
+\end{DoxyItemize}
+
+Порядок работы с БЛП\-: 
+\begin{DoxyItemize}
+\item ... 
+\item 
+\item 
+\item 
+\item 
+\item 
+\end{DoxyItemize}
+
+\subsection{Определения типов}
+\hypertarget{classLIBKMS__namespace_1_1Block_abbc80ab417de8b644b70879fe6e330f5}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}!block\-\_\-class\-\_\-factory\-\_\-t@{block\-\_\-class\-\_\-factory\-\_\-t}}
+\index{block\-\_\-class\-\_\-factory\-\_\-t@{block\-\_\-class\-\_\-factory\-\_\-t}!LIBKMS_namespace::Block@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}}
+\subsubsection[{block\-\_\-class\-\_\-factory\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Type\-Factory , template$<$ typename U $>$ class Param\-Spec, typename Scheduler , typename Logger , template$<$ typename U $>$ class Subpr\-Spec, typename String\-Spec , template$<$ typename U $>$ class Bl\-Cl\-Spec, typename Formula\-Solver $>$ typedef {\bf Block\-Class\-Factory}$<$ {\bf function\-\_\-storage\-\_\-t}, {\bf subprogram\-\_\-t}, {\bf subprogram\-\_\-ptr}, {\bf ptr\-\_\-t}, Bl\-Cl\-Spec $>$ {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}$<$ {\bf Type\-Factory}, Param\-Spec, Scheduler, Logger, Subpr\-Spec, String\-Spec, Bl\-Cl\-Spec, Formula\-Solver $>$\-::{\bf block\-\_\-class\-\_\-factory\-\_\-t}}}\label{classLIBKMS__namespace_1_1Block_abbc80ab417de8b644b70879fe6e330f5}
+\hypertarget{classLIBKMS__namespace_1_1Block_ae813a32e603fb01d7e86ef4afcdc91ae}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}!block\-\_\-class\-\_\-ptr@{block\-\_\-class\-\_\-ptr}}
+\index{block\-\_\-class\-\_\-ptr@{block\-\_\-class\-\_\-ptr}!LIBKMS_namespace::Block@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}}
+\subsubsection[{block\-\_\-class\-\_\-ptr}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Type\-Factory , template$<$ typename U $>$ class Param\-Spec, typename Scheduler , typename Logger , template$<$ typename U $>$ class Subpr\-Spec, typename String\-Spec , template$<$ typename U $>$ class Bl\-Cl\-Spec, typename Formula\-Solver $>$ typedef {\bf block\-\_\-class\-\_\-factory\-\_\-t\-::block\-\_\-class\-\_\-ptr} {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}$<$ {\bf Type\-Factory}, Param\-Spec, Scheduler, Logger, Subpr\-Spec, String\-Spec, Bl\-Cl\-Spec, Formula\-Solver $>$\-::{\bf block\-\_\-class\-\_\-ptr}}}\label{classLIBKMS__namespace_1_1Block_ae813a32e603fb01d7e86ef4afcdc91ae}
+\hypertarget{classLIBKMS__namespace_1_1Block_ae33d301121e149f8c7cc9a19f7046237}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}!block\-\_\-t@{block\-\_\-t}}
+\index{block\-\_\-t@{block\-\_\-t}!LIBKMS_namespace::Block@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}}
+\subsubsection[{block\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Type\-Factory , template$<$ typename U $>$ class Param\-Spec, typename Scheduler , typename Logger , template$<$ typename U $>$ class Subpr\-Spec, typename String\-Spec , template$<$ typename U $>$ class Bl\-Cl\-Spec, typename Formula\-Solver $>$ typedef {\bf Block}$<$ {\bf Type\-Factory}, Param\-Spec, Scheduler, Logger, Subpr\-Spec, String\-Spec, Bl\-Cl\-Spec, Formula\-Solver $>$ {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}$<$ {\bf Type\-Factory}, Param\-Spec, Scheduler, Logger, Subpr\-Spec, String\-Spec, Bl\-Cl\-Spec, Formula\-Solver $>$\-::{\bf block\-\_\-t}}}\label{classLIBKMS__namespace_1_1Block_ae33d301121e149f8c7cc9a19f7046237}
+\hypertarget{classLIBKMS__namespace_1_1Block_a3742cf8820e4b909e4fbcc3d9c22d686}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}!callable\-\_\-t@{callable\-\_\-t}}
+\index{callable\-\_\-t@{callable\-\_\-t}!LIBKMS_namespace::Block@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}}
+\subsubsection[{callable\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Type\-Factory , template$<$ typename U $>$ class Param\-Spec, typename Scheduler , typename Logger , template$<$ typename U $>$ class Subpr\-Spec, typename String\-Spec , template$<$ typename U $>$ class Bl\-Cl\-Spec, typename Formula\-Solver $>$ typedef {\bf Callable}$<$ Logger, {\bf parameter\-\_\-map}, Formula\-Solver $>$ {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}$<$ {\bf Type\-Factory}, Param\-Spec, Scheduler, Logger, Subpr\-Spec, String\-Spec, Bl\-Cl\-Spec, Formula\-Solver $>$\-::{\bf callable\-\_\-t}}}\label{classLIBKMS__namespace_1_1Block_a3742cf8820e4b909e4fbcc3d9c22d686}
+\hypertarget{classLIBKMS__namespace_1_1Block_a2776c98e95ec6726f062516f0a0cf496}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}!function\-\_\-storage\-\_\-t@{function\-\_\-storage\-\_\-t}}
+\index{function\-\_\-storage\-\_\-t@{function\-\_\-storage\-\_\-t}!LIBKMS_namespace::Block@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}}
+\subsubsection[{function\-\_\-storage\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Type\-Factory , template$<$ typename U $>$ class Param\-Spec, typename Scheduler , typename Logger , template$<$ typename U $>$ class Subpr\-Spec, typename String\-Spec , template$<$ typename U $>$ class Bl\-Cl\-Spec, typename Formula\-Solver $>$ typedef {\bf Function\-Storage}$<$ {\bf parameter\-\_\-map} $>$ {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}$<$ {\bf Type\-Factory}, Param\-Spec, Scheduler, Logger, Subpr\-Spec, String\-Spec, Bl\-Cl\-Spec, Formula\-Solver $>$\-::{\bf function\-\_\-storage\-\_\-t}}}\label{classLIBKMS__namespace_1_1Block_a2776c98e95ec6726f062516f0a0cf496}
+\hypertarget{classLIBKMS__namespace_1_1Block_aedba90f9127d999f41d7d397e691e081}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}!map\-\_\-t@{map\-\_\-t}}
+\index{map\-\_\-t@{map\-\_\-t}!LIBKMS_namespace::Block@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}}
+\subsubsection[{map\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Type\-Factory , template$<$ typename U $>$ class Param\-Spec, typename Scheduler , typename Logger , template$<$ typename U $>$ class Subpr\-Spec, typename String\-Spec , template$<$ typename U $>$ class Bl\-Cl\-Spec, typename Formula\-Solver $>$ typedef Subpr\-Spec$<$ {\bf block\-\_\-t} $>$\-::map {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}$<$ {\bf Type\-Factory}, Param\-Spec, Scheduler, Logger, Subpr\-Spec, String\-Spec, Bl\-Cl\-Spec, Formula\-Solver $>$\-::{\bf map\-\_\-t}}}\label{classLIBKMS__namespace_1_1Block_aedba90f9127d999f41d7d397e691e081}
+\hypertarget{classLIBKMS__namespace_1_1Block_a8d67012b101494c21dee73cd82a1e99f}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}!parameter\-\_\-map@{parameter\-\_\-map}}
+\index{parameter\-\_\-map@{parameter\-\_\-map}!LIBKMS_namespace::Block@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}}
+\subsubsection[{parameter\-\_\-map}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Type\-Factory , template$<$ typename U $>$ class Param\-Spec, typename Scheduler , typename Logger , template$<$ typename U $>$ class Subpr\-Spec, typename String\-Spec , template$<$ typename U $>$ class Bl\-Cl\-Spec, typename Formula\-Solver $>$ typedef Param\-Spec$<$ {\bf parameter\-\_\-t} $>$\-::map {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}$<$ {\bf Type\-Factory}, Param\-Spec, Scheduler, Logger, Subpr\-Spec, String\-Spec, Bl\-Cl\-Spec, Formula\-Solver $>$\-::{\bf parameter\-\_\-map}}}\label{classLIBKMS__namespace_1_1Block_a8d67012b101494c21dee73cd82a1e99f}
+\hypertarget{classLIBKMS__namespace_1_1Block_ac67e65c4f0bd77566768ec64e25382b6}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}!parameter\-\_\-ptr@{parameter\-\_\-ptr}}
+\index{parameter\-\_\-ptr@{parameter\-\_\-ptr}!LIBKMS_namespace::Block@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}}
+\subsubsection[{parameter\-\_\-ptr}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Type\-Factory , template$<$ typename U $>$ class Param\-Spec, typename Scheduler , typename Logger , template$<$ typename U $>$ class Subpr\-Spec, typename String\-Spec , template$<$ typename U $>$ class Bl\-Cl\-Spec, typename Formula\-Solver $>$ typedef {\bf parameter\-\_\-t\-::ptr\-\_\-t} {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}$<$ {\bf Type\-Factory}, Param\-Spec, Scheduler, Logger, Subpr\-Spec, String\-Spec, Bl\-Cl\-Spec, Formula\-Solver $>$\-::{\bf parameter\-\_\-ptr}}}\label{classLIBKMS__namespace_1_1Block_ac67e65c4f0bd77566768ec64e25382b6}
+\hypertarget{classLIBKMS__namespace_1_1Block_aebb850556ee5e8369c1d95caa5dc9c69}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}!parameter\-\_\-t@{parameter\-\_\-t}}
+\index{parameter\-\_\-t@{parameter\-\_\-t}!LIBKMS_namespace::Block@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}}
+\subsubsection[{parameter\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Type\-Factory , template$<$ typename U $>$ class Param\-Spec, typename Scheduler , typename Logger , template$<$ typename U $>$ class Subpr\-Spec, typename String\-Spec , template$<$ typename U $>$ class Bl\-Cl\-Spec, typename Formula\-Solver $>$ typedef {\bf type\-\_\-factory\-\_\-t\-::parameter\-\_\-t} {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}$<$ {\bf Type\-Factory}, Param\-Spec, Scheduler, Logger, Subpr\-Spec, String\-Spec, Bl\-Cl\-Spec, Formula\-Solver $>$\-::{\bf parameter\-\_\-t}}}\label{classLIBKMS__namespace_1_1Block_aebb850556ee5e8369c1d95caa5dc9c69}
+\hypertarget{classLIBKMS__namespace_1_1Block_a85039a495a9c40a4425de6a5291decbe}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}!ptr\-\_\-t@{ptr\-\_\-t}}
+\index{ptr\-\_\-t@{ptr\-\_\-t}!LIBKMS_namespace::Block@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}}
+\subsubsection[{ptr\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Type\-Factory , template$<$ typename U $>$ class Param\-Spec, typename Scheduler , typename Logger , template$<$ typename U $>$ class Subpr\-Spec, typename String\-Spec , template$<$ typename U $>$ class Bl\-Cl\-Spec, typename Formula\-Solver $>$ typedef Subpr\-Spec$<$ {\bf block\-\_\-t} $>$\-::ptr {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}$<$ {\bf Type\-Factory}, Param\-Spec, Scheduler, Logger, Subpr\-Spec, String\-Spec, Bl\-Cl\-Spec, Formula\-Solver $>$\-::{\bf ptr\-\_\-t}}}\label{classLIBKMS__namespace_1_1Block_a85039a495a9c40a4425de6a5291decbe}
+\hypertarget{classLIBKMS__namespace_1_1Block_abd8589c23dd87cd24c96cf2d1a7c9d71}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}!subp\-\_\-user\-\_\-exception@{subp\-\_\-user\-\_\-exception}}
+\index{subp\-\_\-user\-\_\-exception@{subp\-\_\-user\-\_\-exception}!LIBKMS_namespace::Block@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}}
+\subsubsection[{subp\-\_\-user\-\_\-exception}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Type\-Factory , template$<$ typename U $>$ class Param\-Spec, typename Scheduler , typename Logger , template$<$ typename U $>$ class Subpr\-Spec, typename String\-Spec , template$<$ typename U $>$ class Bl\-Cl\-Spec, typename Formula\-Solver $>$ typedef {\bf subprogram\-\_\-t\-::user\-\_\-exception} {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}$<$ {\bf Type\-Factory}, Param\-Spec, Scheduler, Logger, Subpr\-Spec, String\-Spec, Bl\-Cl\-Spec, Formula\-Solver $>$\-::{\bf subp\-\_\-user\-\_\-exception}}}\label{classLIBKMS__namespace_1_1Block_abd8589c23dd87cd24c96cf2d1a7c9d71}
+\hypertarget{classLIBKMS__namespace_1_1Block_af6ad7e673cbb2f16fe125605494e67fb}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}!subprogram\-\_\-map@{subprogram\-\_\-map}}
+\index{subprogram\-\_\-map@{subprogram\-\_\-map}!LIBKMS_namespace::Block@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}}
+\subsubsection[{subprogram\-\_\-map}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Type\-Factory , template$<$ typename U $>$ class Param\-Spec, typename Scheduler , typename Logger , template$<$ typename U $>$ class Subpr\-Spec, typename String\-Spec , template$<$ typename U $>$ class Bl\-Cl\-Spec, typename Formula\-Solver $>$ typedef Subpr\-Spec$<$ {\bf subprogram\-\_\-t} $>$\-::map {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}$<$ {\bf Type\-Factory}, Param\-Spec, Scheduler, Logger, Subpr\-Spec, String\-Spec, Bl\-Cl\-Spec, Formula\-Solver $>$\-::{\bf subprogram\-\_\-map}}}\label{classLIBKMS__namespace_1_1Block_af6ad7e673cbb2f16fe125605494e67fb}
+\hypertarget{classLIBKMS__namespace_1_1Block_aa267fa3009a53828cb55cd853ff4c1b6}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}!subprogram\-\_\-ptr@{subprogram\-\_\-ptr}}
+\index{subprogram\-\_\-ptr@{subprogram\-\_\-ptr}!LIBKMS_namespace::Block@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}}
+\subsubsection[{subprogram\-\_\-ptr}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Type\-Factory , template$<$ typename U $>$ class Param\-Spec, typename Scheduler , typename Logger , template$<$ typename U $>$ class Subpr\-Spec, typename String\-Spec , template$<$ typename U $>$ class Bl\-Cl\-Spec, typename Formula\-Solver $>$ typedef Subpr\-Spec$<$ {\bf subprogram\-\_\-t} $>$\-::ptr {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}$<$ {\bf Type\-Factory}, Param\-Spec, Scheduler, Logger, Subpr\-Spec, String\-Spec, Bl\-Cl\-Spec, Formula\-Solver $>$\-::{\bf subprogram\-\_\-ptr}}}\label{classLIBKMS__namespace_1_1Block_aa267fa3009a53828cb55cd853ff4c1b6}
+\hypertarget{classLIBKMS__namespace_1_1Block_a89ead8d5558038ca06b862f1988c3d1a}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}!subprogram\-\_\-t@{subprogram\-\_\-t}}
+\index{subprogram\-\_\-t@{subprogram\-\_\-t}!LIBKMS_namespace::Block@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}}
+\subsubsection[{subprogram\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Type\-Factory , template$<$ typename U $>$ class Param\-Spec, typename Scheduler , typename Logger , template$<$ typename U $>$ class Subpr\-Spec, typename String\-Spec , template$<$ typename U $>$ class Bl\-Cl\-Spec, typename Formula\-Solver $>$ typedef {\bf Subprogram}$<$ Logger, {\bf parameter\-\_\-map}, Formula\-Solver $>$ {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}$<$ {\bf Type\-Factory}, Param\-Spec, Scheduler, Logger, Subpr\-Spec, String\-Spec, Bl\-Cl\-Spec, Formula\-Solver $>$\-::{\bf subprogram\-\_\-t}}}\label{classLIBKMS__namespace_1_1Block_a89ead8d5558038ca06b862f1988c3d1a}
+\hypertarget{classLIBKMS__namespace_1_1Block_a1eac0ca1a7f0b6eb9e18a2990d3aa286}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}!type\-\_\-factory\-\_\-t@{type\-\_\-factory\-\_\-t}}
+\index{type\-\_\-factory\-\_\-t@{type\-\_\-factory\-\_\-t}!LIBKMS_namespace::Block@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}}
+\subsubsection[{type\-\_\-factory\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Type\-Factory , template$<$ typename U $>$ class Param\-Spec, typename Scheduler , typename Logger , template$<$ typename U $>$ class Subpr\-Spec, typename String\-Spec , template$<$ typename U $>$ class Bl\-Cl\-Spec, typename Formula\-Solver $>$ typedef {\bf Type\-Factory} {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}$<$ {\bf Type\-Factory}, Param\-Spec, Scheduler, Logger, Subpr\-Spec, String\-Spec, Bl\-Cl\-Spec, Formula\-Solver $>$\-::{\bf type\-\_\-factory\-\_\-t}}}\label{classLIBKMS__namespace_1_1Block_a1eac0ca1a7f0b6eb9e18a2990d3aa286}
+
+
+\subsection{Конструктор(ы)}
+\hypertarget{classLIBKMS__namespace_1_1Block_ab5d70866215bcf83e1351b3b87f6faa8}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}!Block@{Block}}
+\index{Block@{Block}!LIBKMS_namespace::Block@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}}
+\subsubsection[{Block}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Type\-Factory , template$<$ typename U $>$ class Param\-Spec, typename Scheduler , typename Logger , template$<$ typename U $>$ class Subpr\-Spec, typename String\-Spec , template$<$ typename U $>$ class Bl\-Cl\-Spec, typename Formula\-Solver $>$ {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}$<$ {\bf Type\-Factory}, Param\-Spec, Scheduler, Logger, Subpr\-Spec, String\-Spec, Bl\-Cl\-Spec, Formula\-Solver $>$\-::{\bf Block} (
+\begin{DoxyParamCaption}
+\item[{const std\-::string}]{classname, }
+\item[{const std\-::string}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classLIBKMS__namespace_1_1Block_ab5d70866215bcf83e1351b3b87f6faa8}
+
+
+Конструктор класса 
+
+\hypertarget{classLIBKMS__namespace_1_1Block_a5a14faabdb3b2d924f8686a3a4f18967}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}!$\sim$\-Block@{$\sim$\-Block}}
+\index{$\sim$\-Block@{$\sim$\-Block}!LIBKMS_namespace::Block@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}}
+\subsubsection[{$\sim$\-Block}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Type\-Factory , template$<$ typename U $>$ class Param\-Spec, typename Scheduler , typename Logger , template$<$ typename U $>$ class Subpr\-Spec, typename String\-Spec , template$<$ typename U $>$ class Bl\-Cl\-Spec, typename Formula\-Solver $>$ virtual {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}$<$ {\bf Type\-Factory}, Param\-Spec, Scheduler, Logger, Subpr\-Spec, String\-Spec, Bl\-Cl\-Spec, Formula\-Solver $>$\-::$\sim${\bf Block} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classLIBKMS__namespace_1_1Block_a5a14faabdb3b2d924f8686a3a4f18967}
+
+
+\subsection{Методы}
+\hypertarget{classLIBKMS__namespace_1_1Block_a2f86d7c526553e42af091402bd86670b}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}!add\-\_\-child@{add\-\_\-child}}
+\index{add\-\_\-child@{add\-\_\-child}!LIBKMS_namespace::Block@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}}
+\subsubsection[{add\-\_\-child}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Type\-Factory , template$<$ typename U $>$ class Param\-Spec, typename Scheduler , typename Logger , template$<$ typename U $>$ class Subpr\-Spec, typename String\-Spec , template$<$ typename U $>$ class Bl\-Cl\-Spec, typename Formula\-Solver $>$ bool {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}$<$ {\bf Type\-Factory}, Param\-Spec, Scheduler, Logger, Subpr\-Spec, String\-Spec, Bl\-Cl\-Spec, Formula\-Solver $>$\-::add\-\_\-child (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{name, }
+\item[{{\bf ptr\-\_\-t} \&}]{bl}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classLIBKMS__namespace_1_1Block_a2f86d7c526553e42af091402bd86670b}
+
+
+Добавить дочерний блок 
+
+\hypertarget{classLIBKMS__namespace_1_1Block_afe9599aa88516b84f5710216cd5ed85a}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}!add\-\_\-return\-\_\-param@{add\-\_\-return\-\_\-param}}
+\index{add\-\_\-return\-\_\-param@{add\-\_\-return\-\_\-param}!LIBKMS_namespace::Block@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}}
+\subsubsection[{add\-\_\-return\-\_\-param}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Type\-Factory , template$<$ typename U $>$ class Param\-Spec, typename Scheduler , typename Logger , template$<$ typename U $>$ class Subpr\-Spec, typename String\-Spec , template$<$ typename U $>$ class Bl\-Cl\-Spec, typename Formula\-Solver $>$ bool {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}$<$ {\bf Type\-Factory}, Param\-Spec, Scheduler, Logger, Subpr\-Spec, String\-Spec, Bl\-Cl\-Spec, Formula\-Solver $>$\-::add\-\_\-return\-\_\-param (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{src\-\_\-name, }
+\item[{const std\-::string \&}]{dst\-\_\-name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classLIBKMS__namespace_1_1Block_afe9599aa88516b84f5710216cd5ed85a}
+Добавить переменную, возвращаемую при вызове 
+\begin{DoxyParams}{Аргументы}
+{\em src\-\_\-name} & имя переменной источника, расположенной в этом блоке \\
+\hline
+{\em dst\-\_\-name} & имя переменной назначения, расположенной в блоке уровнем выше \\
+\hline
+\end{DoxyParams}
+\hypertarget{classLIBKMS__namespace_1_1Block_ac6de19c8495f98c83949dc70b981752f}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}!add\-\_\-subprog@{add\-\_\-subprog}}
+\index{add\-\_\-subprog@{add\-\_\-subprog}!LIBKMS_namespace::Block@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}}
+\subsubsection[{add\-\_\-subprog}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Type\-Factory , template$<$ typename U $>$ class Param\-Spec, typename Scheduler , typename Logger , template$<$ typename U $>$ class Subpr\-Spec, typename String\-Spec , template$<$ typename U $>$ class Bl\-Cl\-Spec, typename Formula\-Solver $>$ bool {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}$<$ {\bf Type\-Factory}, Param\-Spec, Scheduler, Logger, Subpr\-Spec, String\-Spec, Bl\-Cl\-Spec, Formula\-Solver $>$\-::add\-\_\-subprog (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{id, }
+\item[{{\bf subprogram\-\_\-ptr} \&}]{s}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classLIBKMS__namespace_1_1Block_ac6de19c8495f98c83949dc70b981752f}
+
+
+Добавить подпрограмму с приоритетом 
+
+\hypertarget{classLIBKMS__namespace_1_1Block_a6b270518bc9d758d72e50a835cac5a9f}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}!add\-\_\-use\-\_\-param@{add\-\_\-use\-\_\-param}}
+\index{add\-\_\-use\-\_\-param@{add\-\_\-use\-\_\-param}!LIBKMS_namespace::Block@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}}
+\subsubsection[{add\-\_\-use\-\_\-param}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Type\-Factory , template$<$ typename U $>$ class Param\-Spec, typename Scheduler , typename Logger , template$<$ typename U $>$ class Subpr\-Spec, typename String\-Spec , template$<$ typename U $>$ class Bl\-Cl\-Spec, typename Formula\-Solver $>$ bool {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}$<$ {\bf Type\-Factory}, Param\-Spec, Scheduler, Logger, Subpr\-Spec, String\-Spec, Bl\-Cl\-Spec, Formula\-Solver $>$\-::add\-\_\-use\-\_\-param (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{src\-\_\-name, }
+\item[{const std\-::string \&}]{dst\-\_\-name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classLIBKMS__namespace_1_1Block_a6b270518bc9d758d72e50a835cac5a9f}
+Добавить переменную, копируемую из блока уровнем выше 
+\begin{DoxyParams}{Аргументы}
+{\em src\-\_\-name} & имя переменной в блоке уровнем выше \\
+\hline
+{\em dst\-\_\-name} & имя переменной в этом блоке \\
+\hline
+\end{DoxyParams}
+\hypertarget{classLIBKMS__namespace_1_1Block_ac4c34ca843fa50683bf6f67eaa5de7c7}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}!add\-\_\-variable@{add\-\_\-variable}}
+\index{add\-\_\-variable@{add\-\_\-variable}!LIBKMS_namespace::Block@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}}
+\subsubsection[{add\-\_\-variable}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Type\-Factory , template$<$ typename U $>$ class Param\-Spec, typename Scheduler , typename Logger , template$<$ typename U $>$ class Subpr\-Spec, typename String\-Spec , template$<$ typename U $>$ class Bl\-Cl\-Spec, typename Formula\-Solver $>$ bool {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}$<$ {\bf Type\-Factory}, Param\-Spec, Scheduler, Logger, Subpr\-Spec, String\-Spec, Bl\-Cl\-Spec, Formula\-Solver $>$\-::add\-\_\-variable (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{name, }
+\item[{const std\-::string \&}]{type}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}}\label{classLIBKMS__namespace_1_1Block_ac4c34ca843fa50683bf6f67eaa5de7c7}
+
+
+Добавить переменную 
+
+\hypertarget{classLIBKMS__namespace_1_1Block_a11ceb4187857e178a1fbe21fb5bbe3bf}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}!add\-\_\-variable@{add\-\_\-variable}}
+\index{add\-\_\-variable@{add\-\_\-variable}!LIBKMS_namespace::Block@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}}
+\subsubsection[{add\-\_\-variable}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Type\-Factory , template$<$ typename U $>$ class Param\-Spec, typename Scheduler , typename Logger , template$<$ typename U $>$ class Subpr\-Spec, typename String\-Spec , template$<$ typename U $>$ class Bl\-Cl\-Spec, typename Formula\-Solver $>$ bool {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}$<$ {\bf Type\-Factory}, Param\-Spec, Scheduler, Logger, Subpr\-Spec, String\-Spec, Bl\-Cl\-Spec, Formula\-Solver $>$\-::add\-\_\-variable (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{name, }
+\item[{{\bf parameter\-\_\-ptr} \&}]{p}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}}\label{classLIBKMS__namespace_1_1Block_a11ceb4187857e178a1fbe21fb5bbe3bf}
+
+
+Добавить уже созданную переменную 
+
+\hypertarget{classLIBKMS__namespace_1_1Block_a526864a3f11d6bbfdd2c5df34386c19d}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}!call@{call}}
+\index{call@{call}!LIBKMS_namespace::Block@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}}
+\subsubsection[{call}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Type\-Factory , template$<$ typename U $>$ class Param\-Spec, typename Scheduler , typename Logger , template$<$ typename U $>$ class Subpr\-Spec, typename String\-Spec , template$<$ typename U $>$ class Bl\-Cl\-Spec, typename Formula\-Solver $>$ {\bf parameter\-\_\-map} {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}$<$ {\bf Type\-Factory}, Param\-Spec, Scheduler, Logger, Subpr\-Spec, String\-Spec, Bl\-Cl\-Spec, Formula\-Solver $>$\-::call (
+\begin{DoxyParamCaption}
+\item[{double}]{time, }
+\item[{const {\bf parameter\-\_\-map} \&}]{vars, }
+\item[{const {\bf parameter\-\_\-map} \&}]{upper}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classLIBKMS__namespace_1_1Block_a526864a3f11d6bbfdd2c5df34386c19d}
+Для вызова блока извне 
+\begin{DoxyParams}{Аргументы}
+{\em vars} & массив переменных для использования в блоке \\
+\hline
+{\em upper} & массив переменных блока более высокого уровня \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+массив S\-E\-T переменных 
+\end{DoxyReturn}
+Задний фронт питания \hypertarget{classLIBKMS__namespace_1_1Block_aa8c287cbddd60507635837e6f9b80f75}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}!call\-\_\-child@{call\-\_\-child}}
+\index{call\-\_\-child@{call\-\_\-child}!LIBKMS_namespace::Block@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}}
+\subsubsection[{call\-\_\-child}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Type\-Factory , template$<$ typename U $>$ class Param\-Spec, typename Scheduler , typename Logger , template$<$ typename U $>$ class Subpr\-Spec, typename String\-Spec , template$<$ typename U $>$ class Bl\-Cl\-Spec, typename Formula\-Solver $>$ void {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}$<$ {\bf Type\-Factory}, Param\-Spec, Scheduler, Logger, Subpr\-Spec, String\-Spec, Bl\-Cl\-Spec, Formula\-Solver $>$\-::call\-\_\-child (
+\begin{DoxyParamCaption}
+\item[{{\bf block\-\_\-t} \&}]{bl, }
+\item[{double}]{time}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classLIBKMS__namespace_1_1Block_aa8c287cbddd60507635837e6f9b80f75}
+
+
+Вызвать дочерний блок 
+
+\hypertarget{classLIBKMS__namespace_1_1Block_a346b2b894e22b139665a4c14b4c39ca7}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}!call\-\_\-child\-\_\-by\-\_\-name@{call\-\_\-child\-\_\-by\-\_\-name}}
+\index{call\-\_\-child\-\_\-by\-\_\-name@{call\-\_\-child\-\_\-by\-\_\-name}!LIBKMS_namespace::Block@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}}
+\subsubsection[{call\-\_\-child\-\_\-by\-\_\-name}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Type\-Factory , template$<$ typename U $>$ class Param\-Spec, typename Scheduler , typename Logger , template$<$ typename U $>$ class Subpr\-Spec, typename String\-Spec , template$<$ typename U $>$ class Bl\-Cl\-Spec, typename Formula\-Solver $>$ void {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}$<$ {\bf Type\-Factory}, Param\-Spec, Scheduler, Logger, Subpr\-Spec, String\-Spec, Bl\-Cl\-Spec, Formula\-Solver $>$\-::call\-\_\-child\-\_\-by\-\_\-name (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{name, }
+\item[{double}]{time}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classLIBKMS__namespace_1_1Block_a346b2b894e22b139665a4c14b4c39ca7}
+
+
+Вызвать дочерний блок по имени 
+
+\hypertarget{classLIBKMS__namespace_1_1Block_a045a7ef5cf8f38f1cdd9e88f833b4df8}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}!get\-\_\-block\-\_\-class@{get\-\_\-block\-\_\-class}}
+\index{get\-\_\-block\-\_\-class@{get\-\_\-block\-\_\-class}!LIBKMS_namespace::Block@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}}
+\subsubsection[{get\-\_\-block\-\_\-class}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Type\-Factory , template$<$ typename U $>$ class Param\-Spec, typename Scheduler , typename Logger , template$<$ typename U $>$ class Subpr\-Spec, typename String\-Spec , template$<$ typename U $>$ class Bl\-Cl\-Spec, typename Formula\-Solver $>$ {\bf block\-\_\-class\-\_\-ptr} {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}$<$ {\bf Type\-Factory}, Param\-Spec, Scheduler, Logger, Subpr\-Spec, String\-Spec, Bl\-Cl\-Spec, Formula\-Solver $>$\-::get\-\_\-block\-\_\-class (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classLIBKMS__namespace_1_1Block_a045a7ef5cf8f38f1cdd9e88f833b4df8}
+\hypertarget{classLIBKMS__namespace_1_1Block_ad78d26bc20dd3a2fbb064881c9a05be2}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}!get\-\_\-child@{get\-\_\-child}}
+\index{get\-\_\-child@{get\-\_\-child}!LIBKMS_namespace::Block@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}}
+\subsubsection[{get\-\_\-child}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Type\-Factory , template$<$ typename U $>$ class Param\-Spec, typename Scheduler , typename Logger , template$<$ typename U $>$ class Subpr\-Spec, typename String\-Spec , template$<$ typename U $>$ class Bl\-Cl\-Spec, typename Formula\-Solver $>$ {\bf ptr\-\_\-t} {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}$<$ {\bf Type\-Factory}, Param\-Spec, Scheduler, Logger, Subpr\-Spec, String\-Spec, Bl\-Cl\-Spec, Formula\-Solver $>$\-::get\-\_\-child (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{name}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classLIBKMS__namespace_1_1Block_ad78d26bc20dd3a2fbb064881c9a05be2}
+\hypertarget{classLIBKMS__namespace_1_1Block_a5ab9ab41a6f1e64bb0c2d1e5c43b72db}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}!get\-\_\-lastcall\-\_\-time\-\_\-plan@{get\-\_\-lastcall\-\_\-time\-\_\-plan}}
+\index{get\-\_\-lastcall\-\_\-time\-\_\-plan@{get\-\_\-lastcall\-\_\-time\-\_\-plan}!LIBKMS_namespace::Block@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}}
+\subsubsection[{get\-\_\-lastcall\-\_\-time\-\_\-plan}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Type\-Factory , template$<$ typename U $>$ class Param\-Spec, typename Scheduler , typename Logger , template$<$ typename U $>$ class Subpr\-Spec, typename String\-Spec , template$<$ typename U $>$ class Bl\-Cl\-Spec, typename Formula\-Solver $>$ double {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}$<$ {\bf Type\-Factory}, Param\-Spec, Scheduler, Logger, Subpr\-Spec, String\-Spec, Bl\-Cl\-Spec, Formula\-Solver $>$\-::get\-\_\-lastcall\-\_\-time\-\_\-plan (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classLIBKMS__namespace_1_1Block_a5ab9ab41a6f1e64bb0c2d1e5c43b72db}
+
+
+Возвращает время последнего вызова по плану 
+
+\hypertarget{classLIBKMS__namespace_1_1Block_af2ed32615fbeb3e4671d4d4b35802f45}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}!get\-\_\-next\-\_\-errors@{get\-\_\-next\-\_\-errors}}
+\index{get\-\_\-next\-\_\-errors@{get\-\_\-next\-\_\-errors}!LIBKMS_namespace::Block@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}}
+\subsubsection[{get\-\_\-next\-\_\-errors}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Type\-Factory , template$<$ typename U $>$ class Param\-Spec, typename Scheduler , typename Logger , template$<$ typename U $>$ class Subpr\-Spec, typename String\-Spec , template$<$ typename U $>$ class Bl\-Cl\-Spec, typename Formula\-Solver $>$ std\-::pair$<$ std\-::deque$<$ std\-::string $>$, size\-\_\-t $>$ {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}$<$ {\bf Type\-Factory}, Param\-Spec, Scheduler, Logger, Subpr\-Spec, String\-Spec, Bl\-Cl\-Spec, Formula\-Solver $>$\-::get\-\_\-next\-\_\-errors (
+\begin{DoxyParamCaption}
+\item[{size\-\_\-t}]{max = {\ttfamily 10}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classLIBKMS__namespace_1_1Block_af2ed32615fbeb3e4671d4d4b35802f45}
+\hypertarget{classLIBKMS__namespace_1_1Block_a7aebfd8f059a5e29eb9fa680b7de3adb}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}!get\-\_\-period@{get\-\_\-period}}
+\index{get\-\_\-period@{get\-\_\-period}!LIBKMS_namespace::Block@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}}
+\subsubsection[{get\-\_\-period}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Type\-Factory , template$<$ typename U $>$ class Param\-Spec, typename Scheduler , typename Logger , template$<$ typename U $>$ class Subpr\-Spec, typename String\-Spec , template$<$ typename U $>$ class Bl\-Cl\-Spec, typename Formula\-Solver $>$ double {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}$<$ {\bf Type\-Factory}, Param\-Spec, Scheduler, Logger, Subpr\-Spec, String\-Spec, Bl\-Cl\-Spec, Formula\-Solver $>$\-::get\-\_\-period (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}}\label{classLIBKMS__namespace_1_1Block_a7aebfd8f059a5e29eb9fa680b7de3adb}
+\hypertarget{classLIBKMS__namespace_1_1Block_ad5cbf3d42dd4c5098c894ff5df6c7f21}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}!get\-\_\-prev\-\_\-power@{get\-\_\-prev\-\_\-power}}
+\index{get\-\_\-prev\-\_\-power@{get\-\_\-prev\-\_\-power}!LIBKMS_namespace::Block@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}}
+\subsubsection[{get\-\_\-prev\-\_\-power}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Type\-Factory , template$<$ typename U $>$ class Param\-Spec, typename Scheduler , typename Logger , template$<$ typename U $>$ class Subpr\-Spec, typename String\-Spec , template$<$ typename U $>$ class Bl\-Cl\-Spec, typename Formula\-Solver $>$ bool {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}$<$ {\bf Type\-Factory}, Param\-Spec, Scheduler, Logger, Subpr\-Spec, String\-Spec, Bl\-Cl\-Spec, Formula\-Solver $>$\-::get\-\_\-prev\-\_\-power (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classLIBKMS__namespace_1_1Block_ad5cbf3d42dd4c5098c894ff5df6c7f21}
+
+
+Получить признак включения на предыдущем шаге 
+
+\hypertarget{classLIBKMS__namespace_1_1Block_a0977650092787638c559ea40fff04d64}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}!get\-\_\-subblocks\-\_\-with\-\_\-errors@{get\-\_\-subblocks\-\_\-with\-\_\-errors}}
+\index{get\-\_\-subblocks\-\_\-with\-\_\-errors@{get\-\_\-subblocks\-\_\-with\-\_\-errors}!LIBKMS_namespace::Block@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}}
+\subsubsection[{get\-\_\-subblocks\-\_\-with\-\_\-errors}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Type\-Factory , template$<$ typename U $>$ class Param\-Spec, typename Scheduler , typename Logger , template$<$ typename U $>$ class Subpr\-Spec, typename String\-Spec , template$<$ typename U $>$ class Bl\-Cl\-Spec, typename Formula\-Solver $>$ std\-::set$<$ std\-::string $>$ {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}$<$ {\bf Type\-Factory}, Param\-Spec, Scheduler, Logger, Subpr\-Spec, String\-Spec, Bl\-Cl\-Spec, Formula\-Solver $>$\-::get\-\_\-subblocks\-\_\-with\-\_\-errors (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classLIBKMS__namespace_1_1Block_a0977650092787638c559ea40fff04d64}
+\hypertarget{classLIBKMS__namespace_1_1Block_a5145a4cbdf4f2f82e25a5dc30e625f53}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}!get\-\_\-subp\-\_\-list@{get\-\_\-subp\-\_\-list}}
+\index{get\-\_\-subp\-\_\-list@{get\-\_\-subp\-\_\-list}!LIBKMS_namespace::Block@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}}
+\subsubsection[{get\-\_\-subp\-\_\-list}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Type\-Factory , template$<$ typename U $>$ class Param\-Spec, typename Scheduler , typename Logger , template$<$ typename U $>$ class Subpr\-Spec, typename String\-Spec , template$<$ typename U $>$ class Bl\-Cl\-Spec, typename Formula\-Solver $>$ std\-::set$<$ std\-::string $>$ {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}$<$ {\bf Type\-Factory}, Param\-Spec, Scheduler, Logger, Subpr\-Spec, String\-Spec, Bl\-Cl\-Spec, Formula\-Solver $>$\-::get\-\_\-subp\-\_\-list (
+\begin{DoxyParamCaption}
+\item[{bool}]{show\-\_\-locals}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classLIBKMS__namespace_1_1Block_a5145a4cbdf4f2f82e25a5dc30e625f53}
+Вывести все подпрограммы блока \begin{DoxyReturn}{Возвращает}
+множество строк с именами всех подпрограмм блока 
+\end{DoxyReturn}
+\hypertarget{classLIBKMS__namespace_1_1Block_a8687ab032807e767e74d002b546364b7}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}!get\-\_\-subprog@{get\-\_\-subprog}}
+\index{get\-\_\-subprog@{get\-\_\-subprog}!LIBKMS_namespace::Block@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}}
+\subsubsection[{get\-\_\-subprog}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Type\-Factory , template$<$ typename U $>$ class Param\-Spec, typename Scheduler , typename Logger , template$<$ typename U $>$ class Subpr\-Spec, typename String\-Spec , template$<$ typename U $>$ class Bl\-Cl\-Spec, typename Formula\-Solver $>$ {\bf subprogram\-\_\-ptr} {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}$<$ {\bf Type\-Factory}, Param\-Spec, Scheduler, Logger, Subpr\-Spec, String\-Spec, Bl\-Cl\-Spec, Formula\-Solver $>$\-::get\-\_\-subprog (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classLIBKMS__namespace_1_1Block_a8687ab032807e767e74d002b546364b7}
+
+
+Найти подпрограмму с заданным именем 
+
+\hypertarget{classLIBKMS__namespace_1_1Block_af3cf3e07e2ea977d1b125abb6a5da96a}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}!get\-\_\-var\-\_\-list@{get\-\_\-var\-\_\-list}}
+\index{get\-\_\-var\-\_\-list@{get\-\_\-var\-\_\-list}!LIBKMS_namespace::Block@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}}
+\subsubsection[{get\-\_\-var\-\_\-list}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Type\-Factory , template$<$ typename U $>$ class Param\-Spec, typename Scheduler , typename Logger , template$<$ typename U $>$ class Subpr\-Spec, typename String\-Spec , template$<$ typename U $>$ class Bl\-Cl\-Spec, typename Formula\-Solver $>$ std\-::set$<$ std\-::string $>$ {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}$<$ {\bf Type\-Factory}, Param\-Spec, Scheduler, Logger, Subpr\-Spec, String\-Spec, Bl\-Cl\-Spec, Formula\-Solver $>$\-::get\-\_\-var\-\_\-list (
+\begin{DoxyParamCaption}
+\item[{bool}]{show\-\_\-locals}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classLIBKMS__namespace_1_1Block_af3cf3e07e2ea977d1b125abb6a5da96a}
+Вывести все переменные блока \begin{DoxyReturn}{Возвращает}
+строка с описанием всех переменных блока 
+\end{DoxyReturn}
+\hypertarget{classLIBKMS__namespace_1_1Block_a865fb12a0800ec98c6ccdbc114051b74}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}!get\-\_\-variable@{get\-\_\-variable}}
+\index{get\-\_\-variable@{get\-\_\-variable}!LIBKMS_namespace::Block@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}}
+\subsubsection[{get\-\_\-variable}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Type\-Factory , template$<$ typename U $>$ class Param\-Spec, typename Scheduler , typename Logger , template$<$ typename U $>$ class Subpr\-Spec, typename String\-Spec , template$<$ typename U $>$ class Bl\-Cl\-Spec, typename Formula\-Solver $>$ {\bf parameter\-\_\-ptr} {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}$<$ {\bf Type\-Factory}, Param\-Spec, Scheduler, Logger, Subpr\-Spec, String\-Spec, Bl\-Cl\-Spec, Formula\-Solver $>$\-::get\-\_\-variable (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{name}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}}\label{classLIBKMS__namespace_1_1Block_a865fb12a0800ec98c6ccdbc114051b74}
+
+
+Получить указатель на переменную с именем 
+
+\hypertarget{classLIBKMS__namespace_1_1Block_a237c80b9eda1709cd50ded2320a11c94}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}!is\-\_\-blocked\-\_\-in\-\_\-stop@{is\-\_\-blocked\-\_\-in\-\_\-stop}}
+\index{is\-\_\-blocked\-\_\-in\-\_\-stop@{is\-\_\-blocked\-\_\-in\-\_\-stop}!LIBKMS_namespace::Block@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}}
+\subsubsection[{is\-\_\-blocked\-\_\-in\-\_\-stop}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Type\-Factory , template$<$ typename U $>$ class Param\-Spec, typename Scheduler , typename Logger , template$<$ typename U $>$ class Subpr\-Spec, typename String\-Spec , template$<$ typename U $>$ class Bl\-Cl\-Spec, typename Formula\-Solver $>$ bool {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}$<$ {\bf Type\-Factory}, Param\-Spec, Scheduler, Logger, Subpr\-Spec, String\-Spec, Bl\-Cl\-Spec, Formula\-Solver $>$\-::is\-\_\-blocked\-\_\-in\-\_\-stop (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}}\label{classLIBKMS__namespace_1_1Block_a237c80b9eda1709cd50ded2320a11c94}
+
+
+Проверить, является ли заблокированным в СТОПе 
+
+\hypertarget{classLIBKMS__namespace_1_1Block_a60f4040e8c8d04493ca228bca478b3f8}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}!is\-\_\-periodical@{is\-\_\-periodical}}
+\index{is\-\_\-periodical@{is\-\_\-periodical}!LIBKMS_namespace::Block@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}}
+\subsubsection[{is\-\_\-periodical}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Type\-Factory , template$<$ typename U $>$ class Param\-Spec, typename Scheduler , typename Logger , template$<$ typename U $>$ class Subpr\-Spec, typename String\-Spec , template$<$ typename U $>$ class Bl\-Cl\-Spec, typename Formula\-Solver $>$ bool {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}$<$ {\bf Type\-Factory}, Param\-Spec, Scheduler, Logger, Subpr\-Spec, String\-Spec, Bl\-Cl\-Spec, Formula\-Solver $>$\-::is\-\_\-periodical (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}}\label{classLIBKMS__namespace_1_1Block_a60f4040e8c8d04493ca228bca478b3f8}
+\hypertarget{classLIBKMS__namespace_1_1Block_a12d13e5d8452da4ac44028deb0e5de83}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}!make\-\_\-nonperiodical@{make\-\_\-nonperiodical}}
+\index{make\-\_\-nonperiodical@{make\-\_\-nonperiodical}!LIBKMS_namespace::Block@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}}
+\subsubsection[{make\-\_\-nonperiodical}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Type\-Factory , template$<$ typename U $>$ class Param\-Spec, typename Scheduler , typename Logger , template$<$ typename U $>$ class Subpr\-Spec, typename String\-Spec , template$<$ typename U $>$ class Bl\-Cl\-Spec, typename Formula\-Solver $>$ void {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}$<$ {\bf Type\-Factory}, Param\-Spec, Scheduler, Logger, Subpr\-Spec, String\-Spec, Bl\-Cl\-Spec, Formula\-Solver $>$\-::make\-\_\-nonperiodical (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}}\label{classLIBKMS__namespace_1_1Block_a12d13e5d8452da4ac44028deb0e5de83}
+
+
+Сделать блок вызываемым по обновлению 
+
+\hypertarget{classLIBKMS__namespace_1_1Block_aa40076dc7823a49c1d9b3a674982621d}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}!make\-\_\-periodical@{make\-\_\-periodical}}
+\index{make\-\_\-periodical@{make\-\_\-periodical}!LIBKMS_namespace::Block@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}}
+\subsubsection[{make\-\_\-periodical}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Type\-Factory , template$<$ typename U $>$ class Param\-Spec, typename Scheduler , typename Logger , template$<$ typename U $>$ class Subpr\-Spec, typename String\-Spec , template$<$ typename U $>$ class Bl\-Cl\-Spec, typename Formula\-Solver $>$ void {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}$<$ {\bf Type\-Factory}, Param\-Spec, Scheduler, Logger, Subpr\-Spec, String\-Spec, Bl\-Cl\-Spec, Formula\-Solver $>$\-::make\-\_\-periodical (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}}\label{classLIBKMS__namespace_1_1Block_aa40076dc7823a49c1d9b3a674982621d}
+
+
+Сделать блок периодическим 
+
+\hypertarget{classLIBKMS__namespace_1_1Block_a7b987f3386282af15cce3ca7b6a6de96}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}!set\-\_\-blocked\-\_\-in\-\_\-stop@{set\-\_\-blocked\-\_\-in\-\_\-stop}}
+\index{set\-\_\-blocked\-\_\-in\-\_\-stop@{set\-\_\-blocked\-\_\-in\-\_\-stop}!LIBKMS_namespace::Block@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}}
+\subsubsection[{set\-\_\-blocked\-\_\-in\-\_\-stop}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Type\-Factory , template$<$ typename U $>$ class Param\-Spec, typename Scheduler , typename Logger , template$<$ typename U $>$ class Subpr\-Spec, typename String\-Spec , template$<$ typename U $>$ class Bl\-Cl\-Spec, typename Formula\-Solver $>$ void {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}$<$ {\bf Type\-Factory}, Param\-Spec, Scheduler, Logger, Subpr\-Spec, String\-Spec, Bl\-Cl\-Spec, Formula\-Solver $>$\-::set\-\_\-blocked\-\_\-in\-\_\-stop (
+\begin{DoxyParamCaption}
+\item[{bool}]{bl}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}}\label{classLIBKMS__namespace_1_1Block_a7b987f3386282af15cce3ca7b6a6de96}
+
+
+Установить признак блокировки в СТОПе 
+
+\hypertarget{classLIBKMS__namespace_1_1Block_ab0208151cac031b7d0465e5d80e4fd7e}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}!set\-\_\-names@{set\-\_\-names}}
+\index{set\-\_\-names@{set\-\_\-names}!LIBKMS_namespace::Block@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}}
+\subsubsection[{set\-\_\-names}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Type\-Factory , template$<$ typename U $>$ class Param\-Spec, typename Scheduler , typename Logger , template$<$ typename U $>$ class Subpr\-Spec, typename String\-Spec , template$<$ typename U $>$ class Bl\-Cl\-Spec, typename Formula\-Solver $>$ const std\-::set$<$ std\-::string $>$ {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}$<$ {\bf Type\-Factory}, Param\-Spec, Scheduler, Logger, Subpr\-Spec, String\-Spec, Bl\-Cl\-Spec, Formula\-Solver $>$\-::set\-\_\-names (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}}\label{classLIBKMS__namespace_1_1Block_ab0208151cac031b7d0465e5d80e4fd7e}
+
+
+Возвращает список имен переменных S\-E\-T. 
+
+\hypertarget{classLIBKMS__namespace_1_1Block_a7578ee18a28d988ab83c2caad09b51d6}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}!set\-\_\-names\-\_\-set@{set\-\_\-names\-\_\-set}}
+\index{set\-\_\-names\-\_\-set@{set\-\_\-names\-\_\-set}!LIBKMS_namespace::Block@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}}
+\subsubsection[{set\-\_\-names\-\_\-set}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Type\-Factory , template$<$ typename U $>$ class Param\-Spec, typename Scheduler , typename Logger , template$<$ typename U $>$ class Subpr\-Spec, typename String\-Spec , template$<$ typename U $>$ class Bl\-Cl\-Spec, typename Formula\-Solver $>$ template$<$template$<$ typename T $>$ class Iterable$>$ void {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}$<$ {\bf Type\-Factory}, Param\-Spec, Scheduler, Logger, Subpr\-Spec, String\-Spec, Bl\-Cl\-Spec, Formula\-Solver $>$\-::set\-\_\-names\-\_\-set (
+\begin{DoxyParamCaption}
+\item[{Iterable$<$ std\-::string $>$ \&}]{names}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}}\label{classLIBKMS__namespace_1_1Block_a7578ee18a28d988ab83c2caad09b51d6}
+
+
+Устанавливает имена переменных S\-E\-T. 
+
+\hypertarget{classLIBKMS__namespace_1_1Block_a69d14e60cbcdd128a7a8349bcd04df20}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}!set\-\_\-period@{set\-\_\-period}}
+\index{set\-\_\-period@{set\-\_\-period}!LIBKMS_namespace::Block@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}}
+\subsubsection[{set\-\_\-period}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Type\-Factory , template$<$ typename U $>$ class Param\-Spec, typename Scheduler , typename Logger , template$<$ typename U $>$ class Subpr\-Spec, typename String\-Spec , template$<$ typename U $>$ class Bl\-Cl\-Spec, typename Formula\-Solver $>$ void {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}$<$ {\bf Type\-Factory}, Param\-Spec, Scheduler, Logger, Subpr\-Spec, String\-Spec, Bl\-Cl\-Spec, Formula\-Solver $>$\-::set\-\_\-period (
+\begin{DoxyParamCaption}
+\item[{double}]{period}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}}\label{classLIBKMS__namespace_1_1Block_a69d14e60cbcdd128a7a8349bcd04df20}
+
+
+Установить период вызова 
+
+\hypertarget{classLIBKMS__namespace_1_1Block_a1976ce5bedc5c014cc7444a53009d5a9}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}!set\-\_\-poweroff\-\_\-vars@{set\-\_\-poweroff\-\_\-vars}}
+\index{set\-\_\-poweroff\-\_\-vars@{set\-\_\-poweroff\-\_\-vars}!LIBKMS_namespace::Block@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}}
+\subsubsection[{set\-\_\-poweroff\-\_\-vars}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Type\-Factory , template$<$ typename U $>$ class Param\-Spec, typename Scheduler , typename Logger , template$<$ typename U $>$ class Subpr\-Spec, typename String\-Spec , template$<$ typename U $>$ class Bl\-Cl\-Spec, typename Formula\-Solver $>$ void {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}$<$ {\bf Type\-Factory}, Param\-Spec, Scheduler, Logger, Subpr\-Spec, String\-Spec, Bl\-Cl\-Spec, Formula\-Solver $>$\-::set\-\_\-poweroff\-\_\-vars (
+\begin{DoxyParamCaption}
+\item[{const {\bf parameter\-\_\-map} \&}]{p}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classLIBKMS__namespace_1_1Block_a1976ce5bedc5c014cc7444a53009d5a9}
+
+
+Установить словарь переменных, записываемых по выключению модуля 
+
+\hypertarget{classLIBKMS__namespace_1_1Block_ade9aea609aecf6bfc8664003e5f0d33c}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}!set\-\_\-poweron\-\_\-vars@{set\-\_\-poweron\-\_\-vars}}
+\index{set\-\_\-poweron\-\_\-vars@{set\-\_\-poweron\-\_\-vars}!LIBKMS_namespace::Block@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}}
+\subsubsection[{set\-\_\-poweron\-\_\-vars}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Type\-Factory , template$<$ typename U $>$ class Param\-Spec, typename Scheduler , typename Logger , template$<$ typename U $>$ class Subpr\-Spec, typename String\-Spec , template$<$ typename U $>$ class Bl\-Cl\-Spec, typename Formula\-Solver $>$ void {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}$<$ {\bf Type\-Factory}, Param\-Spec, Scheduler, Logger, Subpr\-Spec, String\-Spec, Bl\-Cl\-Spec, Formula\-Solver $>$\-::set\-\_\-poweron\-\_\-vars (
+\begin{DoxyParamCaption}
+\item[{const {\bf parameter\-\_\-map} \&}]{p}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classLIBKMS__namespace_1_1Block_ade9aea609aecf6bfc8664003e5f0d33c}
+
+
+Установить словарь переменных, записываемых по включению модуля 
+
+\hypertarget{classLIBKMS__namespace_1_1Block_a65c37b5d072c50d71c416676196663ac}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}!set\-\_\-prev\-\_\-power@{set\-\_\-prev\-\_\-power}}
+\index{set\-\_\-prev\-\_\-power@{set\-\_\-prev\-\_\-power}!LIBKMS_namespace::Block@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}}
+\subsubsection[{set\-\_\-prev\-\_\-power}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Type\-Factory , template$<$ typename U $>$ class Param\-Spec, typename Scheduler , typename Logger , template$<$ typename U $>$ class Subpr\-Spec, typename String\-Spec , template$<$ typename U $>$ class Bl\-Cl\-Spec, typename Formula\-Solver $>$ void {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}$<$ {\bf Type\-Factory}, Param\-Spec, Scheduler, Logger, Subpr\-Spec, String\-Spec, Bl\-Cl\-Spec, Formula\-Solver $>$\-::set\-\_\-prev\-\_\-power (
+\begin{DoxyParamCaption}
+\item[{bool}]{power}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classLIBKMS__namespace_1_1Block_a65c37b5d072c50d71c416676196663ac}
+
+
+Установить признак включения на предыдущем шаге 
+
+\hypertarget{classLIBKMS__namespace_1_1Block_a29bbb63c82a1ca44dca3a879db824592}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}!use\-\_\-names@{use\-\_\-names}}
+\index{use\-\_\-names@{use\-\_\-names}!LIBKMS_namespace::Block@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}}
+\subsubsection[{use\-\_\-names}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Type\-Factory , template$<$ typename U $>$ class Param\-Spec, typename Scheduler , typename Logger , template$<$ typename U $>$ class Subpr\-Spec, typename String\-Spec , template$<$ typename U $>$ class Bl\-Cl\-Spec, typename Formula\-Solver $>$ const std\-::set$<$ std\-::string $>$ {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}$<$ {\bf Type\-Factory}, Param\-Spec, Scheduler, Logger, Subpr\-Spec, String\-Spec, Bl\-Cl\-Spec, Formula\-Solver $>$\-::use\-\_\-names (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}}\label{classLIBKMS__namespace_1_1Block_a29bbb63c82a1ca44dca3a879db824592}
+
+
+Возвращает список имен переменных U\-S\-E. 
+
+\hypertarget{classLIBKMS__namespace_1_1Block_a9576f7464cb1111775fa2f07c2c30937}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}!write\-\_\-poweroff\-\_\-vars@{write\-\_\-poweroff\-\_\-vars}}
+\index{write\-\_\-poweroff\-\_\-vars@{write\-\_\-poweroff\-\_\-vars}!LIBKMS_namespace::Block@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}}
+\subsubsection[{write\-\_\-poweroff\-\_\-vars}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Type\-Factory , template$<$ typename U $>$ class Param\-Spec, typename Scheduler , typename Logger , template$<$ typename U $>$ class Subpr\-Spec, typename String\-Spec , template$<$ typename U $>$ class Bl\-Cl\-Spec, typename Formula\-Solver $>$ {\bf parameter\-\_\-map} {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}$<$ {\bf Type\-Factory}, Param\-Spec, Scheduler, Logger, Subpr\-Spec, String\-Spec, Bl\-Cl\-Spec, Formula\-Solver $>$\-::write\-\_\-poweroff\-\_\-vars (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classLIBKMS__namespace_1_1Block_a9576f7464cb1111775fa2f07c2c30937}
+Записать переменные при выключении модуля \begin{DoxyReturn}{Возвращает}
+Обновленные возвращаемые переменные 
+\end{DoxyReturn}
+\hypertarget{classLIBKMS__namespace_1_1Block_a2dbcc05db46fa70b284bb4e3fd0e6ae4}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}!write\-\_\-poweron\-\_\-vars@{write\-\_\-poweron\-\_\-vars}}
+\index{write\-\_\-poweron\-\_\-vars@{write\-\_\-poweron\-\_\-vars}!LIBKMS_namespace::Block@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}}
+\subsubsection[{write\-\_\-poweron\-\_\-vars}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Type\-Factory , template$<$ typename U $>$ class Param\-Spec, typename Scheduler , typename Logger , template$<$ typename U $>$ class Subpr\-Spec, typename String\-Spec , template$<$ typename U $>$ class Bl\-Cl\-Spec, typename Formula\-Solver $>$ {\bf parameter\-\_\-map} {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}$<$ {\bf Type\-Factory}, Param\-Spec, Scheduler, Logger, Subpr\-Spec, String\-Spec, Bl\-Cl\-Spec, Formula\-Solver $>$\-::write\-\_\-poweron\-\_\-vars (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classLIBKMS__namespace_1_1Block_a2dbcc05db46fa70b284bb4e3fd0e6ae4}
+Записать переменные при включении модуля \begin{DoxyReturn}{Возвращает}
+Обновленные возвращаемые переменные 
+\end{DoxyReturn}
+\hypertarget{classLIBKMS__namespace_1_1Block_a4b04254ca77c0d2f34d76d45b8e297d2}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}!write\-\_\-variables@{write\-\_\-variables}}
+\index{write\-\_\-variables@{write\-\_\-variables}!LIBKMS_namespace::Block@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}}
+\subsubsection[{write\-\_\-variables}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Type\-Factory , template$<$ typename U $>$ class Param\-Spec, typename Scheduler , typename Logger , template$<$ typename U $>$ class Subpr\-Spec, typename String\-Spec , template$<$ typename U $>$ class Bl\-Cl\-Spec, typename Formula\-Solver $>$ std\-::set$<$ std\-::string $>$ {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}$<$ {\bf Type\-Factory}, Param\-Spec, Scheduler, Logger, Subpr\-Spec, String\-Spec, Bl\-Cl\-Spec, Formula\-Solver $>$\-::write\-\_\-variables (
+\begin{DoxyParamCaption}
+\item[{const std\-::set$<$ std\-::string $>$ \&}]{allowed, }
+\item[{{\bf parameter\-\_\-map} \&}]{val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classLIBKMS__namespace_1_1Block_a4b04254ca77c0d2f34d76d45b8e297d2}
+Записать значения разрешенных для записи переменных \begin{DoxyReturn}{Возвращает}
+список записанных переменных 
+\end{DoxyReturn}
+
+
+\subsection{Данные класса}
+\hypertarget{classLIBKMS__namespace_1_1Block_a1d39e7d7bc913e6ed550677602e74e50}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}!\-\_\-classname@{\-\_\-classname}}
+\index{\-\_\-classname@{\-\_\-classname}!LIBKMS_namespace::Block@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}}
+\subsubsection[{\-\_\-classname}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Type\-Factory , template$<$ typename U $>$ class Param\-Spec, typename Scheduler , typename Logger , template$<$ typename U $>$ class Subpr\-Spec, typename String\-Spec , template$<$ typename U $>$ class Bl\-Cl\-Spec, typename Formula\-Solver $>$ std\-::string {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block}$<$ {\bf Type\-Factory}, Param\-Spec, Scheduler, Logger, Subpr\-Spec, String\-Spec, Bl\-Cl\-Spec, Formula\-Solver $>$\-::\-\_\-classname\hspace{0.3cm}{\ttfamily [protected]}}}\label{classLIBKMS__namespace_1_1Block_a1d39e7d7bc913e6ed550677602e74e50}
+
+
+Объявления и описания членов класса находятся в файле\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{block_8hpp}{block.\-hpp}\end{DoxyCompactItemize}

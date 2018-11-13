@@ -1,0 +1,118 @@
+\hypertarget{classLIBKMS__namespace_1_1BlockClassFactory}{\section{Шаблон класса L\-I\-B\-K\-M\-S\-\_\-namespace\-:\-:Block\-Class\-Factory$<$ Function\-Storage, Subprogram, Subprogram\-Ptr, Block\-Ptr, Bl\-Cl\-Spec $>$}
+\label{classLIBKMS__namespace_1_1BlockClassFactory}\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block\-Class\-Factory$<$ Function\-Storage, Subprogram, Subprogram\-Ptr, Block\-Ptr, Bl\-Cl\-Spec $>$@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block\-Class\-Factory$<$ Function\-Storage, Subprogram, Subprogram\-Ptr, Block\-Ptr, Bl\-Cl\-Spec $>$}}
+}
+
+
+Фабрика классов блоков  
+
+
+
+
+{\ttfamily \#include $<$block\-\_\-class.\-hpp$>$}
+
+\subsection*{Классы}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structLIBKMS__namespace_1_1BlockClassFactory_1_1block__class__with__config}{block\-\_\-class\-\_\-with\-\_\-config}
+\end{DoxyCompactItemize}
+\subsection*{Открытые типы}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classLIBKMS__namespace_1_1BlockClassFactory}{Block\-Class\-Factory}\\*
+$<$ \hyperlink{classLIBKMS__namespace_1_1FunctionStorage}{Function\-Storage}, \hyperlink{classLIBKMS__namespace_1_1Subprogram}{Subprogram}, \\*
+Subprogram\-Ptr, Block\-Ptr, \\*
+Bl\-Cl\-Spec $>$ \hyperlink{classLIBKMS__namespace_1_1BlockClassFactory_ac764a55036aeecf1279f5b43464ab9ad}{block\-\_\-class\-\_\-factory\-\_\-t}
+\item 
+typedef \hyperlink{classLIBKMS__namespace_1_1BlockClass}{Block\-Class}\\*
+$<$ \hyperlink{classLIBKMS__namespace_1_1FunctionStorage}{Function\-Storage}, \hyperlink{classLIBKMS__namespace_1_1Subprogram}{Subprogram}, \\*
+Subprogram\-Ptr, Block\-Ptr, \\*
+Bl\-Cl\-Spec $>$ \hyperlink{classLIBKMS__namespace_1_1BlockClassFactory_ab6e704b98791fd6c718cfbb0fe2d2a5a}{block\-\_\-class\-\_\-t}
+\item 
+typedef Bl\-Cl\-Spec\\*
+$<$ \hyperlink{classLIBKMS__namespace_1_1BlockClassFactory_ab6e704b98791fd6c718cfbb0fe2d2a5a}{block\-\_\-class\-\_\-t} $>$\-::ptr \hyperlink{classLIBKMS__namespace_1_1BlockClassFactory_a882880cb8a33fcc808b41e283cea2dc3}{block\-\_\-class\-\_\-ptr}
+\item 
+typedef Bl\-Cl\-Spec\\*
+$<$ \hyperlink{classLIBKMS__namespace_1_1BlockClassFactory_ab6e704b98791fd6c718cfbb0fe2d2a5a}{block\-\_\-class\-\_\-t} $>$\-::map \hyperlink{classLIBKMS__namespace_1_1BlockClassFactory_a6c80887a7827dcc55a3508b242b906c9}{block\-\_\-class\-\_\-map}
+\end{DoxyCompactItemize}
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classLIBKMS__namespace_1_1BlockClassFactory_a882880cb8a33fcc808b41e283cea2dc3}{block\-\_\-class\-\_\-ptr} \hyperlink{classLIBKMS__namespace_1_1BlockClassFactory_a51d6671829d0b5ac15c27adc604835db}{create} (const std\-::string \&classname) const noexcept
+\begin{DoxyCompactList}\small\item\em Создать экземпляр класса блока \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\bool \hyperlink{classLIBKMS__namespace_1_1BlockClassFactory_a185c0b7f022b7dea757e663bac1a1caa}{add\-\_\-block\-\_\-class} (const std\-::string \&classname)
+\end{DoxyCompactItemize}
+\subsection*{Открытые статические члены}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classLIBKMS__namespace_1_1BlockClassFactory_ac764a55036aeecf1279f5b43464ab9ad}{block\-\_\-class\-\_\-factory\-\_\-t} \& \hyperlink{classLIBKMS__namespace_1_1BlockClassFactory_a95ef3434b162301444650d201025bca6}{instance} () noexcept
+\begin{DoxyCompactList}\small\item\em Вернуть экземпляр фабрики классов блоков \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\static \hyperlink{structLIBKMS__namespace_1_1BlockClassFactory_1_1block__class__with__config}{block\-\_\-class\-\_\-with\-\_\-config}\\*
+$<$ T $>$\-::ptr\-\_\-t \hyperlink{classLIBKMS__namespace_1_1BlockClassFactory_afb4a03e20d36516a2b1ac6c3214bc1d8}{with\-\_\-config} (const \hyperlink{classLIBKMS__namespace_1_1BlockClassFactory_a882880cb8a33fcc808b41e283cea2dc3}{block\-\_\-class\-\_\-ptr} p)
+\end{DoxyCompactItemize}
+
+
+\subsection{Подробное описание}
+\subsubsection*{template$<$typename Function\-Storage, typename Subprogram, typename Subprogram\-Ptr, typename Block\-Ptr, template$<$ typename U $>$ class Bl\-Cl\-Spec$>$class L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block\-Class\-Factory$<$ Function\-Storage, Subprogram, Subprogram\-Ptr, Block\-Ptr, Bl\-Cl\-Spec $>$}
+
+Фабрика классов блоков 
+
+\subsection{Определения типов}
+\hypertarget{classLIBKMS__namespace_1_1BlockClassFactory_ac764a55036aeecf1279f5b43464ab9ad}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block\-Class\-Factory@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block\-Class\-Factory}!block\-\_\-class\-\_\-factory\-\_\-t@{block\-\_\-class\-\_\-factory\-\_\-t}}
+\index{block\-\_\-class\-\_\-factory\-\_\-t@{block\-\_\-class\-\_\-factory\-\_\-t}!LIBKMS_namespace::BlockClassFactory@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block\-Class\-Factory}}
+\subsubsection[{block\-\_\-class\-\_\-factory\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Function\-Storage , typename Subprogram , typename Subprogram\-Ptr , typename Block\-Ptr , template$<$ typename U $>$ class Bl\-Cl\-Spec$>$ typedef {\bf Block\-Class\-Factory}$<$ {\bf Function\-Storage}, {\bf Subprogram}, Subprogram\-Ptr, Block\-Ptr, Bl\-Cl\-Spec $>$ {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block\-Class\-Factory}$<$ {\bf Function\-Storage}, {\bf Subprogram}, Subprogram\-Ptr, Block\-Ptr, Bl\-Cl\-Spec $>$\-::{\bf block\-\_\-class\-\_\-factory\-\_\-t}}}\label{classLIBKMS__namespace_1_1BlockClassFactory_ac764a55036aeecf1279f5b43464ab9ad}
+\hypertarget{classLIBKMS__namespace_1_1BlockClassFactory_a6c80887a7827dcc55a3508b242b906c9}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block\-Class\-Factory@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block\-Class\-Factory}!block\-\_\-class\-\_\-map@{block\-\_\-class\-\_\-map}}
+\index{block\-\_\-class\-\_\-map@{block\-\_\-class\-\_\-map}!LIBKMS_namespace::BlockClassFactory@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block\-Class\-Factory}}
+\subsubsection[{block\-\_\-class\-\_\-map}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Function\-Storage , typename Subprogram , typename Subprogram\-Ptr , typename Block\-Ptr , template$<$ typename U $>$ class Bl\-Cl\-Spec$>$ typedef Bl\-Cl\-Spec$<$ {\bf block\-\_\-class\-\_\-t} $>$\-::map {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block\-Class\-Factory}$<$ {\bf Function\-Storage}, {\bf Subprogram}, Subprogram\-Ptr, Block\-Ptr, Bl\-Cl\-Spec $>$\-::{\bf block\-\_\-class\-\_\-map}}}\label{classLIBKMS__namespace_1_1BlockClassFactory_a6c80887a7827dcc55a3508b242b906c9}
+\hypertarget{classLIBKMS__namespace_1_1BlockClassFactory_a882880cb8a33fcc808b41e283cea2dc3}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block\-Class\-Factory@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block\-Class\-Factory}!block\-\_\-class\-\_\-ptr@{block\-\_\-class\-\_\-ptr}}
+\index{block\-\_\-class\-\_\-ptr@{block\-\_\-class\-\_\-ptr}!LIBKMS_namespace::BlockClassFactory@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block\-Class\-Factory}}
+\subsubsection[{block\-\_\-class\-\_\-ptr}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Function\-Storage , typename Subprogram , typename Subprogram\-Ptr , typename Block\-Ptr , template$<$ typename U $>$ class Bl\-Cl\-Spec$>$ typedef Bl\-Cl\-Spec$<$ {\bf block\-\_\-class\-\_\-t} $>$\-::ptr {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block\-Class\-Factory}$<$ {\bf Function\-Storage}, {\bf Subprogram}, Subprogram\-Ptr, Block\-Ptr, Bl\-Cl\-Spec $>$\-::{\bf block\-\_\-class\-\_\-ptr}}}\label{classLIBKMS__namespace_1_1BlockClassFactory_a882880cb8a33fcc808b41e283cea2dc3}
+\hypertarget{classLIBKMS__namespace_1_1BlockClassFactory_ab6e704b98791fd6c718cfbb0fe2d2a5a}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block\-Class\-Factory@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block\-Class\-Factory}!block\-\_\-class\-\_\-t@{block\-\_\-class\-\_\-t}}
+\index{block\-\_\-class\-\_\-t@{block\-\_\-class\-\_\-t}!LIBKMS_namespace::BlockClassFactory@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block\-Class\-Factory}}
+\subsubsection[{block\-\_\-class\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Function\-Storage , typename Subprogram , typename Subprogram\-Ptr , typename Block\-Ptr , template$<$ typename U $>$ class Bl\-Cl\-Spec$>$ typedef {\bf Block\-Class}$<$ {\bf Function\-Storage}, {\bf Subprogram}, Subprogram\-Ptr, Block\-Ptr, Bl\-Cl\-Spec $>$ {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block\-Class\-Factory}$<$ {\bf Function\-Storage}, {\bf Subprogram}, Subprogram\-Ptr, Block\-Ptr, Bl\-Cl\-Spec $>$\-::{\bf block\-\_\-class\-\_\-t}}}\label{classLIBKMS__namespace_1_1BlockClassFactory_ab6e704b98791fd6c718cfbb0fe2d2a5a}
+
+
+\subsection{Методы}
+\hypertarget{classLIBKMS__namespace_1_1BlockClassFactory_a185c0b7f022b7dea757e663bac1a1caa}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block\-Class\-Factory@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block\-Class\-Factory}!add\-\_\-block\-\_\-class@{add\-\_\-block\-\_\-class}}
+\index{add\-\_\-block\-\_\-class@{add\-\_\-block\-\_\-class}!LIBKMS_namespace::BlockClassFactory@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block\-Class\-Factory}}
+\subsubsection[{add\-\_\-block\-\_\-class}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Function\-Storage , typename Subprogram , typename Subprogram\-Ptr , typename Block\-Ptr , template$<$ typename U $>$ class Bl\-Cl\-Spec$>$ template$<$typename T $>$ bool {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block\-Class\-Factory}$<$ {\bf Function\-Storage}, {\bf Subprogram}, Subprogram\-Ptr, Block\-Ptr, Bl\-Cl\-Spec $>$\-::add\-\_\-block\-\_\-class (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{classname}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classLIBKMS__namespace_1_1BlockClassFactory_a185c0b7f022b7dea757e663bac1a1caa}
+Добавить новый класс блоков \begin{DoxyReturn}{Возвращает}
+добавилось ли 
+\end{DoxyReturn}
+\hypertarget{classLIBKMS__namespace_1_1BlockClassFactory_a51d6671829d0b5ac15c27adc604835db}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block\-Class\-Factory@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block\-Class\-Factory}!create@{create}}
+\index{create@{create}!LIBKMS_namespace::BlockClassFactory@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block\-Class\-Factory}}
+\subsubsection[{create}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Function\-Storage , typename Subprogram , typename Subprogram\-Ptr , typename Block\-Ptr , template$<$ typename U $>$ class Bl\-Cl\-Spec$>$ {\bf block\-\_\-class\-\_\-ptr} {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block\-Class\-Factory}$<$ {\bf Function\-Storage}, {\bf Subprogram}, Subprogram\-Ptr, Block\-Ptr, Bl\-Cl\-Spec $>$\-::create (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{classname}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}}\label{classLIBKMS__namespace_1_1BlockClassFactory_a51d6671829d0b5ac15c27adc604835db}
+
+
+Создать экземпляр класса блока 
+
+\hypertarget{classLIBKMS__namespace_1_1BlockClassFactory_a95ef3434b162301444650d201025bca6}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block\-Class\-Factory@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block\-Class\-Factory}!instance@{instance}}
+\index{instance@{instance}!LIBKMS_namespace::BlockClassFactory@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block\-Class\-Factory}}
+\subsubsection[{instance}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Function\-Storage , typename Subprogram , typename Subprogram\-Ptr , typename Block\-Ptr , template$<$ typename U $>$ class Bl\-Cl\-Spec$>$ static {\bf block\-\_\-class\-\_\-factory\-\_\-t}\& {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block\-Class\-Factory}$<$ {\bf Function\-Storage}, {\bf Subprogram}, Subprogram\-Ptr, Block\-Ptr, Bl\-Cl\-Spec $>$\-::instance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [noexcept]}}}\label{classLIBKMS__namespace_1_1BlockClassFactory_a95ef3434b162301444650d201025bca6}
+
+
+Вернуть экземпляр фабрики классов блоков 
+
+\hypertarget{classLIBKMS__namespace_1_1BlockClassFactory_afb4a03e20d36516a2b1ac6c3214bc1d8}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block\-Class\-Factory@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block\-Class\-Factory}!with\-\_\-config@{with\-\_\-config}}
+\index{with\-\_\-config@{with\-\_\-config}!LIBKMS_namespace::BlockClassFactory@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block\-Class\-Factory}}
+\subsubsection[{with\-\_\-config}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Function\-Storage , typename Subprogram , typename Subprogram\-Ptr , typename Block\-Ptr , template$<$ typename U $>$ class Bl\-Cl\-Spec$>$ template$<$typename T $>$ static {\bf block\-\_\-class\-\_\-with\-\_\-config}$<$ T $>$\-::ptr\-\_\-t {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Block\-Class\-Factory}$<$ {\bf Function\-Storage}, {\bf Subprogram}, Subprogram\-Ptr, Block\-Ptr, Bl\-Cl\-Spec $>$\-::with\-\_\-config (
+\begin{DoxyParamCaption}
+\item[{const {\bf block\-\_\-class\-\_\-ptr}}]{p}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classLIBKMS__namespace_1_1BlockClassFactory_afb4a03e20d36516a2b1ac6c3214bc1d8}
+
+
+Объявления и описания членов класса находятся в файле\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{block__class_8hpp}{block\-\_\-class.\-hpp}\end{DoxyCompactItemize}

@@ -1,0 +1,276 @@
+\hypertarget{classLIBKMS__namespace_1_1Callable}{\section{Шаблон класса L\-I\-B\-K\-M\-S\-\_\-namespace\-:\-:Callable$<$ Logger, Parameter\-Map, Formula\-Solver $>$}
+\label{classLIBKMS__namespace_1_1Callable}\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Callable$<$ Logger, Parameter\-Map, Formula\-Solver $>$@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Callable$<$ Logger, Parameter\-Map, Formula\-Solver $>$}}
+}
+
+
+{\ttfamily \#include $<$callable.\-hpp$>$}
+
+Граф наследования\-:L\-I\-B\-K\-M\-S\-\_\-namespace\-:\-:Callable$<$ Logger, Parameter\-Map, Formula\-Solver $>$\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classLIBKMS__namespace_1_1Callable}
+\end{center}
+\end{figure}
+\subsection*{Открытые типы}
+\begin{DoxyCompactItemize}
+\item 
+typedef Parameter\-Map \hyperlink{classLIBKMS__namespace_1_1Callable_ad58caabaa5ac247c9d385e6d5451916a}{parameter\-\_\-map}
+\end{DoxyCompactItemize}
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classLIBKMS__namespace_1_1Callable_a2ae113d77b64ace4b5dbc6ac2cb8d22b}{Callable} (std\-::string name, double priority, bool isblocked)
+\item 
+void \hyperlink{classLIBKMS__namespace_1_1Callable_a3e475788ceb6452ea984ae7c41c173c4}{set\-\_\-name} (std\-::string name)
+\item 
+std\-::string \hyperlink{classLIBKMS__namespace_1_1Callable_a58a214027a04f1cf8ab9644b9ad57916}{get\-\_\-name} ()
+\item 
+virtual \hyperlink{classLIBKMS__namespace_1_1Callable_acd80016512d6e1062ae0fe5b4d84776e}{$\sim$\-Callable} ()
+\item 
+virtual \hyperlink{classLIBKMS__namespace_1_1Callable_ad58caabaa5ac247c9d385e6d5451916a}{parameter\-\_\-map} \hyperlink{classLIBKMS__namespace_1_1Callable_ad9cad480516a054f09c056ae248691b1}{call} (double time, const \hyperlink{classLIBKMS__namespace_1_1Callable_ad58caabaa5ac247c9d385e6d5451916a}{parameter\-\_\-map} \&block\-\_\-vars, const \hyperlink{classLIBKMS__namespace_1_1Callable_ad58caabaa5ac247c9d385e6d5451916a}{parameter\-\_\-map} \&upper\-\_\-vars)=0
+\item 
+\hyperlink{classLIBKMS__namespace_1_1Callable_ad58caabaa5ac247c9d385e6d5451916a}{parameter\-\_\-map} \hyperlink{classLIBKMS__namespace_1_1Callable_a7838731afe0ac0fee5e88ab64952aa4a}{operator()} (double time, const \hyperlink{classLIBKMS__namespace_1_1Callable_ad58caabaa5ac247c9d385e6d5451916a}{parameter\-\_\-map} \&block\-\_\-vars=no\-\_\-params, const \hyperlink{classLIBKMS__namespace_1_1Callable_ad58caabaa5ac247c9d385e6d5451916a}{parameter\-\_\-map} \&upper\-\_\-vars=no\-\_\-params)
+\item 
+void \hyperlink{classLIBKMS__namespace_1_1Callable_a300b999c2d5ff9663aeb4cb022a5d79b}{touch} ()
+\begin{DoxyCompactList}\small\item\em Запомнить текущее время как время последнего вызова \end{DoxyCompactList}\item 
+void \hyperlink{classLIBKMS__namespace_1_1Callable_a42b5186f839fb643c115a7db10b14dbd}{set\-\_\-priority} (double priority) noexcept
+\begin{DoxyCompactList}\small\item\em Установить значение приоритета \end{DoxyCompactList}\item 
+void \hyperlink{classLIBKMS__namespace_1_1Callable_ad07f298a0831bc06851159003426e199}{set\-\_\-lock} (bool lock) noexcept
+\begin{DoxyCompactList}\small\item\em Установить блокировку блока \end{DoxyCompactList}\item 
+double \hyperlink{classLIBKMS__namespace_1_1Callable_a43d1d9a56ec6a20d3e47a756a4dea6b2}{get\-\_\-lastcall\-\_\-time} () const noexcept
+\item 
+double \hyperlink{classLIBKMS__namespace_1_1Callable_aa2668a9d0ec66e3dab36450f3b7c6c5f}{get\-\_\-process\-\_\-time} () const noexcept
+\item 
+double \hyperlink{classLIBKMS__namespace_1_1Callable_a592eba396f24ff83ce9444027c116d9b}{get\-\_\-delta\-\_\-time} () const noexcept
+\item 
+double \hyperlink{classLIBKMS__namespace_1_1Callable_afc4d97e5407815e621065af7ce8566d6}{get\-\_\-priority} () const noexcept
+\item 
+bool \hyperlink{classLIBKMS__namespace_1_1Callable_a7585ce4ee8b17e0a45f40acf784d0229}{is\-\_\-blocked} () const noexcept
+\item 
+bool \hyperlink{classLIBKMS__namespace_1_1Callable_a07e942cddded27a2b1a7b8eb735904a7}{is\-\_\-powered} (const \hyperlink{classLIBKMS__namespace_1_1Callable_ad58caabaa5ac247c9d385e6d5451916a}{parameter\-\_\-map} \&v) const 
+\begin{DoxyCompactList}\small\item\em Является ли объект включенным при заданных входных переменных \end{DoxyCompactList}\item 
+bool \hyperlink{classLIBKMS__namespace_1_1Callable_a69c7569651e285a161b243daeca7b2a5}{set\-\_\-power\-\_\-cond} (const std\-::string \&src)
+\begin{DoxyCompactList}\small\item\em Считать формулу для определения включения объекта \end{DoxyCompactList}\item 
+std\-::string \hyperlink{classLIBKMS__namespace_1_1Callable_a1b5d88ad33daaf0df7168fc125bfda98}{get\-\_\-power\-\_\-cond} () const 
+\begin{DoxyCompactList}\small\item\em Вернуть строку с формулой \end{DoxyCompactList}\item 
+std\-::vector$<$ std\-::string $>$ \hyperlink{classLIBKMS__namespace_1_1Callable_a3140c543709c0541fee7ef0a6ec23e15}{get\-\_\-power\-\_\-vars} () const 
+\begin{DoxyCompactList}\small\item\em Вернуть список переменных \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Защищенные данные}
+\begin{DoxyCompactItemize}
+\item 
+std\-::string \hyperlink{classLIBKMS__namespace_1_1Callable_a86675c2e858a76fff1431b34d913d6a5}{\-\_\-name}
+\item 
+double \hyperlink{classLIBKMS__namespace_1_1Callable_a828e2be381cf907c88054e604a17f5a4}{\-\_\-priority}
+\item 
+bool \hyperlink{classLIBKMS__namespace_1_1Callable_a32c7bfc356667f15d5b40fc2ce41e2f7}{\-\_\-isblocked}
+\item 
+Formula\-Solver \hyperlink{classLIBKMS__namespace_1_1Callable_a0a2d1ea087e901a7cce848ff0efba7ca}{\-\_\-cond\-\_\-s}
+\end{DoxyCompactItemize}
+
+
+\subsection{Определения типов}
+\hypertarget{classLIBKMS__namespace_1_1Callable_ad58caabaa5ac247c9d385e6d5451916a}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Callable@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Callable}!parameter\-\_\-map@{parameter\-\_\-map}}
+\index{parameter\-\_\-map@{parameter\-\_\-map}!LIBKMS_namespace::Callable@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Callable}}
+\subsubsection[{parameter\-\_\-map}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Logger, typename Parameter\-Map, typename Formula\-Solver$>$ typedef Parameter\-Map {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Callable}$<$ Logger, Parameter\-Map, Formula\-Solver $>$\-::{\bf parameter\-\_\-map}}}\label{classLIBKMS__namespace_1_1Callable_ad58caabaa5ac247c9d385e6d5451916a}
+
+
+\subsection{Конструктор(ы)}
+\hypertarget{classLIBKMS__namespace_1_1Callable_a2ae113d77b64ace4b5dbc6ac2cb8d22b}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Callable@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Callable}!Callable@{Callable}}
+\index{Callable@{Callable}!LIBKMS_namespace::Callable@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Callable}}
+\subsubsection[{Callable}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Logger, typename Parameter\-Map, typename Formula\-Solver$>$ {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Callable}$<$ Logger, Parameter\-Map, Formula\-Solver $>$\-::{\bf Callable} (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{name, }
+\item[{double}]{priority, }
+\item[{bool}]{isblocked}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classLIBKMS__namespace_1_1Callable_a2ae113d77b64ace4b5dbc6ac2cb8d22b}
+\hypertarget{classLIBKMS__namespace_1_1Callable_acd80016512d6e1062ae0fe5b4d84776e}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Callable@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Callable}!$\sim$\-Callable@{$\sim$\-Callable}}
+\index{$\sim$\-Callable@{$\sim$\-Callable}!LIBKMS_namespace::Callable@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Callable}}
+\subsubsection[{$\sim$\-Callable}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Logger, typename Parameter\-Map, typename Formula\-Solver$>$ virtual {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Callable}$<$ Logger, Parameter\-Map, Formula\-Solver $>$\-::$\sim${\bf Callable} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classLIBKMS__namespace_1_1Callable_acd80016512d6e1062ae0fe5b4d84776e}
+
+
+\subsection{Методы}
+\hypertarget{classLIBKMS__namespace_1_1Callable_ad9cad480516a054f09c056ae248691b1}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Callable@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Callable}!call@{call}}
+\index{call@{call}!LIBKMS_namespace::Callable@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Callable}}
+\subsubsection[{call}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Logger, typename Parameter\-Map, typename Formula\-Solver$>$ virtual {\bf parameter\-\_\-map} {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Callable}$<$ Logger, Parameter\-Map, Formula\-Solver $>$\-::call (
+\begin{DoxyParamCaption}
+\item[{double}]{time, }
+\item[{const {\bf parameter\-\_\-map} \&}]{block\-\_\-vars, }
+\item[{const {\bf parameter\-\_\-map} \&}]{upper\-\_\-vars}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classLIBKMS__namespace_1_1Callable_ad9cad480516a054f09c056ae248691b1}
+Осуществить вызов объекта 
+\begin{DoxyParams}{Аргументы}
+{\em time} & текущее время \\
+\hline
+{\em block\-\_\-vars} & переменные родительского блока \\
+\hline
+{\em upper\-\_\-vars} & переменные родителя родительского блока \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+новые значения для переменных родительского блока 
+\end{DoxyReturn}
+
+
+Замещается в \hyperlink{classLIBKMS__namespace_1_1Subprogram_a2898e1d2ff996ca6de8a0d6480be4e1f}{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Subprogram$<$ Logger, Parameter\-Map, Formula\-Solver $>$}.
+
+\hypertarget{classLIBKMS__namespace_1_1Callable_a592eba396f24ff83ce9444027c116d9b}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Callable@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Callable}!get\-\_\-delta\-\_\-time@{get\-\_\-delta\-\_\-time}}
+\index{get\-\_\-delta\-\_\-time@{get\-\_\-delta\-\_\-time}!LIBKMS_namespace::Callable@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Callable}}
+\subsubsection[{get\-\_\-delta\-\_\-time}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Logger, typename Parameter\-Map, typename Formula\-Solver$>$ double {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Callable}$<$ Logger, Parameter\-Map, Formula\-Solver $>$\-::get\-\_\-delta\-\_\-time (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}}\label{classLIBKMS__namespace_1_1Callable_a592eba396f24ff83ce9444027c116d9b}
+\hypertarget{classLIBKMS__namespace_1_1Callable_a43d1d9a56ec6a20d3e47a756a4dea6b2}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Callable@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Callable}!get\-\_\-lastcall\-\_\-time@{get\-\_\-lastcall\-\_\-time}}
+\index{get\-\_\-lastcall\-\_\-time@{get\-\_\-lastcall\-\_\-time}!LIBKMS_namespace::Callable@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Callable}}
+\subsubsection[{get\-\_\-lastcall\-\_\-time}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Logger, typename Parameter\-Map, typename Formula\-Solver$>$ double {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Callable}$<$ Logger, Parameter\-Map, Formula\-Solver $>$\-::get\-\_\-lastcall\-\_\-time (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}}\label{classLIBKMS__namespace_1_1Callable_a43d1d9a56ec6a20d3e47a756a4dea6b2}
+\hypertarget{classLIBKMS__namespace_1_1Callable_a58a214027a04f1cf8ab9644b9ad57916}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Callable@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Callable}!get\-\_\-name@{get\-\_\-name}}
+\index{get\-\_\-name@{get\-\_\-name}!LIBKMS_namespace::Callable@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Callable}}
+\subsubsection[{get\-\_\-name}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Logger, typename Parameter\-Map, typename Formula\-Solver$>$ std\-::string {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Callable}$<$ Logger, Parameter\-Map, Formula\-Solver $>$\-::get\-\_\-name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classLIBKMS__namespace_1_1Callable_a58a214027a04f1cf8ab9644b9ad57916}
+\hypertarget{classLIBKMS__namespace_1_1Callable_a1b5d88ad33daaf0df7168fc125bfda98}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Callable@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Callable}!get\-\_\-power\-\_\-cond@{get\-\_\-power\-\_\-cond}}
+\index{get\-\_\-power\-\_\-cond@{get\-\_\-power\-\_\-cond}!LIBKMS_namespace::Callable@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Callable}}
+\subsubsection[{get\-\_\-power\-\_\-cond}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Logger, typename Parameter\-Map, typename Formula\-Solver$>$ std\-::string {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Callable}$<$ Logger, Parameter\-Map, Formula\-Solver $>$\-::get\-\_\-power\-\_\-cond (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classLIBKMS__namespace_1_1Callable_a1b5d88ad33daaf0df7168fc125bfda98}
+
+
+Вернуть строку с формулой 
+
+\hypertarget{classLIBKMS__namespace_1_1Callable_a3140c543709c0541fee7ef0a6ec23e15}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Callable@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Callable}!get\-\_\-power\-\_\-vars@{get\-\_\-power\-\_\-vars}}
+\index{get\-\_\-power\-\_\-vars@{get\-\_\-power\-\_\-vars}!LIBKMS_namespace::Callable@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Callable}}
+\subsubsection[{get\-\_\-power\-\_\-vars}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Logger, typename Parameter\-Map, typename Formula\-Solver$>$ std\-::vector$<$ std\-::string $>$ {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Callable}$<$ Logger, Parameter\-Map, Formula\-Solver $>$\-::get\-\_\-power\-\_\-vars (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classLIBKMS__namespace_1_1Callable_a3140c543709c0541fee7ef0a6ec23e15}
+
+
+Вернуть список переменных 
+
+\hypertarget{classLIBKMS__namespace_1_1Callable_afc4d97e5407815e621065af7ce8566d6}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Callable@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Callable}!get\-\_\-priority@{get\-\_\-priority}}
+\index{get\-\_\-priority@{get\-\_\-priority}!LIBKMS_namespace::Callable@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Callable}}
+\subsubsection[{get\-\_\-priority}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Logger, typename Parameter\-Map, typename Formula\-Solver$>$ double {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Callable}$<$ Logger, Parameter\-Map, Formula\-Solver $>$\-::get\-\_\-priority (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}}\label{classLIBKMS__namespace_1_1Callable_afc4d97e5407815e621065af7ce8566d6}
+\hypertarget{classLIBKMS__namespace_1_1Callable_aa2668a9d0ec66e3dab36450f3b7c6c5f}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Callable@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Callable}!get\-\_\-process\-\_\-time@{get\-\_\-process\-\_\-time}}
+\index{get\-\_\-process\-\_\-time@{get\-\_\-process\-\_\-time}!LIBKMS_namespace::Callable@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Callable}}
+\subsubsection[{get\-\_\-process\-\_\-time}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Logger, typename Parameter\-Map, typename Formula\-Solver$>$ double {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Callable}$<$ Logger, Parameter\-Map, Formula\-Solver $>$\-::get\-\_\-process\-\_\-time (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}}\label{classLIBKMS__namespace_1_1Callable_aa2668a9d0ec66e3dab36450f3b7c6c5f}
+\hypertarget{classLIBKMS__namespace_1_1Callable_a7585ce4ee8b17e0a45f40acf784d0229}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Callable@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Callable}!is\-\_\-blocked@{is\-\_\-blocked}}
+\index{is\-\_\-blocked@{is\-\_\-blocked}!LIBKMS_namespace::Callable@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Callable}}
+\subsubsection[{is\-\_\-blocked}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Logger, typename Parameter\-Map, typename Formula\-Solver$>$ bool {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Callable}$<$ Logger, Parameter\-Map, Formula\-Solver $>$\-::is\-\_\-blocked (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}}\label{classLIBKMS__namespace_1_1Callable_a7585ce4ee8b17e0a45f40acf784d0229}
+\hypertarget{classLIBKMS__namespace_1_1Callable_a07e942cddded27a2b1a7b8eb735904a7}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Callable@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Callable}!is\-\_\-powered@{is\-\_\-powered}}
+\index{is\-\_\-powered@{is\-\_\-powered}!LIBKMS_namespace::Callable@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Callable}}
+\subsubsection[{is\-\_\-powered}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Logger, typename Parameter\-Map, typename Formula\-Solver$>$ bool {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Callable}$<$ Logger, Parameter\-Map, Formula\-Solver $>$\-::is\-\_\-powered (
+\begin{DoxyParamCaption}
+\item[{const {\bf parameter\-\_\-map} \&}]{v}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classLIBKMS__namespace_1_1Callable_a07e942cddded27a2b1a7b8eb735904a7}
+
+
+Является ли объект включенным при заданных входных переменных 
+
+\hypertarget{classLIBKMS__namespace_1_1Callable_a7838731afe0ac0fee5e88ab64952aa4a}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Callable@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Callable}!operator()@{operator()}}
+\index{operator()@{operator()}!LIBKMS_namespace::Callable@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Callable}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Logger, typename Parameter\-Map, typename Formula\-Solver$>$ {\bf parameter\-\_\-map} {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Callable}$<$ Logger, Parameter\-Map, Formula\-Solver $>$\-::operator() (
+\begin{DoxyParamCaption}
+\item[{double}]{time, }
+\item[{const {\bf parameter\-\_\-map} \&}]{block\-\_\-vars = {\ttfamily no\-\_\-params}, }
+\item[{const {\bf parameter\-\_\-map} \&}]{upper\-\_\-vars = {\ttfamily no\-\_\-params}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classLIBKMS__namespace_1_1Callable_a7838731afe0ac0fee5e88ab64952aa4a}
+\hypertarget{classLIBKMS__namespace_1_1Callable_ad07f298a0831bc06851159003426e199}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Callable@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Callable}!set\-\_\-lock@{set\-\_\-lock}}
+\index{set\-\_\-lock@{set\-\_\-lock}!LIBKMS_namespace::Callable@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Callable}}
+\subsubsection[{set\-\_\-lock}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Logger, typename Parameter\-Map, typename Formula\-Solver$>$ void {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Callable}$<$ Logger, Parameter\-Map, Formula\-Solver $>$\-::set\-\_\-lock (
+\begin{DoxyParamCaption}
+\item[{bool}]{lock}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}}\label{classLIBKMS__namespace_1_1Callable_ad07f298a0831bc06851159003426e199}
+
+
+Установить блокировку блока 
+
+\hypertarget{classLIBKMS__namespace_1_1Callable_a3e475788ceb6452ea984ae7c41c173c4}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Callable@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Callable}!set\-\_\-name@{set\-\_\-name}}
+\index{set\-\_\-name@{set\-\_\-name}!LIBKMS_namespace::Callable@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Callable}}
+\subsubsection[{set\-\_\-name}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Logger, typename Parameter\-Map, typename Formula\-Solver$>$ void {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Callable}$<$ Logger, Parameter\-Map, Formula\-Solver $>$\-::set\-\_\-name (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classLIBKMS__namespace_1_1Callable_a3e475788ceb6452ea984ae7c41c173c4}
+\hypertarget{classLIBKMS__namespace_1_1Callable_a69c7569651e285a161b243daeca7b2a5}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Callable@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Callable}!set\-\_\-power\-\_\-cond@{set\-\_\-power\-\_\-cond}}
+\index{set\-\_\-power\-\_\-cond@{set\-\_\-power\-\_\-cond}!LIBKMS_namespace::Callable@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Callable}}
+\subsubsection[{set\-\_\-power\-\_\-cond}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Logger, typename Parameter\-Map, typename Formula\-Solver$>$ bool {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Callable}$<$ Logger, Parameter\-Map, Formula\-Solver $>$\-::set\-\_\-power\-\_\-cond (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{src}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classLIBKMS__namespace_1_1Callable_a69c7569651e285a161b243daeca7b2a5}
+
+
+Считать формулу для определения включения объекта 
+
+\hypertarget{classLIBKMS__namespace_1_1Callable_a42b5186f839fb643c115a7db10b14dbd}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Callable@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Callable}!set\-\_\-priority@{set\-\_\-priority}}
+\index{set\-\_\-priority@{set\-\_\-priority}!LIBKMS_namespace::Callable@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Callable}}
+\subsubsection[{set\-\_\-priority}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Logger, typename Parameter\-Map, typename Formula\-Solver$>$ void {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Callable}$<$ Logger, Parameter\-Map, Formula\-Solver $>$\-::set\-\_\-priority (
+\begin{DoxyParamCaption}
+\item[{double}]{priority}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}}\label{classLIBKMS__namespace_1_1Callable_a42b5186f839fb643c115a7db10b14dbd}
+
+
+Установить значение приоритета 
+
+\hypertarget{classLIBKMS__namespace_1_1Callable_a300b999c2d5ff9663aeb4cb022a5d79b}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Callable@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Callable}!touch@{touch}}
+\index{touch@{touch}!LIBKMS_namespace::Callable@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Callable}}
+\subsubsection[{touch}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Logger, typename Parameter\-Map, typename Formula\-Solver$>$ void {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Callable}$<$ Logger, Parameter\-Map, Formula\-Solver $>$\-::touch (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classLIBKMS__namespace_1_1Callable_a300b999c2d5ff9663aeb4cb022a5d79b}
+
+
+Запомнить текущее время как время последнего вызова 
+
+
+
+\subsection{Данные класса}
+\hypertarget{classLIBKMS__namespace_1_1Callable_a0a2d1ea087e901a7cce848ff0efba7ca}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Callable@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Callable}!\-\_\-cond\-\_\-s@{\-\_\-cond\-\_\-s}}
+\index{\-\_\-cond\-\_\-s@{\-\_\-cond\-\_\-s}!LIBKMS_namespace::Callable@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Callable}}
+\subsubsection[{\-\_\-cond\-\_\-s}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Logger, typename Parameter\-Map, typename Formula\-Solver$>$ Formula\-Solver {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Callable}$<$ Logger, Parameter\-Map, Formula\-Solver $>$\-::\-\_\-cond\-\_\-s\hspace{0.3cm}{\ttfamily [protected]}}}\label{classLIBKMS__namespace_1_1Callable_a0a2d1ea087e901a7cce848ff0efba7ca}
+\hypertarget{classLIBKMS__namespace_1_1Callable_a32c7bfc356667f15d5b40fc2ce41e2f7}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Callable@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Callable}!\-\_\-isblocked@{\-\_\-isblocked}}
+\index{\-\_\-isblocked@{\-\_\-isblocked}!LIBKMS_namespace::Callable@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Callable}}
+\subsubsection[{\-\_\-isblocked}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Logger, typename Parameter\-Map, typename Formula\-Solver$>$ bool {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Callable}$<$ Logger, Parameter\-Map, Formula\-Solver $>$\-::\-\_\-isblocked\hspace{0.3cm}{\ttfamily [protected]}}}\label{classLIBKMS__namespace_1_1Callable_a32c7bfc356667f15d5b40fc2ce41e2f7}
+\hypertarget{classLIBKMS__namespace_1_1Callable_a86675c2e858a76fff1431b34d913d6a5}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Callable@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Callable}!\-\_\-name@{\-\_\-name}}
+\index{\-\_\-name@{\-\_\-name}!LIBKMS_namespace::Callable@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Callable}}
+\subsubsection[{\-\_\-name}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Logger, typename Parameter\-Map, typename Formula\-Solver$>$ std\-::string {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Callable}$<$ Logger, Parameter\-Map, Formula\-Solver $>$\-::\-\_\-name\hspace{0.3cm}{\ttfamily [protected]}}}\label{classLIBKMS__namespace_1_1Callable_a86675c2e858a76fff1431b34d913d6a5}
+\hypertarget{classLIBKMS__namespace_1_1Callable_a828e2be381cf907c88054e604a17f5a4}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Callable@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Callable}!\-\_\-priority@{\-\_\-priority}}
+\index{\-\_\-priority@{\-\_\-priority}!LIBKMS_namespace::Callable@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Callable}}
+\subsubsection[{\-\_\-priority}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Logger, typename Parameter\-Map, typename Formula\-Solver$>$ double {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Callable}$<$ Logger, Parameter\-Map, Formula\-Solver $>$\-::\-\_\-priority\hspace{0.3cm}{\ttfamily [protected]}}}\label{classLIBKMS__namespace_1_1Callable_a828e2be381cf907c88054e604a17f5a4}
+
+
+Объявления и описания членов класса находятся в файле\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{callable_8hpp}{callable.\-hpp}\end{DoxyCompactItemize}

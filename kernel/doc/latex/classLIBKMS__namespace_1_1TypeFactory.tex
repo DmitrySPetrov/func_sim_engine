@@ -1,0 +1,106 @@
+\hypertarget{classLIBKMS__namespace_1_1TypeFactory}{\section{Шаблон класса L\-I\-B\-K\-M\-S\-\_\-namespace\-:\-:Type\-Factory$<$ Ext, Spec $>$}
+\label{classLIBKMS__namespace_1_1TypeFactory}\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Type\-Factory$<$ Ext, Spec $>$@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Type\-Factory$<$ Ext, Spec $>$}}
+}
+
+
+Фабрика параметров  
+
+
+
+
+{\ttfamily \#include $<$typefactory.\-hpp$>$}
+
+\subsection*{Открытые типы}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classLIBKMS__namespace_1_1TypeFactory}{Type\-Factory}$<$ Ext, Spec $>$ \hyperlink{classLIBKMS__namespace_1_1TypeFactory_a1ea3eb75810d29bed5a7f017e188a43d}{type\-\_\-factory\-\_\-t}
+\item 
+typedef \hyperlink{classLIBKMS__namespace_1_1Parameter}{Parameter}$<$ Ext, Spec $>$ \hyperlink{classLIBKMS__namespace_1_1TypeFactory_a103a08b747cfe5b233b12c802b4563dc}{parameter\-\_\-t}
+\item 
+typedef \hyperlink{classLIBKMS__namespace_1_1Parameter_a28516bcd5bad5857b2d1c676e4176f51}{parameter\-\_\-t\-::ptr\-\_\-t} \hyperlink{classLIBKMS__namespace_1_1TypeFactory_a54c61c4d970a37a1059746070a1eea11}{parameter\-\_\-ptr}
+\item 
+typedef \hyperlink{classLIBKMS__namespace_1_1Holder}{Holder}\\*
+$<$ std\-\_\-types\-::t\-Bool, \\*
+\hyperlink{classLIBKMS__namespace_1_1TypeFactory_a103a08b747cfe5b233b12c802b4563dc}{parameter\-\_\-t} $>$ \hyperlink{classLIBKMS__namespace_1_1TypeFactory_a5af2bfe6425fe90d4951268240dc1768}{bool\-\_\-holder}
+\item 
+typedef \hyperlink{classLIBKMS__namespace_1_1Holder}{Holder}\\*
+$<$ std\-\_\-types\-::t\-Int, \hyperlink{classLIBKMS__namespace_1_1TypeFactory_a103a08b747cfe5b233b12c802b4563dc}{parameter\-\_\-t} $>$ \hyperlink{classLIBKMS__namespace_1_1TypeFactory_a118a2227ad78008ae8e7d16c9d7f854a}{int\-\_\-holder}
+\item 
+typedef \hyperlink{classLIBKMS__namespace_1_1Holder}{Holder}\\*
+$<$ std\-\_\-types\-::t\-Real, \\*
+\hyperlink{classLIBKMS__namespace_1_1TypeFactory_a103a08b747cfe5b233b12c802b4563dc}{parameter\-\_\-t} $>$ \hyperlink{classLIBKMS__namespace_1_1TypeFactory_a789fcb94a8ce6dfd8b2ff0e9b4ce299c}{real\-\_\-holder}
+\item 
+typedef \hyperlink{classLIBKMS__namespace_1_1Holder}{Holder}\\*
+$<$ std\-\_\-types\-::t\-String, \\*
+\hyperlink{classLIBKMS__namespace_1_1TypeFactory_a103a08b747cfe5b233b12c802b4563dc}{parameter\-\_\-t} $>$ \hyperlink{classLIBKMS__namespace_1_1TypeFactory_a17b132ee9e501536bec342ed6377497a}{string\-\_\-holder}
+\end{DoxyCompactItemize}
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classLIBKMS__namespace_1_1TypeFactory_a54c61c4d970a37a1059746070a1eea11}{parameter\-\_\-ptr} \hyperlink{classLIBKMS__namespace_1_1TypeFactory_a5105b6ca3256a95cebe301c14e8f56dc}{create} (const std\-::string \&name) const noexcept
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \hyperlink{classLIBKMS__namespace_1_1TypeFactory_ac4c8b3e60558d8402e8a405cab8c1079}{add\-\_\-type} (const std\-::string \&name)
+\end{DoxyCompactItemize}
+\subsection*{Открытые статические члены}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classLIBKMS__namespace_1_1TypeFactory_a1ea3eb75810d29bed5a7f017e188a43d}{type\-\_\-factory\-\_\-t} \& \hyperlink{classLIBKMS__namespace_1_1TypeFactory_a14d95fd9ad1442a0c10120519f9841d7}{instance} () noexcept
+\end{DoxyCompactItemize}
+
+
+\subsection{Подробное описание}
+\subsubsection*{template$<$typename Ext, template$<$ typename U $>$ class Spec$>$class L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Type\-Factory$<$ Ext, Spec $>$}
+
+Фабрика параметров 
+
+\subsection{Определения типов}
+\hypertarget{classLIBKMS__namespace_1_1TypeFactory_a5af2bfe6425fe90d4951268240dc1768}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Type\-Factory@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Type\-Factory}!bool\-\_\-holder@{bool\-\_\-holder}}
+\index{bool\-\_\-holder@{bool\-\_\-holder}!LIBKMS_namespace::TypeFactory@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Type\-Factory}}
+\subsubsection[{bool\-\_\-holder}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Ext , template$<$ typename U $>$ class Spec$>$ typedef {\bf Holder}$<$ std\-\_\-types\-::t\-Bool, {\bf parameter\-\_\-t} $>$ {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Type\-Factory}$<$ Ext, Spec $>$\-::{\bf bool\-\_\-holder}}}\label{classLIBKMS__namespace_1_1TypeFactory_a5af2bfe6425fe90d4951268240dc1768}
+\hypertarget{classLIBKMS__namespace_1_1TypeFactory_a118a2227ad78008ae8e7d16c9d7f854a}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Type\-Factory@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Type\-Factory}!int\-\_\-holder@{int\-\_\-holder}}
+\index{int\-\_\-holder@{int\-\_\-holder}!LIBKMS_namespace::TypeFactory@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Type\-Factory}}
+\subsubsection[{int\-\_\-holder}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Ext , template$<$ typename U $>$ class Spec$>$ typedef {\bf Holder}$<$ std\-\_\-types\-::t\-Int, {\bf parameter\-\_\-t} $>$ {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Type\-Factory}$<$ Ext, Spec $>$\-::{\bf int\-\_\-holder}}}\label{classLIBKMS__namespace_1_1TypeFactory_a118a2227ad78008ae8e7d16c9d7f854a}
+\hypertarget{classLIBKMS__namespace_1_1TypeFactory_a54c61c4d970a37a1059746070a1eea11}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Type\-Factory@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Type\-Factory}!parameter\-\_\-ptr@{parameter\-\_\-ptr}}
+\index{parameter\-\_\-ptr@{parameter\-\_\-ptr}!LIBKMS_namespace::TypeFactory@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Type\-Factory}}
+\subsubsection[{parameter\-\_\-ptr}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Ext , template$<$ typename U $>$ class Spec$>$ typedef {\bf parameter\-\_\-t\-::ptr\-\_\-t} {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Type\-Factory}$<$ Ext, Spec $>$\-::{\bf parameter\-\_\-ptr}}}\label{classLIBKMS__namespace_1_1TypeFactory_a54c61c4d970a37a1059746070a1eea11}
+\hypertarget{classLIBKMS__namespace_1_1TypeFactory_a103a08b747cfe5b233b12c802b4563dc}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Type\-Factory@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Type\-Factory}!parameter\-\_\-t@{parameter\-\_\-t}}
+\index{parameter\-\_\-t@{parameter\-\_\-t}!LIBKMS_namespace::TypeFactory@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Type\-Factory}}
+\subsubsection[{parameter\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Ext , template$<$ typename U $>$ class Spec$>$ typedef {\bf Parameter}$<$ Ext, Spec $>$ {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Type\-Factory}$<$ Ext, Spec $>$\-::{\bf parameter\-\_\-t}}}\label{classLIBKMS__namespace_1_1TypeFactory_a103a08b747cfe5b233b12c802b4563dc}
+\hypertarget{classLIBKMS__namespace_1_1TypeFactory_a789fcb94a8ce6dfd8b2ff0e9b4ce299c}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Type\-Factory@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Type\-Factory}!real\-\_\-holder@{real\-\_\-holder}}
+\index{real\-\_\-holder@{real\-\_\-holder}!LIBKMS_namespace::TypeFactory@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Type\-Factory}}
+\subsubsection[{real\-\_\-holder}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Ext , template$<$ typename U $>$ class Spec$>$ typedef {\bf Holder}$<$ std\-\_\-types\-::t\-Real, {\bf parameter\-\_\-t} $>$ {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Type\-Factory}$<$ Ext, Spec $>$\-::{\bf real\-\_\-holder}}}\label{classLIBKMS__namespace_1_1TypeFactory_a789fcb94a8ce6dfd8b2ff0e9b4ce299c}
+\hypertarget{classLIBKMS__namespace_1_1TypeFactory_a17b132ee9e501536bec342ed6377497a}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Type\-Factory@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Type\-Factory}!string\-\_\-holder@{string\-\_\-holder}}
+\index{string\-\_\-holder@{string\-\_\-holder}!LIBKMS_namespace::TypeFactory@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Type\-Factory}}
+\subsubsection[{string\-\_\-holder}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Ext , template$<$ typename U $>$ class Spec$>$ typedef {\bf Holder}$<$ std\-\_\-types\-::t\-String, {\bf parameter\-\_\-t} $>$ {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Type\-Factory}$<$ Ext, Spec $>$\-::{\bf string\-\_\-holder}}}\label{classLIBKMS__namespace_1_1TypeFactory_a17b132ee9e501536bec342ed6377497a}
+\hypertarget{classLIBKMS__namespace_1_1TypeFactory_a1ea3eb75810d29bed5a7f017e188a43d}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Type\-Factory@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Type\-Factory}!type\-\_\-factory\-\_\-t@{type\-\_\-factory\-\_\-t}}
+\index{type\-\_\-factory\-\_\-t@{type\-\_\-factory\-\_\-t}!LIBKMS_namespace::TypeFactory@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Type\-Factory}}
+\subsubsection[{type\-\_\-factory\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Ext , template$<$ typename U $>$ class Spec$>$ typedef {\bf Type\-Factory}$<$ Ext, Spec $>$ {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Type\-Factory}$<$ Ext, Spec $>$\-::{\bf type\-\_\-factory\-\_\-t}}}\label{classLIBKMS__namespace_1_1TypeFactory_a1ea3eb75810d29bed5a7f017e188a43d}
+
+
+\subsection{Методы}
+\hypertarget{classLIBKMS__namespace_1_1TypeFactory_ac4c8b3e60558d8402e8a405cab8c1079}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Type\-Factory@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Type\-Factory}!add\-\_\-type@{add\-\_\-type}}
+\index{add\-\_\-type@{add\-\_\-type}!LIBKMS_namespace::TypeFactory@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Type\-Factory}}
+\subsubsection[{add\-\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Ext , template$<$ typename U $>$ class Spec$>$ template$<$typename T $>$ void {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Type\-Factory}$<$ Ext, Spec $>$\-::add\-\_\-type (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classLIBKMS__namespace_1_1TypeFactory_ac4c8b3e60558d8402e8a405cab8c1079}
+\hypertarget{classLIBKMS__namespace_1_1TypeFactory_a5105b6ca3256a95cebe301c14e8f56dc}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Type\-Factory@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Type\-Factory}!create@{create}}
+\index{create@{create}!LIBKMS_namespace::TypeFactory@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Type\-Factory}}
+\subsubsection[{create}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Ext , template$<$ typename U $>$ class Spec$>$ {\bf parameter\-\_\-ptr} {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Type\-Factory}$<$ Ext, Spec $>$\-::create (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{name}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}}\label{classLIBKMS__namespace_1_1TypeFactory_a5105b6ca3256a95cebe301c14e8f56dc}
+\hypertarget{classLIBKMS__namespace_1_1TypeFactory_a14d95fd9ad1442a0c10120519f9841d7}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Type\-Factory@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Type\-Factory}!instance@{instance}}
+\index{instance@{instance}!LIBKMS_namespace::TypeFactory@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Type\-Factory}}
+\subsubsection[{instance}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Ext , template$<$ typename U $>$ class Spec$>$ static {\bf type\-\_\-factory\-\_\-t}\& {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Type\-Factory}$<$ Ext, Spec $>$\-::instance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [noexcept]}}}\label{classLIBKMS__namespace_1_1TypeFactory_a14d95fd9ad1442a0c10120519f9841d7}
+
+
+Объявления и описания членов класса находятся в файле\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{typefactory_8hpp}{typefactory.\-hpp}\end{DoxyCompactItemize}

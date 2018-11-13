@@ -1,0 +1,7 @@
+^doc\/
+^doc\\
+\.swp$
+\\build\\
+\/build\/
+^build\\
+^build\/

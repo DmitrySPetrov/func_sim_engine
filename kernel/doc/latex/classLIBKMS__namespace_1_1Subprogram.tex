@@ -1,0 +1,117 @@
+\hypertarget{classLIBKMS__namespace_1_1Subprogram}{\section{Шаблон класса L\-I\-B\-K\-M\-S\-\_\-namespace\-:\-:Subprogram$<$ Logger, Parameter\-Map, Formula\-Solver $>$}
+\label{classLIBKMS__namespace_1_1Subprogram}\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Subprogram$<$ Logger, Parameter\-Map, Formula\-Solver $>$@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Subprogram$<$ Logger, Parameter\-Map, Formula\-Solver $>$}}
+}
+
+
+Шаблонный класс -\/ обертка подпрограмм  
+
+
+
+
+{\ttfamily \#include $<$subprog.\-hpp$>$}
+
+Граф наследования\-:L\-I\-B\-K\-M\-S\-\_\-namespace\-:\-:Subprogram$<$ Logger, Parameter\-Map, Formula\-Solver $>$\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classLIBKMS__namespace_1_1Subprogram}
+\end{center}
+\end{figure}
+\subsection*{Классы}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structLIBKMS__namespace_1_1Subprogram_1_1user__exception}{user\-\_\-exception}
+\end{DoxyCompactItemize}
+\subsection*{Открытые типы}
+\begin{DoxyCompactItemize}
+\item 
+typedef Parameter\-Map \hyperlink{classLIBKMS__namespace_1_1Subprogram_a2ee2b32579888fcf68d85338b37b505c}{parameter\-\_\-map}
+\item 
+typedef \hyperlink{classLIBKMS__namespace_1_1FunctionStorage}{Function\-Storage}\\*
+$<$ Parameter\-Map $>$ \hyperlink{classLIBKMS__namespace_1_1Subprogram_a6233a24c21954444f64217e7af397349}{function\-\_\-storage\-\_\-t}
+\end{DoxyCompactItemize}
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classLIBKMS__namespace_1_1Callable_ad58caabaa5ac247c9d385e6d5451916a}{parameter\-\_\-map} \hyperlink{classLIBKMS__namespace_1_1Subprogram_a2898e1d2ff996ca6de8a0d6480be4e1f}{call} (double time, const \hyperlink{classLIBKMS__namespace_1_1Callable_ad58caabaa5ac247c9d385e6d5451916a}{parameter\-\_\-map} \&v, const \hyperlink{classLIBKMS__namespace_1_1Callable_ad58caabaa5ac247c9d385e6d5451916a}{parameter\-\_\-map} \&u)
+\item 
+\hyperlink{classLIBKMS__namespace_1_1Subprogram_a2279d8a886dbb2c16955e617c429b842}{Subprogram} (std\-::string name, std\-::string class\-\_\-, double priority)
+\item 
+bool \hyperlink{classLIBKMS__namespace_1_1Subprogram_ab147a59ea5ce42f20af207c3f1499fb0}{set\-\_\-key\-\_\-remap} (const param\-\_\-key\-\_\-t \&target, const param\-\_\-key\-\_\-t \&remapped)
+\item 
+bool \hyperlink{classLIBKMS__namespace_1_1Subprogram_a1c6cab2580663cd14f5297cfe6425ccd}{is\-\_\-func\-\_\-set} () const noexcept
+\end{DoxyCompactItemize}
+\subsection*{Дополнительные унаследованные члены}
+
+
+\subsection{Подробное описание}
+\subsubsection*{template$<$typename Logger, typename Parameter\-Map, typename Formula\-Solver$>$class L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Subprogram$<$ Logger, Parameter\-Map, Formula\-Solver $>$}
+
+Шаблонный класс -\/ обертка подпрограмм 
+
+\subsection{Определения типов}
+\hypertarget{classLIBKMS__namespace_1_1Subprogram_a6233a24c21954444f64217e7af397349}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Subprogram@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Subprogram}!function\-\_\-storage\-\_\-t@{function\-\_\-storage\-\_\-t}}
+\index{function\-\_\-storage\-\_\-t@{function\-\_\-storage\-\_\-t}!LIBKMS_namespace::Subprogram@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Subprogram}}
+\subsubsection[{function\-\_\-storage\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Logger , typename Parameter\-Map , typename Formula\-Solver $>$ typedef {\bf Function\-Storage}$<$ Parameter\-Map $>$ {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Subprogram}$<$ Logger, Parameter\-Map, Formula\-Solver $>$\-::{\bf function\-\_\-storage\-\_\-t}}}\label{classLIBKMS__namespace_1_1Subprogram_a6233a24c21954444f64217e7af397349}
+\hypertarget{classLIBKMS__namespace_1_1Subprogram_a2ee2b32579888fcf68d85338b37b505c}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Subprogram@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Subprogram}!parameter\-\_\-map@{parameter\-\_\-map}}
+\index{parameter\-\_\-map@{parameter\-\_\-map}!LIBKMS_namespace::Subprogram@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Subprogram}}
+\subsubsection[{parameter\-\_\-map}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Logger , typename Parameter\-Map , typename Formula\-Solver $>$ typedef Parameter\-Map {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Subprogram}$<$ Logger, Parameter\-Map, Formula\-Solver $>$\-::{\bf parameter\-\_\-map}}}\label{classLIBKMS__namespace_1_1Subprogram_a2ee2b32579888fcf68d85338b37b505c}
+
+
+\subsection{Конструктор(ы)}
+\hypertarget{classLIBKMS__namespace_1_1Subprogram_a2279d8a886dbb2c16955e617c429b842}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Subprogram@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Subprogram}!Subprogram@{Subprogram}}
+\index{Subprogram@{Subprogram}!LIBKMS_namespace::Subprogram@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Subprogram}}
+\subsubsection[{Subprogram}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Logger , typename Parameter\-Map , typename Formula\-Solver $>$ {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Subprogram}$<$ Logger, Parameter\-Map, Formula\-Solver $>$\-::{\bf Subprogram} (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{name, }
+\item[{std\-::string}]{class\-\_\-, }
+\item[{double}]{priority}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classLIBKMS__namespace_1_1Subprogram_a2279d8a886dbb2c16955e617c429b842}
+
+
+\subsection{Методы}
+\hypertarget{classLIBKMS__namespace_1_1Subprogram_a2898e1d2ff996ca6de8a0d6480be4e1f}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Subprogram@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Subprogram}!call@{call}}
+\index{call@{call}!LIBKMS_namespace::Subprogram@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Subprogram}}
+\subsubsection[{call}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Logger , typename Parameter\-Map , typename Formula\-Solver $>$ {\bf parameter\-\_\-map} {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Subprogram}$<$ Logger, Parameter\-Map, Formula\-Solver $>$\-::call (
+\begin{DoxyParamCaption}
+\item[{double}]{time, }
+\item[{const {\bf parameter\-\_\-map} \&}]{block\-\_\-vars, }
+\item[{const {\bf parameter\-\_\-map} \&}]{upper\-\_\-vars}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classLIBKMS__namespace_1_1Subprogram_a2898e1d2ff996ca6de8a0d6480be4e1f}
+Осуществить вызов объекта 
+\begin{DoxyParams}{Аргументы}
+{\em time} & текущее время \\
+\hline
+{\em block\-\_\-vars} & переменные родительского блока \\
+\hline
+{\em upper\-\_\-vars} & переменные родителя родительского блока \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+новые значения для переменных родительского блока 
+\end{DoxyReturn}
+
+
+Замещает \hyperlink{classLIBKMS__namespace_1_1Callable_ad9cad480516a054f09c056ae248691b1}{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Callable$<$ Logger, Parameter\-Map, Formula\-Solver $>$}.
+
+\hypertarget{classLIBKMS__namespace_1_1Subprogram_a1c6cab2580663cd14f5297cfe6425ccd}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Subprogram@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Subprogram}!is\-\_\-func\-\_\-set@{is\-\_\-func\-\_\-set}}
+\index{is\-\_\-func\-\_\-set@{is\-\_\-func\-\_\-set}!LIBKMS_namespace::Subprogram@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Subprogram}}
+\subsubsection[{is\-\_\-func\-\_\-set}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Logger , typename Parameter\-Map , typename Formula\-Solver $>$ bool {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Subprogram}$<$ Logger, Parameter\-Map, Formula\-Solver $>$\-::is\-\_\-func\-\_\-set (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}}\label{classLIBKMS__namespace_1_1Subprogram_a1c6cab2580663cd14f5297cfe6425ccd}
+\hypertarget{classLIBKMS__namespace_1_1Subprogram_ab147a59ea5ce42f20af207c3f1499fb0}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Subprogram@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Subprogram}!set\-\_\-key\-\_\-remap@{set\-\_\-key\-\_\-remap}}
+\index{set\-\_\-key\-\_\-remap@{set\-\_\-key\-\_\-remap}!LIBKMS_namespace::Subprogram@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Subprogram}}
+\subsubsection[{set\-\_\-key\-\_\-remap}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Logger , typename Parameter\-Map , typename Formula\-Solver $>$ bool {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Subprogram}$<$ Logger, Parameter\-Map, Formula\-Solver $>$\-::set\-\_\-key\-\_\-remap (
+\begin{DoxyParamCaption}
+\item[{const param\-\_\-key\-\_\-t \&}]{target, }
+\item[{const param\-\_\-key\-\_\-t \&}]{remapped}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classLIBKMS__namespace_1_1Subprogram_ab147a59ea5ce42f20af207c3f1499fb0}
+
+
+Объявления и описания членов класса находятся в файле\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{subprog_8hpp}{subprog.\-hpp}\end{DoxyCompactItemize}

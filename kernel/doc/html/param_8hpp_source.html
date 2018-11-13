@@ -1,0 +1,290 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>КМС2: Исходный файл param.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">КМС2
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="namespaces.html"><span>Пространства&#160;имен</span></a></li>
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li class="current"><a href="files.html"><span>Файлы</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Файлы</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Пространства имен</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Функции</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Переменные</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Определения типов</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">param.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="param_8hpp.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef __LIBKMS_PARAM_HPP__</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define __LIBKMS_PARAM_HPP__</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;param/convert.hpp&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;detail/spec.hpp&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;detail/std.hpp&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;algorithm&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;cstring&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">namespace </span>LIBKMS_namespace {</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">namespace </span>types {</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">template</span>&lt; <span class="keyword">typename</span> T, <span class="keyword">typename</span> P &gt;</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="structLIBKMS__namespace_1_1types_1_1get__return__type.html">   20</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structLIBKMS__namespace_1_1types_1_1get__return__type.html">get_return_type</a> {</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="structLIBKMS__namespace_1_1types_1_1get__return__type.html#a599165be1e050dd76942eb69e5a24319">   21</a></span>&#160;    <span class="keyword">typedef</span> T <a class="code" href="structLIBKMS__namespace_1_1types_1_1get__return__type.html#a599165be1e050dd76942eb69e5a24319">ogiginal_t</a>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="structLIBKMS__namespace_1_1types_1_1get__return__type.html#ac549f484335955f84d86be6a644198e2">   22</a></span>&#160;    <span class="keyword">typedef</span> T <a class="code" href="structLIBKMS__namespace_1_1types_1_1get__return__type.html#ac549f484335955f84d86be6a644198e2">return_t</a>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;};</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;}   <span class="comment">//  namespace types</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">//  TODO: Описать нулевой оператор копирования и нулевой метод</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">//      сравнения</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">template</span>&lt;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">class </span>Ext,          <span class="comment">//  Класс-расширение</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">template</span> &lt; <span class="keyword">typename</span> U &gt; <span class="keyword">class </span>Spec &gt;</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classLIBKMS__namespace_1_1Parameter.html">   34</a></span>&#160;<span class="keyword">class </span><a class="code" href="classLIBKMS__namespace_1_1Parameter.html">Parameter</a>: <span class="keyword">public</span> Ext</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    std::string _type;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    std::string _desc;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">bool</span> _locked;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classLIBKMS__namespace_1_1Parameter.html#af353e23edea754f9a2d1c936cd5c8eab">   42</a></span>&#160;    <span class="keyword">typedef</span> <a class="code" href="classLIBKMS__namespace_1_1Parameter.html">Parameter&lt; Ext, Spec &gt;</a> <a class="code" href="classLIBKMS__namespace_1_1Parameter.html#af353e23edea754f9a2d1c936cd5c8eab">parameter_t</a>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="classLIBKMS__namespace_1_1Parameter.html#a28516bcd5bad5857b2d1c676e4176f51">   43</a></span>&#160;    <span class="keyword">typedef</span> <span class="keyword">typename</span> Spec&lt; parameter_t &gt;::ptr <a class="code" href="classLIBKMS__namespace_1_1Parameter.html#a28516bcd5bad5857b2d1c676e4176f51">ptr_t</a>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="classLIBKMS__namespace_1_1Parameter.html#a3978d2027190f56451d37703d7e317a2">   45</a></span>&#160;    <span class="keyword">static</span> <a class="code" href="classLIBKMS__namespace_1_1Parameter.html#a28516bcd5bad5857b2d1c676e4176f51">ptr_t</a> <a class="code" href="classLIBKMS__namespace_1_1Parameter.html#a3978d2027190f56451d37703d7e317a2">null_ptr</a>() { <span class="keywordflow">return</span> Spec&lt; parameter_t &gt;::null_ptr(); }</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="classLIBKMS__namespace_1_1Parameter.html#ac767db81c6aa9e552089be5958bfc81f">   49</a></span>&#160;    <a class="code" href="classLIBKMS__namespace_1_1Parameter.html#ac767db81c6aa9e552089be5958bfc81f">Parameter</a>():</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        _locked( false )</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    {}</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="classLIBKMS__namespace_1_1Parameter.html#a3c0c7c0222fbe9d6d38e002e706cf1b7">   53</a></span>&#160;    <a class="code" href="classLIBKMS__namespace_1_1Parameter.html#a3c0c7c0222fbe9d6d38e002e706cf1b7">Parameter</a>( <span class="keyword">const</span> std::string type_name ):</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        _type( type_name ),</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        _locked( false )</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    {}</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="classLIBKMS__namespace_1_1Parameter.html#a644c4a3c66079510847da3377e5f1594">   58</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classLIBKMS__namespace_1_1Parameter.html#a644c4a3c66079510847da3377e5f1594">~Parameter</a>() { }</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classLIBKMS__namespace_1_1Parameter.html#a28516bcd5bad5857b2d1c676e4176f51">ptr_t</a> <a class="code" href="classLIBKMS__namespace_1_1Parameter.html#a2b360aeb7f850d4fccc58adc4a5b88b7">clone</a>()=0;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keyword">virtual</span> std::string <a class="code" href="classLIBKMS__namespace_1_1Parameter.html#ad934454e1569e546f6f347bb03ce705f">to_string</a>() <span class="keyword">const</span>=0;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classLIBKMS__namespace_1_1Parameter.html#a6da649d3045e979a488c336bf77b411b">from_string</a>( <span class="keyword">const</span> std::string &amp; )=0;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keyword">virtual</span> std::vector&lt; uint8_t &gt; <a class="code" href="classLIBKMS__namespace_1_1Parameter.html#a6ebf9bc6aaa62d78f786bc6368a2c65a">to_bytes</a>() <span class="keyword">const</span>=0;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classLIBKMS__namespace_1_1Parameter.html#a33a7dac4680f0e39c9166771c65971ab">from_bytes</a>( <span class="keyword">const</span> uint8_t *, <span class="keywordtype">size_t</span> )=0;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classLIBKMS__namespace_1_1Parameter.html#a2f582483707d9229a5a2bde88d860fff">is_equal</a>( <span class="keyword">const</span> <a class="code" href="classLIBKMS__namespace_1_1Parameter.html#af353e23edea754f9a2d1c936cd5c8eab">parameter_t</a> &amp; another ) <span class="keyword">const</span>=0;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classLIBKMS__namespace_1_1Parameter.html#ac46dd4bb2e060a4e5f522b625cb44b11">is_set</a>() <span class="keyword">const</span>=0;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="classLIBKMS__namespace_1_1Parameter.html#a7d03af2df98ad4053433f84288f0e786">   81</a></span>&#160;    std::string <a class="code" href="classLIBKMS__namespace_1_1Parameter.html#a7d03af2df98ad4053433f84288f0e786">get_type</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="keyword">        </span>{ <span class="keywordflow">return</span> _type; }</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classLIBKMS__namespace_1_1Parameter.html#a506fa08096a6595f04341b90912f35a0">copy_data</a>( <a class="code" href="classLIBKMS__namespace_1_1Parameter.html#af353e23edea754f9a2d1c936cd5c8eab">parameter_t</a> &amp; )=0;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keyword">template</span>&lt; <span class="keyword">typename</span> T &gt;</div>
+<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="classLIBKMS__namespace_1_1Parameter.html#ae6f38891ce947733703c3de5aafce38c">   91</a></span>&#160;    <span class="keyword">typename</span> <a class="code" href="structLIBKMS__namespace_1_1types_1_1get__return__type.html#ac549f484335955f84d86be6a644198e2">types::get_return_type&lt; T, parameter_t &gt;::return_t</a> <a class="code" href="classLIBKMS__namespace_1_1Parameter.html#ae6f38891ce947733703c3de5aafce38c">as</a>() {</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <span class="keywordflow">return</span> obj_as&lt;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                <span class="keyword">typename</span> <a class="code" href="structLIBKMS__namespace_1_1types_1_1get__return__type.html#ac549f484335955f84d86be6a644198e2">types::get_return_type&lt; T, parameter_t &gt;::return_t</a>,</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                <a class="code" href="classLIBKMS__namespace_1_1Parameter.html">parameter_t</a></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            &gt;<a class="code" href="classLIBKMS__namespace_1_1Parameter.html#ae6f38891ce947733703c3de5aafce38c">::as</a>( *<span class="keyword">this</span> );</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    }</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keyword">template</span>&lt; <span class="keyword">typename</span> T &gt;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keyword">const</span> <span class="keyword">typename</span> <a class="code" href="structLIBKMS__namespace_1_1types_1_1get__return__type.html#ac549f484335955f84d86be6a644198e2">types::get_return_type&lt; T, parameter_t &gt;::return_t</a></div>
+<div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="classLIBKMS__namespace_1_1Parameter.html#a75fd27c3385b7474e99d501e4118702a">   99</a></span>&#160;        <a class="code" href="classLIBKMS__namespace_1_1Parameter.html#a75fd27c3385b7474e99d501e4118702a">c_as</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <span class="keywordflow">return</span> obj_as&lt;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                <span class="keyword">typename</span> <a class="code" href="structLIBKMS__namespace_1_1types_1_1get__return__type.html#ac549f484335955f84d86be6a644198e2">types::get_return_type&lt; T, parameter_t &gt;::return_t</a>,</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                <a class="code" href="classLIBKMS__namespace_1_1Parameter.html">parameter_t</a></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            &gt;<a class="code" href="classLIBKMS__namespace_1_1Parameter.html#a75fd27c3385b7474e99d501e4118702a">::c_as</a>( *<span class="keyword">this</span> );</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    }</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
+<div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="classLIBKMS__namespace_1_1Parameter.html#a688e383ed05a421a5b74f3d9a8780fad">  108</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classLIBKMS__namespace_1_1Parameter.html#a688e383ed05a421a5b74f3d9a8780fad">set_desc</a>( <span class="keyword">const</span> std::string &amp; d )</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        { _desc = d; }</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
+<div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="classLIBKMS__namespace_1_1Parameter.html#a5696d8f34e854cae392e96ecca20e6c0">  112</a></span>&#160;    <span class="keyword">const</span> std::string &amp; <a class="code" href="classLIBKMS__namespace_1_1Parameter.html#a5696d8f34e854cae392e96ecca20e6c0">get_desc</a>( )<span class="keyword"> const</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="keyword">        </span>{ <span class="keywordflow">return</span> _desc; }</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
+<div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="classLIBKMS__namespace_1_1Parameter.html#a1bc31e7df8a2b5c68bec3ca3300af114">  116</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classLIBKMS__namespace_1_1Parameter.html#a1bc31e7df8a2b5c68bec3ca3300af114">is_locked</a>( )<span class="keyword"> const</span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="keyword">        </span>{ <span class="keywordflow">return</span> _locked; }</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
+<div class="line"><a name="l00120"></a><span class="lineno"><a class="line" href="classLIBKMS__namespace_1_1Parameter.html#aea87ceb7edf34c23aa5ec9240cd90673">  120</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classLIBKMS__namespace_1_1Parameter.html#aea87ceb7edf34c23aa5ec9240cd90673">set_lock</a>( <span class="keywordtype">bool</span> <a class="code" href="classLIBKMS__namespace_1_1Parameter.html#a1bc31e7df8a2b5c68bec3ca3300af114">is_locked</a> )</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        { _locked = <a class="code" href="classLIBKMS__namespace_1_1Parameter.html#a1bc31e7df8a2b5c68bec3ca3300af114">is_locked</a>; }</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;};  <span class="comment">// struct parameter</span></div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
+<div class="line"><a name="l00126"></a><span class="lineno"><a class="line" href="namespaceLIBKMS__namespace_1_1util.html">  126</a></span>&#160;<span class="keyword">namespace </span>util {</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="keyword">template</span>&lt; <span class="keyword">typename</span> E, <span class="keyword">template</span>&lt; <span class="keyword">typename</span> U &gt; <span class="keyword">class </span>S &gt;</div>
+<div class="line"><a name="l00129"></a><span class="lineno"><a class="line" href="namespaceLIBKMS__namespace_1_1util.html#a6aca094f1844c50997e998a39d99e658">  129</a></span>&#160;<span class="keyword">inline</span> std::string <a class="code" href="namespaceLIBKMS__namespace_1_1util.html#a6aca094f1844c50997e998a39d99e658">to_string</a>( <span class="keyword">const</span> <a class="code" href="classLIBKMS__namespace_1_1Parameter.html">Parameter&lt; E, S &gt;</a> &amp; src ) {</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <span class="keywordflow">return</span> src.<a class="code" href="classLIBKMS__namespace_1_1Parameter.html#ad934454e1569e546f6f347bb03ce705f">to_string</a>();</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;}</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="keyword">template</span>&lt; <span class="keyword">typename</span> E, <span class="keyword">template</span>&lt; <span class="keyword">typename</span> U &gt; <span class="keyword">class </span>S &gt;</div>
+<div class="line"><a name="l00134"></a><span class="lineno"><a class="line" href="namespaceLIBKMS__namespace_1_1util.html#aa6a46e615d0fb9d64175abbf18f89a13">  134</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="namespaceLIBKMS__namespace_1_1util.html#aa6a46e615d0fb9d64175abbf18f89a13">from_string</a>( <span class="keyword">const</span> std::string &amp; s, <a class="code" href="classLIBKMS__namespace_1_1Parameter.html">Parameter&lt; E, S &gt;</a> &amp; dst ) {</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <span class="keywordflow">return</span> dst.<a class="code" href="classLIBKMS__namespace_1_1Parameter.html#a6da649d3045e979a488c336bf77b411b">from_string</a>( s );</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;}</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;<span class="keyword">template</span>&lt; <span class="keyword">typename</span> E, <span class="keyword">template</span>&lt; <span class="keyword">typename</span> U &gt; <span class="keyword">class </span>S &gt;</div>
+<div class="line"><a name="l00139"></a><span class="lineno"><a class="line" href="namespaceLIBKMS__namespace_1_1util.html#a90d243caef8c555f4c786b3ded8175fe">  139</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="namespaceLIBKMS__namespace_1_1util.html#a90d243caef8c555f4c786b3ded8175fe">from_bytes</a>( <span class="keyword">const</span> uint8_t * b, <span class="keywordtype">size_t</span> s, <a class="code" href="classLIBKMS__namespace_1_1Parameter.html">Parameter&lt; E, S &gt;</a> &amp; dst ) {</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    <span class="keywordflow">return</span> dst.<a class="code" href="classLIBKMS__namespace_1_1Parameter.html#a33a7dac4680f0e39c9166771c65971ab">from_bytes</a>( b, s );</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;}</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;<span class="keyword">template</span>&lt; <span class="keyword">typename</span> Container, <span class="keyword">typename</span> E, <span class="keyword">template</span>&lt; <span class="keyword">typename</span> U &gt; <span class="keyword">class </span>S &gt;</div>
+<div class="line"><a name="l00144"></a><span class="lineno"><a class="line" href="namespaceLIBKMS__namespace_1_1util.html#a81d60ded0db9b86f8c47f2bba7075e84">  144</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="namespaceLIBKMS__namespace_1_1util.html#a90d243caef8c555f4c786b3ded8175fe">from_bytes</a>( <span class="keyword">const</span> Container &amp; src, <a class="code" href="classLIBKMS__namespace_1_1Parameter.html">Parameter&lt; E, S &gt;</a> &amp; dst ) {</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    <span class="keywordflow">return</span> dst.<a class="code" href="classLIBKMS__namespace_1_1Parameter.html#a33a7dac4680f0e39c9166771c65971ab">from_bytes</a>( src.data(), src.size() );</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;}</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<span class="keyword">template</span>&lt; <span class="keyword">typename</span> E, <span class="keyword">template</span>&lt; <span class="keyword">typename</span> U &gt; <span class="keyword">class </span>S &gt;</div>
+<div class="line"><a name="l00149"></a><span class="lineno"><a class="line" href="namespaceLIBKMS__namespace_1_1util.html#a7e4f3e0fd8ee0d9657eae4c1f8d459d2">  149</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">size_t</span> <a class="code" href="namespaceLIBKMS__namespace_1_1util.html#a7e4f3e0fd8ee0d9657eae4c1f8d459d2">to_bytes</a>( <span class="keyword">const</span> <a class="code" href="classLIBKMS__namespace_1_1Parameter.html">Parameter&lt; E, S &gt;</a> &amp; src, uint8_t * dst, <span class="keywordtype">size_t</span> len ) {</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    <span class="keyword">auto</span> res = src.<a class="code" href="classLIBKMS__namespace_1_1Parameter.html#a6ebf9bc6aaa62d78f786bc6368a2c65a">to_bytes</a>();</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    <span class="keywordtype">size_t</span> len_ = std::min( len, res.size() );</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    std::memcpy( dst, res.data(), len_ );</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <span class="keywordflow">return</span> len_;</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;}</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;<span class="keyword">template</span>&lt; <span class="keyword">typename</span> Container, <span class="keyword">typename</span> E, <span class="keyword">template</span>&lt; <span class="keyword">typename</span> U &gt; <span class="keyword">class </span>S &gt;</div>
+<div class="line"><a name="l00157"></a><span class="lineno"><a class="line" href="namespaceLIBKMS__namespace_1_1util.html#a692e2a914fea260c7098affde01f50ef">  157</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">size_t</span> <a class="code" href="namespaceLIBKMS__namespace_1_1util.html#a7e4f3e0fd8ee0d9657eae4c1f8d459d2">to_bytes</a>( <span class="keyword">const</span> <a class="code" href="classLIBKMS__namespace_1_1Parameter.html">Parameter&lt; E, S &gt;</a> &amp; src, Container &amp; dst ) {</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    <span class="keyword">auto</span> res = src.<a class="code" href="classLIBKMS__namespace_1_1Parameter.html#a6ebf9bc6aaa62d78f786bc6368a2c65a">to_bytes</a>();</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    std::copy( res.begin(), res.end(), std::back_inserter( dst ) );</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    <span class="keywordflow">return</span> dst.size();</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;}</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;<span class="keyword">template</span>&lt; <span class="keyword">typename</span> E, <span class="keyword">template</span>&lt; <span class="keyword">typename</span> U &gt; <span class="keyword">class </span>S &gt;</div>
+<div class="line"><a name="l00164"></a><span class="lineno"><a class="line" href="namespaceLIBKMS__namespace_1_1util.html#a93964262b5263dd408d800e5acbca34f">  164</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="namespaceLIBKMS__namespace_1_1util.html#a93964262b5263dd408d800e5acbca34f">is_equal</a>( <span class="keyword">const</span> <a class="code" href="classLIBKMS__namespace_1_1Parameter.html">Parameter&lt; E, S &gt;</a> &amp; one, <span class="keyword">const</span> <a class="code" href="classLIBKMS__namespace_1_1Parameter.html">Parameter&lt; E, S &gt;</a> &amp; another )</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;{</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    <span class="keywordflow">return</span> one.<a class="code" href="classLIBKMS__namespace_1_1Parameter.html#a2f582483707d9229a5a2bde88d860fff">is_equal</a>( another );</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;}</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;<span class="keyword">template</span>&lt; <span class="keyword">typename</span> E, <span class="keyword">template</span>&lt; <span class="keyword">typename</span> U &gt; <span class="keyword">class </span>S &gt;</div>
+<div class="line"><a name="l00170"></a><span class="lineno"><a class="line" href="namespaceLIBKMS__namespace_1_1util.html#ac400a8367bc5921cad6cb8bb062fc170">  170</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="namespaceLIBKMS__namespace_1_1util.html#ac400a8367bc5921cad6cb8bb062fc170">copy_data</a>( <a class="code" href="classLIBKMS__namespace_1_1Parameter.html">Parameter&lt; E, S &gt;</a> &amp; src, <a class="code" href="classLIBKMS__namespace_1_1Parameter.html">Parameter&lt; E, S &gt;</a> &amp; dst )</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;{</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    <span class="keywordflow">return</span> dst.<a class="code" href="classLIBKMS__namespace_1_1Parameter.html#a506fa08096a6595f04341b90912f35a0">copy_data</a>( src );</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;}</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;}   <span class="comment">//  namespace util</span></div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;}   <span class="comment">//  namespace LIBKMS_namespace</span></div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;<span class="preprocessor"></span></div>
+<div class="ttc" id="classLIBKMS__namespace_1_1Parameter_html_ae6f38891ce947733703c3de5aafce38c"><div class="ttname"><a href="classLIBKMS__namespace_1_1Parameter.html#ae6f38891ce947733703c3de5aafce38c">LIBKMS_namespace::Parameter::as</a></div><div class="ttdeci">types::get_return_type&lt; T, parameter_t &gt;::return_t as()</div><div class="ttdef"><b>Definition:</b> param.hpp:91</div></div>
+<div class="ttc" id="classLIBKMS__namespace_1_1Parameter_html_aea87ceb7edf34c23aa5ec9240cd90673"><div class="ttname"><a href="classLIBKMS__namespace_1_1Parameter.html#aea87ceb7edf34c23aa5ec9240cd90673">LIBKMS_namespace::Parameter::set_lock</a></div><div class="ttdeci">void set_lock(bool is_locked)</div><div class="ttdoc">Блокирует переменную </div><div class="ttdef"><b>Definition:</b> param.hpp:120</div></div>
+<div class="ttc" id="classLIBKMS__namespace_1_1Parameter_html_ac46dd4bb2e060a4e5f522b625cb44b11"><div class="ttname"><a href="classLIBKMS__namespace_1_1Parameter.html#ac46dd4bb2e060a4e5f522b625cb44b11">LIBKMS_namespace::Parameter::is_set</a></div><div class="ttdeci">virtual bool is_set() const =0</div><div class="ttdoc">Является ли параметр установленным (для power-переменных) </div></div>
+<div class="ttc" id="classLIBKMS__namespace_1_1Parameter_html_ac767db81c6aa9e552089be5958bfc81f"><div class="ttname"><a href="classLIBKMS__namespace_1_1Parameter.html#ac767db81c6aa9e552089be5958bfc81f">LIBKMS_namespace::Parameter::Parameter</a></div><div class="ttdeci">Parameter()</div><div class="ttdef"><b>Definition:</b> param.hpp:49</div></div>
+<div class="ttc" id="classLIBKMS__namespace_1_1Parameter_html_a2f582483707d9229a5a2bde88d860fff"><div class="ttname"><a href="classLIBKMS__namespace_1_1Parameter.html#a2f582483707d9229a5a2bde88d860fff">LIBKMS_namespace::Parameter::is_equal</a></div><div class="ttdeci">virtual bool is_equal(const parameter_t &amp;another) const =0</div><div class="ttdoc">Сравнить значения </div></div>
+<div class="ttc" id="namespaceLIBKMS__namespace_1_1util_html_a93964262b5263dd408d800e5acbca34f"><div class="ttname"><a href="namespaceLIBKMS__namespace_1_1util.html#a93964262b5263dd408d800e5acbca34f">LIBKMS_namespace::util::is_equal</a></div><div class="ttdeci">bool is_equal(const Parameter&lt; E, S &gt; &amp;one, const Parameter&lt; E, S &gt; &amp;another)</div><div class="ttdef"><b>Definition:</b> param.hpp:164</div></div>
+<div class="ttc" id="classLIBKMS__namespace_1_1Parameter_html_a688e383ed05a421a5b74f3d9a8780fad"><div class="ttname"><a href="classLIBKMS__namespace_1_1Parameter.html#a688e383ed05a421a5b74f3d9a8780fad">LIBKMS_namespace::Parameter::set_desc</a></div><div class="ttdeci">void set_desc(const std::string &amp;d)</div><div class="ttdoc">Устанавливает описание переменной </div><div class="ttdef"><b>Definition:</b> param.hpp:108</div></div>
+<div class="ttc" id="structLIBKMS__namespace_1_1types_1_1get__return__type_html"><div class="ttname"><a href="structLIBKMS__namespace_1_1types_1_1get__return__type.html">LIBKMS_namespace::types::get_return_type</a></div><div class="ttdoc">Для осуществления возможности возврата holder&lt; T &gt; по T. </div><div class="ttdef"><b>Definition:</b> param.hpp:20</div></div>
+<div class="ttc" id="classLIBKMS__namespace_1_1Parameter_html_a6da649d3045e979a488c336bf77b411b"><div class="ttname"><a href="classLIBKMS__namespace_1_1Parameter.html#a6da649d3045e979a488c336bf77b411b">LIBKMS_namespace::Parameter::from_string</a></div><div class="ttdeci">virtual bool from_string(const std::string &amp;)=0</div><div class="ttdoc">Записать значение из строки </div></div>
+<div class="ttc" id="classLIBKMS__namespace_1_1Parameter_html_a506fa08096a6595f04341b90912f35a0"><div class="ttname"><a href="classLIBKMS__namespace_1_1Parameter.html#a506fa08096a6595f04341b90912f35a0">LIBKMS_namespace::Parameter::copy_data</a></div><div class="ttdeci">virtual bool copy_data(parameter_t &amp;)=0</div></div>
+<div class="ttc" id="classLIBKMS__namespace_1_1Parameter_html"><div class="ttname"><a href="classLIBKMS__namespace_1_1Parameter.html">LIBKMS_namespace::Parameter</a></div><div class="ttdoc">Класс, от которого должны наследоваться все классы параметров </div><div class="ttdef"><b>Definition:</b> param.hpp:34</div></div>
+<div class="ttc" id="classLIBKMS__namespace_1_1Parameter_html_a3978d2027190f56451d37703d7e317a2"><div class="ttname"><a href="classLIBKMS__namespace_1_1Parameter.html#a3978d2027190f56451d37703d7e317a2">LIBKMS_namespace::Parameter::null_ptr</a></div><div class="ttdeci">static ptr_t null_ptr()</div><div class="ttdef"><b>Definition:</b> param.hpp:45</div></div>
+<div class="ttc" id="namespaceLIBKMS__namespace_1_1util_html_a7e4f3e0fd8ee0d9657eae4c1f8d459d2"><div class="ttname"><a href="namespaceLIBKMS__namespace_1_1util.html#a7e4f3e0fd8ee0d9657eae4c1f8d459d2">LIBKMS_namespace::util::to_bytes</a></div><div class="ttdeci">size_t to_bytes(const Parameter&lt; E, S &gt; &amp;src, uint8_t *dst, size_t len)</div><div class="ttdef"><b>Definition:</b> param.hpp:149</div></div>
+<div class="ttc" id="classLIBKMS__namespace_1_1Parameter_html_af353e23edea754f9a2d1c936cd5c8eab"><div class="ttname"><a href="classLIBKMS__namespace_1_1Parameter.html#af353e23edea754f9a2d1c936cd5c8eab">LIBKMS_namespace::Parameter::parameter_t</a></div><div class="ttdeci">Parameter&lt; Ext, Spec &gt; parameter_t</div><div class="ttdef"><b>Definition:</b> param.hpp:42</div></div>
+<div class="ttc" id="structLIBKMS__namespace_1_1types_1_1get__return__type_html_a599165be1e050dd76942eb69e5a24319"><div class="ttname"><a href="structLIBKMS__namespace_1_1types_1_1get__return__type.html#a599165be1e050dd76942eb69e5a24319">LIBKMS_namespace::types::get_return_type::ogiginal_t</a></div><div class="ttdeci">T ogiginal_t</div><div class="ttdef"><b>Definition:</b> param.hpp:21</div></div>
+<div class="ttc" id="classLIBKMS__namespace_1_1Parameter_html_a2b360aeb7f850d4fccc58adc4a5b88b7"><div class="ttname"><a href="classLIBKMS__namespace_1_1Parameter.html#a2b360aeb7f850d4fccc58adc4a5b88b7">LIBKMS_namespace::Parameter::clone</a></div><div class="ttdeci">virtual ptr_t clone()=0</div></div>
+<div class="ttc" id="classLIBKMS__namespace_1_1Parameter_html_ad934454e1569e546f6f347bb03ce705f"><div class="ttname"><a href="classLIBKMS__namespace_1_1Parameter.html#ad934454e1569e546f6f347bb03ce705f">LIBKMS_namespace::Parameter::to_string</a></div><div class="ttdeci">virtual std::string to_string() const =0</div><div class="ttdoc">Вернуть представление данных в виде строки </div></div>
+<div class="ttc" id="classLIBKMS__namespace_1_1Parameter_html_a644c4a3c66079510847da3377e5f1594"><div class="ttname"><a href="classLIBKMS__namespace_1_1Parameter.html#a644c4a3c66079510847da3377e5f1594">LIBKMS_namespace::Parameter::~Parameter</a></div><div class="ttdeci">virtual ~Parameter()</div><div class="ttdef"><b>Definition:</b> param.hpp:58</div></div>
+<div class="ttc" id="classLIBKMS__namespace_1_1Parameter_html_a75fd27c3385b7474e99d501e4118702a"><div class="ttname"><a href="classLIBKMS__namespace_1_1Parameter.html#a75fd27c3385b7474e99d501e4118702a">LIBKMS_namespace::Parameter::c_as</a></div><div class="ttdeci">const types::get_return_type&lt; T, parameter_t &gt;::return_t c_as() const </div><div class="ttdef"><b>Definition:</b> param.hpp:99</div></div>
+<div class="ttc" id="classLIBKMS__namespace_1_1Parameter_html_a7d03af2df98ad4053433f84288f0e786"><div class="ttname"><a href="classLIBKMS__namespace_1_1Parameter.html#a7d03af2df98ad4053433f84288f0e786">LIBKMS_namespace::Parameter::get_type</a></div><div class="ttdeci">std::string get_type() const </div><div class="ttdoc">Вернуть имя типа </div><div class="ttdef"><b>Definition:</b> param.hpp:81</div></div>
+<div class="ttc" id="classLIBKMS__namespace_1_1Parameter_html_a6ebf9bc6aaa62d78f786bc6368a2c65a"><div class="ttname"><a href="classLIBKMS__namespace_1_1Parameter.html#a6ebf9bc6aaa62d78f786bc6368a2c65a">LIBKMS_namespace::Parameter::to_bytes</a></div><div class="ttdeci">virtual std::vector&lt; uint8_t &gt; to_bytes() const =0</div><div class="ttdoc">Вернуть представление данных в виде вектора байтов </div></div>
+<div class="ttc" id="structLIBKMS__namespace_1_1types_1_1get__return__type_html_ac549f484335955f84d86be6a644198e2"><div class="ttname"><a href="structLIBKMS__namespace_1_1types_1_1get__return__type.html#ac549f484335955f84d86be6a644198e2">LIBKMS_namespace::types::get_return_type::return_t</a></div><div class="ttdeci">T return_t</div><div class="ttdef"><b>Definition:</b> param.hpp:22</div></div>
+<div class="ttc" id="classLIBKMS__namespace_1_1Parameter_html_a5696d8f34e854cae392e96ecca20e6c0"><div class="ttname"><a href="classLIBKMS__namespace_1_1Parameter.html#a5696d8f34e854cae392e96ecca20e6c0">LIBKMS_namespace::Parameter::get_desc</a></div><div class="ttdeci">const std::string &amp; get_desc() const </div><div class="ttdoc">Возвращает описание переменной </div><div class="ttdef"><b>Definition:</b> param.hpp:112</div></div>
+<div class="ttc" id="namespaceLIBKMS__namespace_1_1util_html_a90d243caef8c555f4c786b3ded8175fe"><div class="ttname"><a href="namespaceLIBKMS__namespace_1_1util.html#a90d243caef8c555f4c786b3ded8175fe">LIBKMS_namespace::util::from_bytes</a></div><div class="ttdeci">bool from_bytes(const uint8_t *b, size_t s, Parameter&lt; E, S &gt; &amp;dst)</div><div class="ttdef"><b>Definition:</b> param.hpp:139</div></div>
+<div class="ttc" id="classLIBKMS__namespace_1_1Parameter_html_a3c0c7c0222fbe9d6d38e002e706cf1b7"><div class="ttname"><a href="classLIBKMS__namespace_1_1Parameter.html#a3c0c7c0222fbe9d6d38e002e706cf1b7">LIBKMS_namespace::Parameter::Parameter</a></div><div class="ttdeci">Parameter(const std::string type_name)</div><div class="ttdef"><b>Definition:</b> param.hpp:53</div></div>
+<div class="ttc" id="classLIBKMS__namespace_1_1Parameter_html_a1bc31e7df8a2b5c68bec3ca3300af114"><div class="ttname"><a href="classLIBKMS__namespace_1_1Parameter.html#a1bc31e7df8a2b5c68bec3ca3300af114">LIBKMS_namespace::Parameter::is_locked</a></div><div class="ttdeci">bool is_locked() const </div><div class="ttdoc">Возвращает признак блокировки </div><div class="ttdef"><b>Definition:</b> param.hpp:116</div></div>
+<div class="ttc" id="namespaceLIBKMS__namespace_1_1util_html_ac400a8367bc5921cad6cb8bb062fc170"><div class="ttname"><a href="namespaceLIBKMS__namespace_1_1util.html#ac400a8367bc5921cad6cb8bb062fc170">LIBKMS_namespace::util::copy_data</a></div><div class="ttdeci">bool copy_data(Parameter&lt; E, S &gt; &amp;src, Parameter&lt; E, S &gt; &amp;dst)</div><div class="ttdef"><b>Definition:</b> param.hpp:170</div></div>
+<div class="ttc" id="namespaceLIBKMS__namespace_1_1util_html_a6aca094f1844c50997e998a39d99e658"><div class="ttname"><a href="namespaceLIBKMS__namespace_1_1util.html#a6aca094f1844c50997e998a39d99e658">LIBKMS_namespace::util::to_string</a></div><div class="ttdeci">std::string to_string(const Parameter&lt; E, S &gt; &amp;src)</div><div class="ttdef"><b>Definition:</b> param.hpp:129</div></div>
+<div class="ttc" id="classLIBKMS__namespace_1_1Parameter_html_a33a7dac4680f0e39c9166771c65971ab"><div class="ttname"><a href="classLIBKMS__namespace_1_1Parameter.html#a33a7dac4680f0e39c9166771c65971ab">LIBKMS_namespace::Parameter::from_bytes</a></div><div class="ttdeci">virtual bool from_bytes(const uint8_t *, size_t)=0</div><div class="ttdoc">Записать значение из набора байтов </div></div>
+<div class="ttc" id="namespaceLIBKMS__namespace_1_1util_html_aa6a46e615d0fb9d64175abbf18f89a13"><div class="ttname"><a href="namespaceLIBKMS__namespace_1_1util.html#aa6a46e615d0fb9d64175abbf18f89a13">LIBKMS_namespace::util::from_string</a></div><div class="ttdeci">bool from_string(const std::string &amp;s, Parameter&lt; E, S &gt; &amp;dst)</div><div class="ttdef"><b>Definition:</b> param.hpp:134</div></div>
+<div class="ttc" id="classLIBKMS__namespace_1_1Parameter_html_a28516bcd5bad5857b2d1c676e4176f51"><div class="ttname"><a href="classLIBKMS__namespace_1_1Parameter.html#a28516bcd5bad5857b2d1c676e4176f51">LIBKMS_namespace::Parameter::ptr_t</a></div><div class="ttdeci">Spec&lt; parameter_t &gt;::ptr ptr_t</div><div class="ttdef"><b>Definition:</b> param.hpp:43</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Документация по КМС2. Последние изменения: Чт 20 Окт 2016 11:06:11. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

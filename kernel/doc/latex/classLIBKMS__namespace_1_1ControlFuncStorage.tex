@@ -1,0 +1,80 @@
+\hypertarget{classLIBKMS__namespace_1_1ControlFuncStorage}{\section{Шаблон класса L\-I\-B\-K\-M\-S\-\_\-namespace\-:\-:Control\-Func\-Storage$<$ Type\-Factory, Block\-Ptr, Logger, Spec $>$}
+\label{classLIBKMS__namespace_1_1ControlFuncStorage}\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Control\-Func\-Storage$<$ Type\-Factory, Block\-Ptr, Logger, Spec $>$@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Control\-Func\-Storage$<$ Type\-Factory, Block\-Ptr, Logger, Spec $>$}}
+}
+
+
+{\ttfamily \#include $<$control\-\_\-func.\-hpp$>$}
+
+\subsection*{Открытые типы}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classLIBKMS__namespace_1_1ControlFuncStorage}{Control\-Func\-Storage}\\*
+$<$ \hyperlink{classLIBKMS__namespace_1_1TypeFactory}{Type\-Factory}, Block\-Ptr, \\*
+Logger, Spec $>$ \hyperlink{classLIBKMS__namespace_1_1ControlFuncStorage_ad9bffebc36d4a24c52884274e207ecd7}{control\-\_\-func\-\_\-storage\-\_\-t}
+\item 
+typedef \hyperlink{classLIBKMS__namespace_1_1ControlFunc}{Control\-Func}\\*
+$<$ \hyperlink{classLIBKMS__namespace_1_1TypeFactory}{Type\-Factory}, Block\-Ptr, \\*
+Logger $>$ \hyperlink{classLIBKMS__namespace_1_1ControlFuncStorage_a69b15024d98e8df2ebe35447de1acd34}{control\-\_\-func\-\_\-t}
+\end{DoxyCompactItemize}
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$template$<$ typename T, typename U, typename Y $>$ class F$>$ }\\bool \hyperlink{classLIBKMS__namespace_1_1ControlFuncStorage_a8c8b2bde18b8bfe909737e6e2cdacf49}{add\-\_\-func} (std\-::string name)
+\begin{DoxyCompactList}\small\item\em Добавляем новую функцию \end{DoxyCompactList}\item 
+const control\-\_\-func\-\_\-ptr \hyperlink{classLIBKMS__namespace_1_1ControlFuncStorage_a7518fbd7426301d1b29039feb25c7060}{get} (const std\-::string \&name) const 
+\begin{DoxyCompactList}\small\item\em Получаем указатель на функцию по имени \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Открытые статические члены}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classLIBKMS__namespace_1_1ControlFuncStorage_ad9bffebc36d4a24c52884274e207ecd7}{control\-\_\-func\-\_\-storage\-\_\-t} \& \hyperlink{classLIBKMS__namespace_1_1ControlFuncStorage_a11f70db0ce25a1062bf0e0050d92415d}{instance} () noexcept
+\begin{DoxyCompactList}\small\item\em Возвращаем ссылку на синглтон \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Определения типов}
+\hypertarget{classLIBKMS__namespace_1_1ControlFuncStorage_ad9bffebc36d4a24c52884274e207ecd7}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Control\-Func\-Storage@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Control\-Func\-Storage}!control\-\_\-func\-\_\-storage\-\_\-t@{control\-\_\-func\-\_\-storage\-\_\-t}}
+\index{control\-\_\-func\-\_\-storage\-\_\-t@{control\-\_\-func\-\_\-storage\-\_\-t}!LIBKMS_namespace::ControlFuncStorage@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Control\-Func\-Storage}}
+\subsubsection[{control\-\_\-func\-\_\-storage\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Type\-Factory , typename Block\-Ptr , typename Logger , template$<$ typename U $>$ class Spec$>$ typedef {\bf Control\-Func\-Storage}$<$ {\bf Type\-Factory}, Block\-Ptr, Logger, Spec $>$ {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Control\-Func\-Storage}$<$ {\bf Type\-Factory}, Block\-Ptr, Logger, Spec $>$\-::{\bf control\-\_\-func\-\_\-storage\-\_\-t}}}\label{classLIBKMS__namespace_1_1ControlFuncStorage_ad9bffebc36d4a24c52884274e207ecd7}
+\hypertarget{classLIBKMS__namespace_1_1ControlFuncStorage_a69b15024d98e8df2ebe35447de1acd34}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Control\-Func\-Storage@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Control\-Func\-Storage}!control\-\_\-func\-\_\-t@{control\-\_\-func\-\_\-t}}
+\index{control\-\_\-func\-\_\-t@{control\-\_\-func\-\_\-t}!LIBKMS_namespace::ControlFuncStorage@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Control\-Func\-Storage}}
+\subsubsection[{control\-\_\-func\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Type\-Factory , typename Block\-Ptr , typename Logger , template$<$ typename U $>$ class Spec$>$ typedef {\bf Control\-Func}$<$ {\bf Type\-Factory}, Block\-Ptr, Logger $>$ {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Control\-Func\-Storage}$<$ {\bf Type\-Factory}, Block\-Ptr, Logger, Spec $>$\-::{\bf control\-\_\-func\-\_\-t}}}\label{classLIBKMS__namespace_1_1ControlFuncStorage_a69b15024d98e8df2ebe35447de1acd34}
+
+
+\subsection{Методы}
+\hypertarget{classLIBKMS__namespace_1_1ControlFuncStorage_a8c8b2bde18b8bfe909737e6e2cdacf49}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Control\-Func\-Storage@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Control\-Func\-Storage}!add\-\_\-func@{add\-\_\-func}}
+\index{add\-\_\-func@{add\-\_\-func}!LIBKMS_namespace::ControlFuncStorage@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Control\-Func\-Storage}}
+\subsubsection[{add\-\_\-func}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Type\-Factory , typename Block\-Ptr , typename Logger , template$<$ typename U $>$ class Spec$>$ template$<$template$<$ typename T, typename U, typename Y $>$ class F$>$ bool {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Control\-Func\-Storage}$<$ {\bf Type\-Factory}, Block\-Ptr, Logger, Spec $>$\-::add\-\_\-func (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classLIBKMS__namespace_1_1ControlFuncStorage_a8c8b2bde18b8bfe909737e6e2cdacf49}
+
+
+Добавляем новую функцию 
+
+\hypertarget{classLIBKMS__namespace_1_1ControlFuncStorage_a7518fbd7426301d1b29039feb25c7060}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Control\-Func\-Storage@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Control\-Func\-Storage}!get@{get}}
+\index{get@{get}!LIBKMS_namespace::ControlFuncStorage@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Control\-Func\-Storage}}
+\subsubsection[{get}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Type\-Factory , typename Block\-Ptr , typename Logger , template$<$ typename U $>$ class Spec$>$ const control\-\_\-func\-\_\-ptr {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Control\-Func\-Storage}$<$ {\bf Type\-Factory}, Block\-Ptr, Logger, Spec $>$\-::get (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{name}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classLIBKMS__namespace_1_1ControlFuncStorage_a7518fbd7426301d1b29039feb25c7060}
+
+
+Получаем указатель на функцию по имени 
+
+\hypertarget{classLIBKMS__namespace_1_1ControlFuncStorage_a11f70db0ce25a1062bf0e0050d92415d}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Control\-Func\-Storage@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Control\-Func\-Storage}!instance@{instance}}
+\index{instance@{instance}!LIBKMS_namespace::ControlFuncStorage@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Control\-Func\-Storage}}
+\subsubsection[{instance}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Type\-Factory , typename Block\-Ptr , typename Logger , template$<$ typename U $>$ class Spec$>$ static {\bf control\-\_\-func\-\_\-storage\-\_\-t}\& {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Control\-Func\-Storage}$<$ {\bf Type\-Factory}, Block\-Ptr, Logger, Spec $>$\-::instance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [noexcept]}}}\label{classLIBKMS__namespace_1_1ControlFuncStorage_a11f70db0ce25a1062bf0e0050d92415d}
+
+
+Возвращаем ссылку на синглтон 
+
+
+
+Объявления и описания членов класса находятся в файле\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{control__func_8hpp}{control\-\_\-func.\-hpp}\end{DoxyCompactItemize}

@@ -1,0 +1,125 @@
+\hypertarget{classLIBKMS__namespace_1_1ControlFunc}{\section{Шаблон класса L\-I\-B\-K\-M\-S\-\_\-namespace\-:\-:Control\-Func$<$ Type\-Factory, Block\-Ptr, Logger $>$}
+\label{classLIBKMS__namespace_1_1ControlFunc}\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Control\-Func$<$ Type\-Factory, Block\-Ptr, Logger $>$@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Control\-Func$<$ Type\-Factory, Block\-Ptr, Logger $>$}}
+}
+
+
+Шаблон класса \char`\"{}управляющая функция\char`\"{} (ФИ)  
+
+
+
+
+{\ttfamily \#include $<$control\-\_\-func.\-hpp$>$}
+
+\subsection*{Открытые типы}
+\begin{DoxyCompactItemize}
+\item 
+typedef Block\-Ptr \hyperlink{classLIBKMS__namespace_1_1ControlFunc_a4c0b78548d7ebcef58f9d5d2e2066c63}{block\-\_\-ptr}
+\end{DoxyCompactItemize}
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classLIBKMS__namespace_1_1ControlFunc_a92c78d0cb0a753d1b6258ee940da449b}{Control\-Func} (std\-::string name)
+\item 
+virtual \hyperlink{classLIBKMS__namespace_1_1ControlFunc_affa6e4a9fefd45216ab78ee4ac0f5f12}{$\sim$\-Control\-Func} ()
+\item 
+bool \hyperlink{classLIBKMS__namespace_1_1ControlFunc_a31fcb06f6bf12131329726163f3d0302}{set\-\_\-parameter\-\_\-values} (std\-::vector$<$ std\-::string $>$ values)
+\item 
+size\-\_\-t \hyperlink{classLIBKMS__namespace_1_1ControlFunc_af5a5020e498ba27633a7d188ba5e6101}{get\-\_\-parameter\-\_\-count} ()
+\begin{DoxyCompactList}\small\item\em Вернуть количество параметров ФИ \end{DoxyCompactList}\item 
+virtual std\-::string \hyperlink{classLIBKMS__namespace_1_1ControlFunc_a907104ca1761cfb76d88aabda134c134}{run} (\hyperlink{classLIBKMS__namespace_1_1ControlFunc_a4c0b78548d7ebcef58f9d5d2e2066c63}{block\-\_\-ptr} main\-\_\-block)=0
+\end{DoxyCompactItemize}
+\subsection*{Защищенные члены}
+\begin{DoxyCompactItemize}
+\item 
+size\-\_\-t \hyperlink{classLIBKMS__namespace_1_1ControlFunc_aea0eac7590ff80e72d40151416f8d87b}{add\-\_\-param} (std\-::string type)
+\item 
+parameter\-\_\-ptr \hyperlink{classLIBKMS__namespace_1_1ControlFunc_ae24248b525cf699d35411325d1f32059}{get\-\_\-param} (size\-\_\-t num)
+\begin{DoxyCompactList}\small\item\em Вернуть указатель на параметр \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Подробное описание}
+\subsubsection*{template$<$typename Type\-Factory, typename Block\-Ptr, typename Logger$>$class L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Control\-Func$<$ Type\-Factory, Block\-Ptr, Logger $>$}
+
+Шаблон класса \char`\"{}управляющая функция\char`\"{} (ФИ) 
+
+\subsection{Определения типов}
+\hypertarget{classLIBKMS__namespace_1_1ControlFunc_a4c0b78548d7ebcef58f9d5d2e2066c63}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Control\-Func@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Control\-Func}!block\-\_\-ptr@{block\-\_\-ptr}}
+\index{block\-\_\-ptr@{block\-\_\-ptr}!LIBKMS_namespace::ControlFunc@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Control\-Func}}
+\subsubsection[{block\-\_\-ptr}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Type\-Factory , typename Block\-Ptr , typename Logger $>$ typedef Block\-Ptr {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Control\-Func}$<$ {\bf Type\-Factory}, Block\-Ptr, Logger $>$\-::{\bf block\-\_\-ptr}}}\label{classLIBKMS__namespace_1_1ControlFunc_a4c0b78548d7ebcef58f9d5d2e2066c63}
+
+
+\subsection{Конструктор(ы)}
+\hypertarget{classLIBKMS__namespace_1_1ControlFunc_a92c78d0cb0a753d1b6258ee940da449b}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Control\-Func@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Control\-Func}!Control\-Func@{Control\-Func}}
+\index{Control\-Func@{Control\-Func}!LIBKMS_namespace::ControlFunc@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Control\-Func}}
+\subsubsection[{Control\-Func}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Type\-Factory , typename Block\-Ptr , typename Logger $>$ {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Control\-Func}$<$ {\bf Type\-Factory}, Block\-Ptr, Logger $>$\-::{\bf Control\-Func} (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classLIBKMS__namespace_1_1ControlFunc_a92c78d0cb0a753d1b6258ee940da449b}
+\hypertarget{classLIBKMS__namespace_1_1ControlFunc_affa6e4a9fefd45216ab78ee4ac0f5f12}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Control\-Func@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Control\-Func}!$\sim$\-Control\-Func@{$\sim$\-Control\-Func}}
+\index{$\sim$\-Control\-Func@{$\sim$\-Control\-Func}!LIBKMS_namespace::ControlFunc@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Control\-Func}}
+\subsubsection[{$\sim$\-Control\-Func}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Type\-Factory , typename Block\-Ptr , typename Logger $>$ virtual {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Control\-Func}$<$ {\bf Type\-Factory}, Block\-Ptr, Logger $>$\-::$\sim${\bf Control\-Func} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classLIBKMS__namespace_1_1ControlFunc_affa6e4a9fefd45216ab78ee4ac0f5f12}
+
+
+\subsection{Методы}
+\hypertarget{classLIBKMS__namespace_1_1ControlFunc_aea0eac7590ff80e72d40151416f8d87b}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Control\-Func@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Control\-Func}!add\-\_\-param@{add\-\_\-param}}
+\index{add\-\_\-param@{add\-\_\-param}!LIBKMS_namespace::ControlFunc@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Control\-Func}}
+\subsubsection[{add\-\_\-param}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Type\-Factory , typename Block\-Ptr , typename Logger $>$ size\-\_\-t {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Control\-Func}$<$ {\bf Type\-Factory}, Block\-Ptr, Logger $>$\-::add\-\_\-param (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{type}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{classLIBKMS__namespace_1_1ControlFunc_aea0eac7590ff80e72d40151416f8d87b}
+Добавить параметр \begin{DoxyReturn}{Возвращает}
+номер добавленного параметра 
+\end{DoxyReturn}
+\hypertarget{classLIBKMS__namespace_1_1ControlFunc_ae24248b525cf699d35411325d1f32059}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Control\-Func@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Control\-Func}!get\-\_\-param@{get\-\_\-param}}
+\index{get\-\_\-param@{get\-\_\-param}!LIBKMS_namespace::ControlFunc@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Control\-Func}}
+\subsubsection[{get\-\_\-param}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Type\-Factory , typename Block\-Ptr , typename Logger $>$ parameter\-\_\-ptr {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Control\-Func}$<$ {\bf Type\-Factory}, Block\-Ptr, Logger $>$\-::get\-\_\-param (
+\begin{DoxyParamCaption}
+\item[{size\-\_\-t}]{num}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{classLIBKMS__namespace_1_1ControlFunc_ae24248b525cf699d35411325d1f32059}
+
+
+Вернуть указатель на параметр 
+
+\hypertarget{classLIBKMS__namespace_1_1ControlFunc_af5a5020e498ba27633a7d188ba5e6101}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Control\-Func@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Control\-Func}!get\-\_\-parameter\-\_\-count@{get\-\_\-parameter\-\_\-count}}
+\index{get\-\_\-parameter\-\_\-count@{get\-\_\-parameter\-\_\-count}!LIBKMS_namespace::ControlFunc@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Control\-Func}}
+\subsubsection[{get\-\_\-parameter\-\_\-count}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Type\-Factory , typename Block\-Ptr , typename Logger $>$ size\-\_\-t {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Control\-Func}$<$ {\bf Type\-Factory}, Block\-Ptr, Logger $>$\-::get\-\_\-parameter\-\_\-count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classLIBKMS__namespace_1_1ControlFunc_af5a5020e498ba27633a7d188ba5e6101}
+
+
+Вернуть количество параметров ФИ 
+
+\hypertarget{classLIBKMS__namespace_1_1ControlFunc_a907104ca1761cfb76d88aabda134c134}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Control\-Func@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Control\-Func}!run@{run}}
+\index{run@{run}!LIBKMS_namespace::ControlFunc@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Control\-Func}}
+\subsubsection[{run}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Type\-Factory , typename Block\-Ptr , typename Logger $>$ virtual std\-::string {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Control\-Func}$<$ {\bf Type\-Factory}, Block\-Ptr, Logger $>$\-::run (
+\begin{DoxyParamCaption}
+\item[{{\bf block\-\_\-ptr}}]{main\-\_\-block}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classLIBKMS__namespace_1_1ControlFunc_a907104ca1761cfb76d88aabda134c134}
+Выполнить действие, предусмотренное функцией \begin{DoxyReturn}{Возвращает}
+текстовое сообщение, выводимое командой 
+\end{DoxyReturn}
+\hypertarget{classLIBKMS__namespace_1_1ControlFunc_a31fcb06f6bf12131329726163f3d0302}{\index{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Control\-Func@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Control\-Func}!set\-\_\-parameter\-\_\-values@{set\-\_\-parameter\-\_\-values}}
+\index{set\-\_\-parameter\-\_\-values@{set\-\_\-parameter\-\_\-values}!LIBKMS_namespace::ControlFunc@{L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Control\-Func}}
+\subsubsection[{set\-\_\-parameter\-\_\-values}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Type\-Factory , typename Block\-Ptr , typename Logger $>$ bool {\bf L\-I\-B\-K\-M\-S\-\_\-namespace\-::\-Control\-Func}$<$ {\bf Type\-Factory}, Block\-Ptr, Logger $>$\-::set\-\_\-parameter\-\_\-values (
+\begin{DoxyParamCaption}
+\item[{std\-::vector$<$ std\-::string $>$}]{values}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classLIBKMS__namespace_1_1ControlFunc_a31fcb06f6bf12131329726163f3d0302}
+Установить значение параметров \begin{DoxyReturn}{Возвращает}
+признак успешного завершения операции 
+\end{DoxyReturn}
+
+
+Объявления и описания членов класса находятся в файле\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{control__func_8hpp}{control\-\_\-func.\-hpp}\end{DoxyCompactItemize}
